@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
       subtotal += itemSubtotal;
       cartHtml += `
         <div class="flex gap-4 p-6 border-b border-outline-variant/30">
-          <img src="${item.image}" alt="${item.name}" class="w-20 h-24 object-cover bg-surface-container-low rounded-md">
+          <img src="${item.image}" alt="${item.name}" class="w-20 h-24 object-cover bg-surface-container-low rounded-none">
           <div class="flex-1 flex flex-col justify-between">
             <div>
               <div class="flex justify-between items-start">
