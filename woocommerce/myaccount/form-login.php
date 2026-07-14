@@ -33,7 +33,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
                 
                 <div class="flex items-center justify-between">
                     <label class="flex items-center gap-2 cursor-pointer woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
-                        <input class="woocommerce-FormInput woocommerce-FormInput--checkbox text-primary focus:ring-primary rounded-sm" name="rememberme" type="checkbox" id="rememberme" value="forever" />
+                        <input class="woocommerce-FormInput woocommerce-FormInput--checkbox text-primary focus:ring-primary rounded-none" name="rememberme" type="checkbox" id="rememberme" value="forever" />
                         <span class="text-xs text-on-surface-variant uppercase tracking-widest font-semibold"><?php esc_html_e( 'Remember me', 'woocommerce' ); ?></span>
                     </label>
                     <a href="<?php echo esc_url( wp_lostpassword_url() ); ?>" class="text-xs text-on-surface-variant uppercase tracking-widest font-semibold hover:text-primary"><?php esc_html_e( 'Lost your password?', 'woocommerce' ); ?></a>

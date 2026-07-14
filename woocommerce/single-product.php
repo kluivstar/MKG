@@ -34,7 +34,7 @@ get_header(); ?>
               $thumb_url = wp_get_attachment_image_url( get_post_thumbnail_id(), 'thumbnail' );
               $full_url = wp_get_attachment_image_url( get_post_thumbnail_id(), 'large' );
               ?>
-              <button data-gallery-thumb="<?php echo esc_url($full_url); ?>" class="aspect-[3/4] w-full bg-surface-container-low overflow-hidden border border-primary rounded-sm">
+              <button data-gallery-thumb="<?php echo esc_url($full_url); ?>" class="aspect-[3/4] w-full bg-surface-container-low overflow-hidden border border-primary rounded-none">
                 <img class="w-full h-full object-cover" alt="Primary Image" src="<?php echo esc_url($thumb_url); ?>"/>
               </button>
               <?php
@@ -44,7 +44,7 @@ get_header(); ?>
                   $thumb_url = wp_get_attachment_image_url( $attachment_id, 'thumbnail' );
                   $full_url = wp_get_attachment_image_url( $attachment_id, 'large' );
                   ?>
-                  <button data-gallery-thumb="<?php echo esc_url($full_url); ?>" class="aspect-[3/4] w-full bg-surface-container-low overflow-hidden border border-transparent rounded-sm">
+                  <button data-gallery-thumb="<?php echo esc_url($full_url); ?>" class="aspect-[3/4] w-full bg-surface-container-low overflow-hidden border border-transparent rounded-none">
                     <img class="w-full h-full object-cover" alt="Gallery Image" src="<?php echo esc_url($thumb_url); ?>"/>
                   </button>
                   <?php
@@ -54,7 +54,7 @@ get_header(); ?>
         </div>
         <!-- Main Product Image -->
         <div class="col-span-10">
-          <div class="aspect-[3/4] bg-surface-container-low overflow-hidden rounded-md">
+          <div class="aspect-[3/4] bg-surface-container-low overflow-hidden rounded-none">
             <?php if ( has_post_thumbnail() ) : ?>
                 <img id="main-gallery-image" class="w-full h-full object-cover transition-all duration-500" alt="<?php the_title_attribute(); ?>" src="<?php echo esc_url( wp_get_attachment_image_url( get_post_thumbnail_id(), 'large' ) ); ?>"/>
             <?php else : ?>

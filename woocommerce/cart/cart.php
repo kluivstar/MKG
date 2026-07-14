@@ -25,8 +25,8 @@ do_action( 'woocommerce_before_cart' ); ?>
                     if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
                         $product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
                         ?>
-                        <div class="flex gap-6 p-6 border-b border-outline-variant/30 bg-surface-container-lowest rounded-md">
-                            <div class="w-24 h-32 overflow-hidden bg-surface-container-low rounded-sm">
+                        <div class="flex gap-6 p-6 border-b border-outline-variant/30 bg-surface-container-lowest rounded-none">
+                            <div class="w-24 h-32 overflow-hidden bg-surface-container-low rounded-none">
                                 <?php
                                 $thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
                                 if ( ! $product_permalink ) {
@@ -114,7 +114,7 @@ do_action( 'woocommerce_before_cart' ); ?>
             </div>
             
             <!-- Cart Totals & Coupon (Column 9-12) -->
-            <div class="lg:col-span-4 bg-surface-container-low p-8 rounded-lg space-y-6">
+            <div class="lg:col-span-4 bg-surface-container-low p-8 rounded-none space-y-6">
                 <?php woocommerce_cart_totals(); ?>
             </div>
             

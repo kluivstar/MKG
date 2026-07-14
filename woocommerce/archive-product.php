@@ -64,7 +64,7 @@ get_header(); ?>
                   global $product;
                   ?>
                   <article <?php wc_product_class( 'group product-card-hover cursor-pointer' ); ?> onclick="location.href='<?php the_permalink(); ?>'">
-                    <div class="relative aspect-[3/4] mb-6 overflow-hidden bg-surface-container-low rounded-md">
+                    <div class="relative aspect-[3/4] mb-6 overflow-hidden bg-surface-container-low rounded-none">
                       <div class="absolute top-4 right-4 z-10" onclick="event.stopPropagation();">
                         <?php echo do_shortcode('[ti_wishlists_addtowishlist loop=yes]'); // YITH or TI Wishlist shortcode if active ?>
                       </div>

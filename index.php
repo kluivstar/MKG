@@ -19,7 +19,7 @@ get_header(); ?>
         while ( have_posts() ) : the_post();
             ?>
             <article <?php post_class( 'group cursor-pointer mb-12' ); ?> onclick="location.href='<?php the_permalink(); ?>'">
-              <div class="overflow-hidden mb-6 bg-surface-container-low rounded-md">
+              <div class="overflow-hidden mb-6 bg-surface-container-low rounded-none">
                 <?php if ( has_post_thumbnail() ) : ?>
                     <?php the_post_thumbnail( 'large', array( 'class' => 'w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700' ) ); ?>
                 <?php else : ?>

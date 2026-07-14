@@ -41,7 +41,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
             </div>
             
             <!-- Order Review & Payments (Column 8-12) -->
-            <div class="lg:col-span-5 bg-surface-container-low p-8 rounded-lg space-y-8">
+            <div class="lg:col-span-5 bg-surface-container-low p-8 rounded-none space-y-8">
                 <h3 id="order_review_heading" class="font-display text-2xl text-primary border-b border-outline-variant/30 pb-4 uppercase"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
                 
                 <?php do_action( 'woocommerce_checkout_before_order_review' ); ?>

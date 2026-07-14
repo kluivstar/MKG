@@ -28,7 +28,7 @@ get_header(); ?>
         </header>
 
         <?php if ( has_post_thumbnail() ) : ?>
-            <div class="aspect-video bg-surface-container overflow-hidden rounded-md">
+            <div class="aspect-video bg-surface-container overflow-hidden rounded-none">
               <?php the_post_thumbnail( 'full', array( 'class' => 'w-full h-full object-cover' ) ); ?>
             </div>
         <?php endif; ?>

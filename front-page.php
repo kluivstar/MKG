@@ -133,11 +133,11 @@ get_header(); ?>
   </section>
 
   <!-- Professional Artistry (Emphasized Section) -->
-  <section id="makeup-booking" class="py-section-desktop px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto my-16 bg-surface-container rounded-lg p-8 md:p-16 shadow-md grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-section-desktop items-center">
+  <section id="makeup-booking" class="py-section-desktop px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto my-16 bg-surface-container rounded-none p-8 md:p-16 shadow-md grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-section-desktop items-center">
     <div class="order-2 md:order-1">
       <div class="relative">
-        <img class="w-full aspect-[4/5] object-cover rounded-md" alt="Makeup artistry service" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHwIKeoqy6E04wAFnmlhpKkzVawU_haqFhl7KrHG0lKiwNLY0UZjl41JoHmHG5uyh3vS07c0hxTelNlEygtJ49WQ9q5orBj9VcXl4-XYvGhYkDHSntxolU6vltVS83LRa96_8po-7d5z7ZIRGwllU1RuRjOg1xJmVH3HqQZeWlRkCqMjGrN1u1prCVVU358-YbTnBTHXoh84jQ26Nm7jE34dObJw30MhqMQ6hgjpo7e1phVNrNV7l-HdbaivNXEZC69530gCe_yIgn"/>
-        <div class="absolute -bottom-6 -right-6 w-32 h-32 border-4 border-secondary-fixed-dim rounded-md hidden lg:block -z-10"></div>
+        <img class="w-full aspect-[4/5] object-cover rounded-none" alt="Makeup artistry service" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHwIKeoqy6E04wAFnmlhpKkzVawU_haqFhl7KrHG0lKiwNLY0UZjl41JoHmHG5uyh3vS07c0hxTelNlEygtJ49WQ9q5orBj9VcXl4-XYvGhYkDHSntxolU6vltVS83LRa96_8po-7d5z7ZIRGwllU1RuRjOg1xJmVH3HqQZeWlRkCqMjGrN1u1prCVVU358-YbTnBTHXoh84jQ26Nm7jE34dObJw30MhqMQ6hgjpo7e1phVNrNV7l-HdbaivNXEZC69530gCe_yIgn"/>
+        <div class="absolute -bottom-6 -right-6 w-32 h-32 border-4 border-secondary-fixed-dim rounded-none hidden lg:block -z-10"></div>
       </div>
     </div>
     <div class="order-1 md:order-2">
@@ -194,7 +194,7 @@ get_header(); ?>
           while ( $blog_loop->have_posts() ) : $blog_loop->the_post();
               ?>
               <article class="group cursor-pointer" onclick="location.href='<?php the_permalink(); ?>'">
-                <div class="overflow-hidden mb-8 bg-surface-container-low rounded-md">
+                <div class="overflow-hidden mb-8 bg-surface-container-low rounded-none">
                   <?php if ( has_post_thumbnail() ) : ?>
                       <?php the_post_thumbnail( 'large', array( 'class' => 'w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700' ) ); ?>
                   <?php else : ?>
@@ -213,7 +213,7 @@ get_header(); ?>
           // Fallback static journal items
           ?>
           <article class="group cursor-pointer">
-            <div class="overflow-hidden mb-8 bg-surface-container-low rounded-md">
+            <div class="overflow-hidden mb-8 bg-surface-container-low rounded-none">
               <img class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700" alt="Morning canvas routine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX0lSy0SVL_OnTtMOJO67P-yVwYWVIs0PJWQRb4nnsHL1unb0aSYpamzwXNz4Jp8dAkc2bzx4mIKUt4ExAFEq73jkgLxYWw32_hTei1dhAfQCJsrufoOLVAw1PZcpeD1vGSpqz4OWLUuCeaDqM40Lw3ezQg90gzPEML38jwrTrs3h-SbOK9ihZB2WYUMGPrOoOc0wjTb2wiOAXKctSV4JQnoh3bdgCzyouodl_D9kqDN-Tc7utVrJOmdQwm7L7wMWLrYhmxq34yhWt"/>
             </div>
             <span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant mb-4 block">Artistry • 12 MIN READ</span>
