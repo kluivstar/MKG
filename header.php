@@ -76,14 +76,14 @@
             "section-desktop": "var(--spacing-section-desktop)"
           },
           fontFamily: {
-            "body-lg": ["var(--font-body)", "Outfit"],
-            "label-sm": ["var(--font-body)", "Outfit"],
-            "display-lg-mobile": ["var(--font-display)", "Syne"],
-            "display-lg": ["var(--font-display)", "Syne"],
-            "headline-xl": ["var(--font-display)", "Syne"],
-            "headline-lg": ["var(--font-display)", "Syne"],
-            "body-md": ["var(--font-body)", "Outfit"],
-            "label-md": ["var(--font-body)", "Outfit"]
+            "body-lg": ["Outfit"],
+            "label-sm": ["Outfit"],
+            "display-lg-mobile": ["Syne", "Clash Display"],
+            "display-lg": ["Syne", "Clash Display"],
+            "headline-xl": ["Syne", "Clash Display"],
+            "headline-lg": ["Syne", "Clash Display"],
+            "body-md": ["Outfit"],
+            "label-md": ["Outfit"]
           }
         }
       }
@@ -130,7 +130,7 @@
       <!-- Right Icons -->
       <div class="flex-1 flex justify-end items-center gap-6">
         <div class="hidden md:flex gap-8 items-center mr-8 font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70">
-          <a class="hover:text-primary transition-colors" href="<?php echo esc_url( home_url( '/hair-services' ) ); ?>">Hairs</a>
+          <a class="hover:text-primary transition-colors" href="<?php echo esc_url( home_url( '/hair-services' ) ); ?>">HAIRS</a>
           <a class="hover:text-primary transition-colors" href="<?php echo esc_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ); ?>">ACCOUNT</a>
         </div>
         <button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 bg-transparent border-0">
@@ -159,7 +159,7 @@
         } else {
             echo '<a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold" href="' . esc_url( home_url('/shop') ) . '">SHOP ALL</a>';
             echo '<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="' . esc_url( home_url('/about') ) . '">OUR STORY</a>';
-            echo '<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="' . esc_url( home_url('/hair-services') ) . '">Hairs</a>';
+            echo '<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="' . esc_url( home_url('/hair-services') ) . '">HAIRS</a>';
             echo '<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="' . esc_url( home_url('/account') ) . '">MY ACCOUNT</a>';
         }
         ?>

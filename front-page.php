@@ -20,7 +20,7 @@ get_header(); ?>
         <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">Curating prestige beauty for the discerning individual. Discover a symphony of texture, light, and artistry in our limited release series.</p>
         <div class="flex gap-4">
           <a href="<?php echo esc_url( home_url('/shop') ); ?>" class="bg-primary text-on-primary px-10 py-5 rounded-none font-label-md text-label-md tracking-widest hover:bg-neutral-800 transition-all duration-500 uppercase text-center">Shop Now</a>
-          <a href="#booking" class="border border-primary text-primary px-10 py-5 rounded-none font-label-md text-label-md tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-500 uppercase text-center">BOOK US</a>
+          <a href="#makeup-booking" class="border border-primary text-primary px-10 py-5 rounded-none font-label-md text-label-md tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-500 uppercase text-center inline-block">BOOK US</a>
         </div>
       </div>
     </div>
@@ -132,18 +132,18 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- Professional Artistry (Emphasized) -->
-  <section id="booking" class="my-16 md:my-24 py-12 md:py-20 px-8 md:px-16 bg-surface-container-low rounded-lg max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-section-desktop items-center">
+  <!-- Professional Artistry (Emphasized Section) -->
+  <section id="makeup-booking" class="py-section-desktop px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto my-16 bg-surface-container rounded-lg p-8 md:p-16 shadow-md grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-section-desktop items-center">
     <div class="order-2 md:order-1">
       <div class="relative">
-        <img class="w-full aspect-[4/5] object-cover" alt="Makeup artistry service" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHwIKeoqy6E04wAFnmlhpKkzVawU_haqFhl7KrHG0lKiwNLY0UZjl41JoHmHG5uyh3vS07c0hxTelNlEygtJ49WQ9q5orBj9VcXl4-XYvGhYkDHSntxolU6vltVS83LRa96_8po-7d5z7ZIRGwllU1RuRjOg1xJmVH3HqQZeWlRkCqMjGrN1u1prCVVU358-YbTnBTHXoh84jQ26Nm7jE34dObJw30MhqMQ6hgjpo7e1phVNrNV7l-HdbaivNXEZC69530gCe_yIgn"/>
-        <div class="absolute -bottom-10 -right-10 w-64 h-64 border-8 border-surface-container hidden lg:block -z-10"></div>
+        <img class="w-full aspect-[4/5] object-cover rounded-md" alt="Makeup artistry service" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHwIKeoqy6E04wAFnmlhpKkzVawU_haqFhl7KrHG0lKiwNLY0UZjl41JoHmHG5uyh3vS07c0hxTelNlEygtJ49WQ9q5orBj9VcXl4-XYvGhYkDHSntxolU6vltVS83LRa96_8po-7d5z7ZIRGwllU1RuRjOg1xJmVH3HqQZeWlRkCqMjGrN1u1prCVVU358-YbTnBTHXoh84jQ26Nm7jE34dObJw30MhqMQ6hgjpo7e1phVNrNV7l-HdbaivNXEZC69530gCe_yIgn"/>
+        <div class="absolute -bottom-6 -right-6 w-32 h-32 border-4 border-secondary-fixed-dim rounded-md hidden lg:block -z-10"></div>
       </div>
     </div>
     <div class="order-1 md:order-2">
-      <span class="font-label-md text-label-md tracking-[0.3em] uppercase text-on-surface-variant mb-6 block">Artistry Services</span>
-      <h3 class="font-display text-3xl md:text-5xl text-primary mb-8 leading-tight">Mastering Your <br/>Unique Canvas</h3>
-      <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Our master artists provide bespoke beauty consultations and full-service makeup applications for your most significant moments. From bridal elegance to editorial avant-garde, we bring prestige artistry to life.</p>
+      <span class="font-label-md text-label-md tracking-[0.3em] uppercase text-secondary mb-6 block">Artistry Services</span>
+      <h3 class="font-display text-4xl md:text-5xl text-primary mb-8 leading-tight">Mastering Your <br/>Unique Canvas</h3>
+      <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 font-semibold">Our master artists provide bespoke beauty consultations and full-service makeup applications for your most significant moments. From bridal elegance to editorial avant-garde, we bring prestige artistry to life.</p>
       <ul class="space-y-4 mb-10">
         <li class="flex items-center gap-4 font-label-md text-label-md uppercase tracking-widest text-primary">
           <span class="material-symbols-outlined text-secondary-fixed-dim">check_circle</span>
@@ -158,7 +158,7 @@ get_header(); ?>
           Private Artistry Masterclasses
         </li>
       </ul>
-      <button class="bg-primary text-on-primary px-10 py-5 rounded-none font-label-md text-label-md tracking-widest uppercase hover:bg-neutral-800 transition-all duration-500">Book A Session</button>
+      <button class="bg-primary text-on-primary px-12 py-6 rounded-none font-label-md text-label-md tracking-widest uppercase hover:bg-neutral-800 transition-all duration-500 shadow-lg">Book A Session</button>
     </div>
   </section>
 
@@ -212,14 +212,14 @@ get_header(); ?>
       } else {
           // Fallback static journal items
           ?>
-          <article class="group cursor-pointer" onclick="location.href='<?php echo esc_url( get_post_type_archive_link('post') ); ?>'">
+          <article class="group cursor-pointer">
             <div class="overflow-hidden mb-8 bg-surface-container-low rounded-md">
               <img class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700" alt="Morning canvas routine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX0lSy0SVL_OnTtMOJO67P-yVwYWVIs0PJWQRb4nnsHL1unb0aSYpamzwXNz4Jp8dAkc2bzx4mIKUt4ExAFEq73jkgLxYWw32_hTei1dhAfQCJsrufoOLVAw1PZcpeD1vGSpqz4OWLUuCeaDqM40Lw3ezQg90gzPEML38jwrTrs3h-SbOK9ihZB2WYUMGPrOoOc0wjTb2wiOAXKctSV4JQnoh3bdgCzyouodl_D9kqDN-Tc7utVrJOmdQwm7L7wMWLrYhmxq34yhWt"/>
             </div>
             <span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant mb-4 block">Artistry • 12 MIN READ</span>
             <h4 class="font-display text-2xl text-primary mb-4 group-hover:text-secondary-fixed-dim transition-colors">The 7 AM Ritual: Prepping the Canvas</h4>
             <p class="font-body-md text-body-md text-on-surface-variant mb-6">Discover the morning skincare and priming secrets used by our lead artists to ensure makeup longevity and that signature MK glow.</p>
-            <a href="<?php echo esc_url( get_post_type_archive_link('post') ); ?>" class="font-label-md text-label-md tracking-widest uppercase text-primary border-b border-primary pb-1 group-hover:pb-2 transition-all inline-block">Read Article</a>
+            <a href="<?php echo esc_url( home_url('/about') ); ?>" class="font-label-md text-label-md tracking-widest uppercase text-primary border-b border-primary pb-1 group-hover:pb-2 transition-all inline-block">Read Article</a>
           </article>
           <?php
       }

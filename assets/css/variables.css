@@ -37,9 +37,9 @@
   --color-on-primary-fixed: #1b1b1b;
   --color-on-primary-fixed-variant: #474747;
   --color-secondary-fixed: #ffe088;
-  --color-secondary-fixed-dim: #0a1d37;
-  --color-on-secondary-fixed: #241a00;
-  --color-on-secondary-fixed-variant: #574500;
+  --color-secondary-fixed-dim: #0a2540;
+  --color-on-secondary-fixed: #ffffff;
+  --color-on-secondary-fixed-variant: #ffffff;
   --color-tertiary-fixed: #e4e2e0;
   --color-tertiary-fixed-dim: #c7c6c4;
   --color-on-tertiary-fixed: #1b1c1b;
@@ -50,7 +50,7 @@
 
   /* Typography Fonts */
   --font-display: 'ClashDisplay-Variable', 'Clash Display', sans-serif;
-  --font-body: 'ClashDisplay-Variable', 'Clash Display', sans-serif;
+  --font-body: 'Outfit', sans-serif;
 
   /* Spacing */
   --spacing-base: 8px;
