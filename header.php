@@ -138,7 +138,7 @@
         </button>
         <button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 relative bg-transparent border-0" data-cart-trigger>
           <span class="material-symbols-outlined">shopping_bag</span>
-          <span class="absolute -top-1 -right-1 w-4 h-4 bg-secondary-fixed-dim text-primary text-[9px] font-bold flex items-center justify-center rounded-full hidden" data-cart-count>0</span>
+          <span class="absolute -top-1 -right-1 w-4 h-4 bg-secondary-fixed-dim text-white text-[9px] font-bold flex items-center justify-center rounded-full hidden" data-cart-count>0</span>
         </button>
         <button class="md:hidden bg-transparent border-0" data-menu-trigger>
           <span class="material-symbols-outlined">menu</span>

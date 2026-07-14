@@ -120,7 +120,7 @@
         </button>
         <button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 relative bg-transparent border-0" data-cart-trigger>
           <span class="material-symbols-outlined">shopping_bag</span>
-          <span class="absolute -top-1 -right-1 w-4 h-4 bg-secondary-fixed-dim text-primary text-[9px] font-bold flex items-center justify-center rounded-full hidden" data-cart-count>0</span>
+          <span class="absolute -top-1 -right-1 w-4 h-4 bg-secondary-fixed-dim text-white text-[9px] font-bold flex items-center justify-center rounded-full hidden" data-cart-count>0</span>
         </button>
         <button class="md:hidden bg-transparent border-0" data-menu-trigger>
           <span class="material-symbols-outlined">menu</span>
@@ -152,7 +152,7 @@
           <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">Curating prestige beauty for the discerning individual. Discover a symphony of texture, light, and artistry in our limited release series.</p>
           <div class="flex gap-4">
             <a href="shop.html" class="bg-primary text-on-primary px-10 py-5 rounded-none font-label-md text-label-md tracking-widest hover:bg-neutral-800 transition-all duration-500 uppercase text-center">Shop Now</a>
-            <button class="border border-primary text-primary px-10 py-5 rounded-none font-label-md text-label-md tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-500 uppercase">The Film</button>
+            <a href="#makeup-booking" class="border border-primary text-primary px-10 py-5 rounded-none font-label-md text-label-md tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-500 uppercase text-center inline-block">BOOK US</a>
           </div>
         </div>
       </div>
@@ -199,7 +199,7 @@
       </div>
     </section>
 
-    <!-- Best Sellers & New Arrivals -->
+    <!-- Best Sellers: Dynamic WooCommerce Products -->
     <section class="bg-surface-container-low py-section-desktop overflow-hidden">
       <div class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto mb-12 flex justify-between items-baseline">
         <h3 class="font-display text-3xl md:text-5xl text-primary">Best Sellers</h3>
@@ -207,13 +207,10 @@
       </div>
       
       <div class="flex gap-gutter overflow-x-auto hide-scrollbar px-margin-mobile md:px-margin-desktop pb-8">
-        <!-- Product Card 1 -->
+        <!-- Velvet Skin Fluid -->
         <div class="min-w-[320px] md:min-w-[400px] group cursor-pointer" onclick="location.href='product-detail.html'">
           <div class="relative overflow-hidden bg-white mb-6">
             <img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" alt="Velvet Skin Fluid foundation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSc4q6a0pFvNa3VTS7shBcgks6PxZOtBOWyCf54qzZX9KAFp8a_GpXdtl_cFVXwIaNCLZH9Qk4Nt-qszqif9BIZJ788t4IX9rfWM71RHLmfuI23kgxdElLUYZ9TPaHmlkPFHISfrAxelnit6MPDvGzWiGYy4yRKdxY0k2UF8Ib1A2Dh3QdG6lssxcaiNf6ToBDDiaUD-kRCbFagbBfTv7HCIYszx4vof51q-qZ4qqzrggxe1zrVkoorl4dt1RPH0xVyFYTmczgj-bn"/>
-            <div class="absolute top-4 left-4">
-              <span class="bg-primary text-on-primary px-3 py-1 font-label-sm text-label-sm uppercase tracking-widest">Award Winning</span>
-            </div>
           </div>
           <div class="text-center">
             <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">Face</p>
@@ -251,18 +248,18 @@
       </div>
     </section>
 
-    <!-- Professional Artistry -->
-    <section class="py-section-desktop px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-section-desktop items-center">
+    <!-- Professional Artistry (Emphasized Section) -->
+    <section id="makeup-booking" class="py-section-desktop px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto my-16 bg-surface-container rounded-lg p-8 md:p-16 shadow-md grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-section-desktop items-center">
       <div class="order-2 md:order-1">
         <div class="relative">
-          <img class="w-full aspect-[4/5] object-cover" alt="Makeup artistry service" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHwIKeoqy6E04wAFnmlhpKkzVawU_haqFhl7KrHG0lKiwNLY0UZjl41JoHmHG5uyh3vS07c0hxTelNlEygtJ49WQ9q5orBj9VcXl4-XYvGhYkDHSntxolU6vltVS83LRa96_8po-7d5z7ZIRGwllU1RuRjOg1xJmVH3HqQZeWlRkCqMjGrN1u1prCVVU358-YbTnBTHXoh84jQ26Nm7jE34dObJw30MhqMQ6hgjpo7e1phVNrNV7l-HdbaivNXEZC69530gCe_yIgn"/>
-          <div class="absolute -bottom-10 -right-10 w-64 h-64 border-8 border-surface-container hidden lg:block -z-10"></div>
+          <img class="w-full aspect-[4/5] object-cover rounded-md" alt="Makeup artistry service" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHwIKeoqy6E04wAFnmlhpKkzVawU_haqFhl7KrHG0lKiwNLY0UZjl41JoHmHG5uyh3vS07c0hxTelNlEygtJ49WQ9q5orBj9VcXl4-XYvGhYkDHSntxolU6vltVS83LRa96_8po-7d5z7ZIRGwllU1RuRjOg1xJmVH3HqQZeWlRkCqMjGrN1u1prCVVU358-YbTnBTHXoh84jQ26Nm7jE34dObJw30MhqMQ6hgjpo7e1phVNrNV7l-HdbaivNXEZC69530gCe_yIgn"/>
+          <div class="absolute -bottom-6 -right-6 w-32 h-32 border-4 border-secondary-fixed-dim rounded-md hidden lg:block -z-10"></div>
         </div>
       </div>
       <div class="order-1 md:order-2">
-        <span class="font-label-md text-label-md tracking-[0.3em] uppercase text-on-surface-variant mb-6 block">Artistry Services</span>
-        <h3 class="font-display text-3xl md:text-5xl text-primary mb-8 leading-tight">Mastering Your <br/>Unique Canvas</h3>
-        <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Our master artists provide bespoke beauty consultations and full-service makeup applications for your most significant moments. From bridal elegance to editorial avant-garde, we bring prestige artistry to life.</p>
+        <span class="font-label-md text-label-md tracking-[0.3em] uppercase text-secondary mb-6 block">Artistry Services</span>
+        <h3 class="font-display text-4xl md:text-5xl text-primary mb-8 leading-tight">Mastering Your <br/>Unique Canvas</h3>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 font-semibold">Our master artists provide bespoke beauty consultations and full-service makeup applications for your most significant moments. From bridal elegance to editorial avant-garde, we bring prestige artistry to life.</p>
         <ul class="space-y-4 mb-10">
           <li class="flex items-center gap-4 font-label-md text-label-md uppercase tracking-widest text-primary">
             <span class="material-symbols-outlined text-secondary-fixed-dim">check_circle</span>
@@ -277,7 +274,7 @@
             Private Artistry Masterclasses
           </li>
         </ul>
-        <button class="bg-primary text-on-primary px-10 py-5 rounded-none font-label-md text-label-md tracking-widest uppercase hover:bg-neutral-800 transition-all duration-500">Book A Session</button>
+        <button class="bg-primary text-on-primary px-12 py-6 rounded-none font-label-md text-label-md tracking-widest uppercase hover:bg-neutral-800 transition-all duration-500 shadow-lg">Book A Session</button>
       </div>
     </section>
 
@@ -360,71 +357,24 @@
         <a class="font-label-md text-label-md text-primary tracking-widest uppercase border-b border-primary pb-1 mt-4 md:mt-0" href="#">Read More Editorial</a>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-        <article class="group cursor-pointer">
+        <article class="group cursor-pointer" onclick="location.href='single.html'">
           <div class="overflow-hidden mb-8 bg-surface-container-low rounded-md">
             <img class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700" alt="Morning canvas routine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX0lSy0SVL_OnTtMOJO67P-yVwYWVIs0PJWQRb4nnsHL1unb0aSYpamzwXNz4Jp8dAkc2bzx4mIKUt4ExAFEq73jkgLxYWw32_hTei1dhAfQCJsrufoOLVAw1PZcpeD1vGSpqz4OWLUuCeaDqM40Lw3ezQg90gzPEML38jwrTrs3h-SbOK9ihZB2WYUMGPrOoOc0wjTb2wiOAXKctSV4JQnoh3bdgCzyouodl_D9kqDN-Tc7utVrJOmdQwm7L7wMWLrYhmxq34yhWt"/>
           </div>
           <span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant mb-4 block">Artistry • 12 MIN READ</span>
           <h4 class="font-display text-2xl text-primary mb-4 group-hover:text-secondary-fixed-dim transition-colors">The 7 AM Ritual: Prepping the Canvas</h4>
           <p class="font-body-md text-body-md text-on-surface-variant mb-6">Discover the morning skincare and priming secrets used by our lead artists to ensure makeup longevity and that signature MK glow.</p>
-          <button class="font-label-md text-label-md tracking-widest uppercase text-primary border-b border-primary pb-1 group-hover:pb-2 transition-all">Read Article</button>
+          <a href="single.html" class="font-label-md text-label-md tracking-widest uppercase text-primary border-b border-primary pb-1 group-hover:pb-2 transition-all inline-block">Read Article</a>
         </article>
-        <article class="group cursor-pointer">
+        <article class="group cursor-pointer" onclick="location.href='single.html'">
           <div class="overflow-hidden mb-8 bg-surface-container-low rounded-md">
             <img class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700" alt="Evening beauty look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_eExlSMUgRLgTK1SCT80BjIUXBLtnFxjxk5v2tL4EOToxamCd7UnLwzb6hWkj7Q--3iQ91Rifj27zUdePiULtx8S1J-cTwJBL7f3BahM79JOhiN9JyOmhLprYg81QdZPzvQm-_fL8OX9BF1tXvt9nJf2fX46-j9F0OsMSFuwze0gmiuuULi142_j2Ymg5cwp4Bjx2RHBGymQj_LQ03nM3zxYx_I5DJ5rM9KqXUYFcXJPolzqfkSnK6KxygdlJQxp8hHK8c75PrmW1"/>
           </div>
           <span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant mb-4 block">Seasonal • 08 MIN READ</span>
           <h4 class="font-display text-2xl text-primary mb-4 group-hover:text-secondary-fixed-dim transition-colors">After Dark: Obsidian &amp; Gold Accents</h4>
           <p class="font-body-md text-body-md text-on-surface-variant mb-6">Mastering the transition from daylight elegance to evening drama using the limited edition Obsidian palette.</p>
-          <button class="font-label-md text-label-md tracking-widest uppercase text-primary border-b border-primary pb-1 group-hover:pb-2 transition-all">Read Article</button>
+          <a href="single.html" class="font-label-md text-label-md tracking-widest uppercase text-primary border-b border-primary pb-1 group-hover:pb-2 transition-all inline-block">Read Article</a>
         </article>
-      </div>
-    </section>
-
-    <!-- Instagram Gallery -->
-    <section class="pb-section-desktop overflow-hidden">
-      <div class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto mb-8 flex items-center justify-between">
-        <p class="font-label-md text-label-md tracking-widest uppercase text-on-surface-variant">Follow @MKGLAMZ</p>
-        <div class="h-[1px] flex-1 mx-8 bg-outline-variant/30 hidden md:block"></div>
-        <p class="font-display text-xl md:text-2xl text-primary">#TheArtOfElegance</p>
-      </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
-        <div class="aspect-square relative group overflow-hidden">
-          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Instagram 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBreQntTsszTMIoJyu-dddoeKhPvLvEnEbPtDGdILooU4Vkh7Tynq3yZIDXKiBMaquxHVyhdGRhY-KUQtfUxALS_b5CrjaQhvD1OQjK4KCb4Ln-dmzMkm1pw96epWOQhTFEC2CEOPIhq3ZEmIZ6H7ZHn9X2Slid1v5rsneRjk0qj8h1A0z-tjwmmh9cU9nk1PwyoXnhipu2s9KaBg9OetIbBFkvRDncRfeXql8sNp8YTo9k1eV5hVag5l-PMa_NpGC6PvtNAIhL8gh9"/>
-          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span class="material-symbols-outlined text-white">favorite</span>
-          </div>
-        </div>
-        <div class="aspect-square relative group overflow-hidden">
-          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Instagram 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiuhfno0XStUoCGlh3hKwB6zEd8j-hniM71CVLEoVepQ5fqihbE5b9Uy1YxUVZVZqYVPy-8FshZPOtWd3ZaMutNEgLfGImBgToXtVZVEXGoX0eMi-86hIcT0QtqZOLsOcHfkxvi9NOtS6xA36i-LKeyswBzI4Zx7N8wQfYbRqUpnEIGXZ23-lPZHV0xFOI2Cf03wVD6rVm2yh9OX9TXEXRGv0l6qpS8aePz7cADMtJUTkXTp4RNo1fG5_nzm8Ro1fQQKCvXAkuIFT0"/>
-          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span class="material-symbols-outlined text-white">favorite</span>
-          </div>
-        </div>
-        <div class="aspect-square relative group overflow-hidden">
-          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Instagram 3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQMbbxxaK18nA-EAFtMntyg1nKOIWfLWluE8qay3rUd8Z1gg78n2i82S3ANaHflVDqFrBl5v6r-JEVAoBqWRww5nO-amjJltvAr4kJVddzDfufuhpFlFWRdHPyPnwXLZJosFM5rh3H5nZLmTF4jUx0Lws2KA_48EKkS0h6mJoNxRzRqnAXQBPMg1UZ3ZDim63fxzS6NEjHOcmYc-yCN0zrSIUqBfaE8oEmimWFf2WiKw2MGaOSXmnyStJiWX-hSw1wt8TwfPKfQyRl"/>
-          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span class="material-symbols-outlined text-white">favorite</span>
-          </div>
-        </div>
-        <div class="aspect-square relative group overflow-hidden">
-          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Instagram 4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ_LJXxMmk-mF5S4rzDN8IMzz1FSoe2oP5GF-PLwTTJoaobzXcPrfBR1nsqKKiqJdf-2S7X7dueQSg8DozCqhaFA2i_IDUUOhOLP4pn92odPSC1e5WXJ_W4FbMocPhzclTxZi3hGMb8iBnIkk-bj6xpcpCTNgp6DVIB9CCSAYTzUXecNtDbrWCM3ePvtMrWjreiJh6d6QFJ7peUfynXdHQX28Z_qljdIE-92UkST4UpAD3s2de_KB9QbxUtMtjeVCs3bLGCrS1mb4n"/>
-          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span class="material-symbols-outlined text-white">favorite</span>
-          </div>
-        </div>
-        <div class="aspect-square relative group overflow-hidden">
-          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Instagram 5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsTDCxKuZ3fGCRZmQ5iE4ksC0KGk2RFtU1iUKWt1ZOzg6N5eWWrvDPD3pCczxAx171NsYrmxqJbbZ75hE5AhWcl2P88Y5rt4wqSg0g1tIHAjIK-1larbXGTNI7ryao_p9V6d8K6tgmtGbB9y_oz2UNQlYpoeXAJbEUVlJZ7_z7MZRXIAm6XLmHTkV7xNLHrNAb6Kc3N-GWu5qkZ9kXV8gq23lTHcfpST09mjkzswhEwzzCbn5bW8dSY82R03xJm7caqiVmvO3aUC-E"/>
-          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span class="material-symbols-outlined text-white">favorite</span>
-          </div>
-        </div>
-        <div class="aspect-square relative group overflow-hidden">
-          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Instagram 6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjy_orV5LdDqUoTBXaDzl6cj_rzmC1PiDE40SXh6XZjsjENcHBOhPidRi9wvcYAFzKREwTqrEvNOJGNqpGTAC9lj8tUd1mImRT92JMI9DqZsL8JoV2pwPUd6dSuhclUUahtlrlNds3dAxVzpEMCQlGmUzLru0DT_xa4sDUGbJVQEKk8AGiI373ZG6N1e3QhQaqlTK8iexmrwgA9zGy61icQdFmYILE7DIZn3oXW1Q0Do6uvcA98E1enrGlYw9V-pwbyCdfeGUoi9WC"/>
-          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span class="material-symbols-outlined text-white">favorite</span>
-          </div>
-        </div>
       </div>
     </section>
 
