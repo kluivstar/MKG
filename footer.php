@@ -34,7 +34,7 @@
           <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
             <li><a href="<?php echo esc_url( home_url('/about') ); ?>" class="hover:text-primary transition-colors">The Brand</a></li>
             <li><a href="<?php echo esc_url( home_url('/#journal') ); ?>" class="hover:text-primary transition-colors">Editorial Journal</a></li>
-            <li><a href="<?php echo esc_url( home_url('/hair-services') ); ?>" class="hover:text-primary transition-colors">Hair Services</a></li>
+            <li><a href="<?php echo esc_url( home_url('/hair-services') ); ?>" class="hover:text-primary transition-colors">Hairs</a></li>
             <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
           </ul>
         </div>
