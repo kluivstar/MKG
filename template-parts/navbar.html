@@ -1,0 +1,49 @@
+<!-- Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 navbar-glass">
+  <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-[1440px] mx-auto">
+    <!-- Desktop Left Menu -->
+    <div class="flex-1 hidden md:flex gap-8 items-center">
+      <a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-secondary-fixed-dim after:rounded-full" href="shop.html">SHOP</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="our-story.html">ABOUT</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="index.html#journal">JOURNAL</a>
+    </div>
+
+    <!-- Center Logo -->
+    <div class="flex-shrink-0 text-center">
+      <a href="index.html" class="font-display text-2xl md:text-3xl font-bold tracking-tighter text-primary">MK GLAMZ</a>
+    </div>
+
+    <!-- Right Icons & Mobile Actions -->
+    <div class="flex-1 flex justify-end items-center gap-6">
+      <div class="hidden md:flex gap-8 items-center mr-8">
+        <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="coming-soon.html">Hairs</a>
+        <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="account.html">ACCOUNT</a>
+      </div>
+      
+      <!-- Search Button (WooCommerce ready placeholder) -->
+      <button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 bg-transparent border-0" aria-label="Search">
+        <span class="material-symbols-outlined">search</span>
+      </button>
+
+      <!-- Cart Button with Count Badge -->
+      <button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 relative bg-transparent border-0" data-cart-trigger aria-label="Shopping Bag">
+        <span class="material-symbols-outlined">shopping_bag</span>
+        <span class="absolute -top-1 -right-1 w-4 h-4 bg-secondary-fixed-dim text-primary text-[9px] font-bold flex items-center justify-center rounded-full hidden" data-cart-count>0</span>
+      </button>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden bg-transparent border-0" data-menu-trigger aria-label="Toggle Menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-outline-variant/30 px-6 py-8 flex flex-col gap-6 animate-fadeIn">
+    <a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold" href="shop.html">SHOP ALL</a>
+    <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="our-story.html">OUR STORY</a>
+    <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="coming-soon.html">Hairs</a>
+    <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="index.html#journal">JOURNAL</a>
+    <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="account.html">MY ACCOUNT</a>
+  </div>
+</nav>

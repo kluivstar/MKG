@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>My Account | MK GLAMZ</title>
+  
+  <!-- CSS Stylesheets -->
+  <link href="assets/css/variables.css" rel="stylesheet" />
+  <link href="assets/css/main.css" rel="stylesheet" />
+  <link href="assets/css/components.css" rel="stylesheet" />
+  
+  <!-- Tailwind CSS Play CDN & Configuration -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "var(--color-primary)",
+            "secondary": "var(--color-secondary)",
+            "background": "var(--color-background)",
+            "on-background": "var(--color-on-background)",
+            "surface": "var(--color-surface)",
+            "surface-dim": "var(--color-surface-dim)",
+            "surface-bright": "var(--color-surface-bright)",
+            "surface-container-lowest": "var(--color-surface-container-lowest)",
+            "surface-container-low": "var(--color-surface-container-low)",
+            "surface-container": "var(--color-surface-container)",
+            "surface-container-high": "var(--color-surface-container-high)",
+            "surface-container-highest": "var(--color-surface-container-highest)",
+            "on-surface": "var(--color-on-surface)",
+            "on-surface-variant": "var(--color-on-surface-variant)",
+            "inverse-surface": "var(--color-inverse-surface)",
+            "inverse-on-surface": "var(--color-inverse-on-surface)",
+            "outline": "var(--color-outline)",
+            "outline-variant": "var(--color-outline-variant)",
+            "surface-tint": "var(--color-surface-tint)",
+            "on-primary": "var(--color-on-primary)",
+            "primary-container": "var(--color-primary-container)",
+            "on-primary-container": "var(--color-on-primary-container)",
+            "inverse-primary": "var(--color-inverse-primary)",
+            "on-secondary": "var(--color-on-secondary)",
+            "secondary-container": "var(--color-secondary-container)",
+            "on-secondary-container": "var(--color-on-secondary-container)",
+            "tertiary": "var(--color-tertiary)",
+            "on-tertiary": "var(--color-on-tertiary)",
+            "tertiary-container": "var(--color-tertiary-container)",
+            "on-tertiary-container": "var(--color-on-tertiary-container)",
+            "error": "var(--color-error)",
+            "on-error": "var(--color-on-error)",
+            "error-container": "var(--color-error-container)",
+            "on-error-container": "var(--color-on-error-container)",
+            "primary-fixed": "var(--color-primary-fixed)",
+            "primary-fixed-dim": "var(--color-primary-fixed-dim)",
+            "on-primary-fixed": "var(--color-on-primary-fixed)",
+            "on-primary-fixed-variant": "var(--color-on-primary-fixed-variant)",
+            "secondary-fixed": "var(--color-secondary-fixed)",
+            "secondary-fixed-dim": "var(--color-secondary-fixed-dim)",
+            "on-secondary-fixed": "var(--color-on-secondary-fixed)",
+            "on-secondary-fixed-variant": "var(--color-on-secondary-fixed-variant)",
+            "tertiary-fixed": "var(--color-tertiary-fixed)",
+            "tertiary-fixed-dim": "var(--color-tertiary-fixed-dim)",
+            "on-tertiary-fixed": "var(--color-on-tertiary-fixed)",
+            "on-tertiary-fixed-variant": "var(--color-on-tertiary-fixed-variant)",
+            "surface-variant": "var(--color-surface-variant)"
+          },
+          borderRadius: {
+            "sm": "var(--radius-sm)",
+            "DEFAULT": "var(--radius-default)",
+            "md": "var(--radius-md)",
+            "lg": "var(--radius-lg)",
+            "xl": "var(--radius-xl)",
+            "full": "var(--radius-full)"
+          },
+          spacing: {
+            "gutter": "var(--spacing-gutter)",
+            "margin-mobile": "var(--spacing-margin-mobile)",
+            "margin-desktop": "var(--spacing-margin-desktop)",
+            "section-mobile": "var(--spacing-section-mobile)",
+            "base": "var(--spacing-base)",
+            "section-desktop": "var(--spacing-section-desktop)"
+          },
+          fontFamily: {
+            "body-lg": ["Outfit"],
+            "label-sm": ["Outfit"],
+            "display-lg-mobile": ["Syne", "Clash Display"],
+            "display-lg": ["Syne", "Clash Display"],
+            "headline-xl": ["Syne", "Clash Display"],
+            "headline-lg": ["Syne", "Clash Display"],
+            "body-md": ["Outfit"],
+            "label-md": ["Outfit"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed pt-[88px]">
+
+  <!-- WORDPRESS TEMPLATE START: template-parts/navbar.html -->
+  <nav class="fixed top-0 w-full z-50 navbar-glass">
+    <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-[1440px] mx-auto">
+      <div class="flex-1 hidden md:flex gap-8 items-center">
+        <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="shop.html">SHOP</a>
+        <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="our-story.html">ABOUT</a>
+        <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="index.html#journal">JOURNAL</a>
+      </div>
+      <div class="flex-shrink-0 text-center">
+        <a href="index.html" class="font-display text-2xl md:text-3xl font-bold tracking-tighter text-primary">MK GLAMZ</a>
+      </div>
+      <div class="flex-1 flex justify-end items-center gap-6">
+        <div class="hidden md:flex gap-8 items-center mr-8">
+          <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="coming-soon.html">HAIR SERVICES</a>
+          <a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-secondary-fixed-dim after:rounded-full" href="account.html">ACCOUNT</a>
+        </div>
+        <button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 bg-transparent border-0">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+        <button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 relative bg-transparent border-0" data-cart-trigger>
+          <span class="material-symbols-outlined">shopping_bag</span>
+          <span class="absolute -top-1 -right-1 w-4 h-4 bg-secondary-fixed-dim text-primary text-[9px] font-bold flex items-center justify-center rounded-full hidden" data-cart-count>0</span>
+        </button>
+        <button class="md:hidden bg-transparent border-0" data-menu-trigger>
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-outline-variant/30 px-6 py-8 flex flex-col gap-6">
+      <a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold" href="shop.html">SHOP ALL</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="our-story.html">OUR STORY</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="coming-soon.html">HAIR SERVICES</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="index.html#journal">JOURNAL</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="account.html">MY ACCOUNT</a>
+    </div>
+  </nav>
+  <!-- WORDPRESS TEMPLATE END: template-parts/navbar.html -->
+
+  <!-- Main Content -->
+  <main class="py-16 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto min-h-screen">
+    
+    <!-- Breadcrumbs -->
+    <nav class="flex items-center gap-2 text-xs uppercase tracking-widest text-on-surface-variant/60 mb-12 font-semibold">
+      <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+      <span>/</span>
+      <span class="text-primary font-bold">My Account</span>
+    </nav>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-4xl mx-auto">
+      
+      <!-- Login Form (WooCommerce ready structure) -->
+      <div class="space-y-8">
+        <h1 class="font-display text-3xl text-primary">Login</h1>
+        <form class="space-y-6" onsubmit="event.preventDefault(); alert('Logged in successfully (Simulated)');">
+          <div>
+            <label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2">Username or email address *</label>
+            <input class="w-full bg-transparent border-b border-outline-variant focus:border-primary border-x-0 border-t-0 p-3 outline-none" type="text" required>
+          </div>
+          <div>
+            <label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2">Password *</label>
+            <input class="w-full bg-transparent border-b border-outline-variant focus:border-primary border-x-0 border-t-0 p-3 outline-none" type="password" required>
+          </div>
+          <div class="flex items-center justify-between">
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="checkbox" class="text-primary focus:ring-primary rounded-sm">
+              <span class="text-xs text-on-surface-variant uppercase tracking-widest font-semibold">Remember me</span>
+            </label>
+            <a href="#" class="text-xs text-on-surface-variant uppercase tracking-widest font-semibold hover:text-primary">Lost your password?</a>
+          </div>
+          <button type="submit" class="w-full bg-primary text-on-primary py-4 font-label-md text-label-md tracking-widest uppercase hover:bg-neutral-800 transition-colors">
+            Log In
+          </button>
+        </form>
+      </div>
+
+      <!-- Register Form -->
+      <div class="space-y-8 border-t md:border-t-0 md:border-l md:pl-16 border-outline-variant/30 pt-12 md:pt-0">
+        <h2 class="font-display text-3xl text-primary">Register</h2>
+        <form class="space-y-6" onsubmit="event.preventDefault(); alert('Account registered successfully (Simulated)');">
+          <div>
+            <label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2">Email address *</label>
+            <input class="w-full bg-transparent border-b border-outline-variant focus:border-primary border-x-0 border-t-0 p-3 outline-none" type="email" required>
+          </div>
+          <div>
+            <label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2">Password *</label>
+            <input class="w-full bg-transparent border-b border-outline-variant focus:border-primary border-x-0 border-t-0 p-3 outline-none" type="password" required placeholder="Min 8 characters">
+          </div>
+          <p class="text-xs text-on-surface-variant/80 leading-relaxed">
+            Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.
+          </p>
+          <button type="submit" class="w-full border border-primary text-primary py-4 font-label-md text-label-md tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-colors">
+            Register
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- WORDPRESS TEMPLATE START: template-parts/footer.html -->
+  <footer class="bg-surface-container-high py-section-desktop border-t border-outline-variant/30 text-on-surface">
+    <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <div>
+          <h3 class="font-display text-2xl font-bold tracking-tighter text-primary mb-6">MK GLAMZ</h3>
+          <p class="font-body-md text-on-surface-variant/80 max-w-xs mb-6">Prestige beauty and curated luxury for the modern and editorial lifestyle.</p>
+          <div class="flex gap-4">
+            <a href="#" class="hover:text-secondary-fixed-dim transition-colors" aria-label="Instagram"><span class="material-symbols-outlined">camera</span></a>
+            <a href="#" class="hover:text-secondary-fixed-dim transition-colors" aria-label="Pinterest"><span class="material-symbols-outlined">dynamic_feed</span></a>
+            <a href="#" class="hover:text-secondary-fixed-dim transition-colors" aria-label="TikTok"><span class="material-symbols-outlined">music_note</span></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">SHOP</h4>
+          <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+            <li><a href="shop.html" class="hover:text-primary transition-colors">Face Products</a></li>
+            <li><a href="shop.html" class="hover:text-primary transition-colors">Lip Products</a></li>
+            <li><a href="shop.html" class="hover:text-primary transition-colors">Luminous Powders</a></li>
+            <li><a href="shop.html" class="hover:text-primary transition-colors">Prestige Collection</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">OUR STORY</h4>
+          <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+            <li><a href="our-story.html" class="hover:text-primary transition-colors">The Brand</a></li>
+            <li><a href="index.html#journal" class="hover:text-primary transition-colors">Editorial Journal</a></li>
+            <li><a href="coming-soon.html" class="hover:text-primary transition-colors">Hair Services</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">SUPPORT</h4>
+          <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+            <li><a href="#" class="hover:text-primary transition-colors">Shipping & Returns</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">FAQ</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Contact Us</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-outline-variant/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 font-label-sm text-label-sm text-on-surface-variant/60 uppercase tracking-widest">
+        <p>&copy; 2026 MK GLAMZ. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-primary transition-colors">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- WORDPRESS TEMPLATE END: template-parts/footer.html -->
+
+  <!-- WORDPRESS TEMPLATE START: template-parts/cart-drawer.html -->
+  <div id="cart-backdrop" class="drawer-backdrop"></div>
+  <div id="cart-drawer" class="drawer">
+    <div class="flex justify-between items-center p-6 border-b border-outline-variant/30">
+      <h3 class="font-display text-lg font-bold tracking-tight text-primary">SHOPPING BAG (<span data-cart-count>0</span>)</h3>
+      <button data-cart-close class="text-primary hover:opacity-75 transition-opacity bg-transparent border-0 cursor-pointer">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </button>
+    </div>
+    <div id="cart-drawer-items" class="flex-1 overflow-y-auto hide-scrollbar"></div>
+    <div class="p-6 border-t border-outline-variant/30 bg-surface-container-low">
+      <div class="flex justify-between items-center mb-6">
+        <span class="font-label-md text-label-md tracking-wider uppercase text-on-surface-variant">Estimated Subtotal</span>
+        <span id="cart-drawer-subtotal" class="font-body text-lg font-bold">$0.00</span>
+      </div>
+      <p class="text-xs text-on-surface-variant/80 mb-6">Shipping, taxes, and discounts will be calculated at checkout.</p>
+      <div class="flex flex-col gap-3">
+        <a href="checkout.html" class="w-full bg-primary text-on-primary text-center py-5 uppercase font-label-md text-label-md tracking-widest hover:bg-neutral-800 transition-colors block">Proceed to Checkout</a>
+        <a href="shop.html" class="w-full text-center py-3 uppercase font-label-sm text-label-sm tracking-widest hover:text-primary transition-colors block">Continue Shopping</a>
+      </div>
+    </div>
+  </div>
+  <!-- WORDPRESS TEMPLATE END: template-parts/cart-drawer.html -->
+
+  <!-- Shared Javascript -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!-- Cart Drawer Backdrop -->
+<div id="cart-backdrop" class="drawer-backdrop"></div>
+
+<!-- Sliding Cart Drawer Component -->
+<div id="cart-drawer" class="drawer">
+  <!-- Header -->
+  <div class="flex justify-between items-center p-6 border-b border-outline-variant/30">
+    <h3 class="font-display text-lg font-bold tracking-tight text-primary">SHOPPING BAG (<span data-cart-count>0</span>)</h3>
+    <button data-cart-close class="text-primary hover:opacity-75 transition-opacity bg-transparent border-0 cursor-pointer">
+      <span class="material-symbols-outlined text-2xl">close</span>
+    </button>
+  </div>
+
+  <!-- Dynamic Cart Items Container -->
+  <div id="cart-drawer-items" class="flex-1 overflow-y-auto hide-scrollbar">
+    <!-- Items are dynamically injected by main.js -->
+  </div>
+
+  <!-- Footer & Summary (WooCommerce Integration ready) -->
+  <div class="p-6 border-t border-outline-variant/30 bg-surface-container-low">
+    <div class="flex justify-between items-center mb-6">
+      <span class="font-label-md text-label-md tracking-wider uppercase text-on-surface-variant">Estimated Subtotal</span>
+      <span id="cart-drawer-subtotal" class="font-body text-lg font-bold">$0.00</span>
+    </div>
+    <p class="text-xs text-on-surface-variant/80 mb-6">
+      Shipping, taxes, and discounts will be calculated at checkout.
+    </p>
+    <div class="flex flex-col gap-3">
+      <a href="checkout.html" class="w-full bg-primary text-on-primary text-center py-5 uppercase font-label-md text-label-md tracking-widest hover:bg-neutral-800 transition-colors block">
+        Proceed to Checkout
+      </a>
+      <a href="shop.html" class="w-full text-center py-3 uppercase font-label-sm text-label-sm tracking-widest hover:text-primary transition-colors block">
+        Continue Shopping
+      </a>
+    </div>
+  </div>
+</div>

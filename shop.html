@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Collections | MK GLAMZ</title>
+  
+  <!-- CSS Stylesheets -->
+  <link href="assets/css/variables.css" rel="stylesheet" />
+  <link href="assets/css/main.css" rel="stylesheet" />
+  <link href="assets/css/components.css" rel="stylesheet" />
+  
+  <!-- Tailwind CSS Play CDN & Configuration -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "var(--color-primary)",
+            "secondary": "var(--color-secondary)",
+            "background": "var(--color-background)",
+            "on-background": "var(--color-on-background)",
+            "surface": "var(--color-surface)",
+            "surface-dim": "var(--color-surface-dim)",
+            "surface-bright": "var(--color-surface-bright)",
+            "surface-container-lowest": "var(--color-surface-container-lowest)",
+            "surface-container-low": "var(--color-surface-container-low)",
+            "surface-container": "var(--color-surface-container)",
+            "surface-container-high": "var(--color-surface-container-high)",
+            "surface-container-highest": "var(--color-surface-container-highest)",
+            "on-surface": "var(--color-on-surface)",
+            "on-surface-variant": "var(--color-on-surface-variant)",
+            "inverse-surface": "var(--color-inverse-surface)",
+            "inverse-on-surface": "var(--color-inverse-on-surface)",
+            "outline": "var(--color-outline)",
+            "outline-variant": "var(--color-outline-variant)",
+            "surface-tint": "var(--color-surface-tint)",
+            "on-primary": "var(--color-on-primary)",
+            "primary-container": "var(--color-primary-container)",
+            "on-primary-container": "var(--color-on-primary-container)",
+            "inverse-primary": "var(--color-inverse-primary)",
+            "on-secondary": "var(--color-on-secondary)",
+            "secondary-container": "var(--color-secondary-container)",
+            "on-secondary-container": "var(--color-on-secondary-container)",
+            "tertiary": "var(--color-tertiary)",
+            "on-tertiary": "var(--color-on-tertiary)",
+            "tertiary-container": "var(--color-tertiary-container)",
+            "on-tertiary-container": "var(--color-on-tertiary-container)",
+            "error": "var(--color-error)",
+            "on-error": "var(--color-on-error)",
+            "error-container": "var(--color-error-container)",
+            "on-error-container": "var(--color-on-error-container)",
+            "primary-fixed": "var(--color-primary-fixed)",
+            "primary-fixed-dim": "var(--color-primary-fixed-dim)",
+            "on-primary-fixed": "var(--color-on-primary-fixed)",
+            "on-primary-fixed-variant": "var(--color-on-primary-fixed-variant)",
+            "secondary-fixed": "var(--color-secondary-fixed)",
+            "secondary-fixed-dim": "var(--color-secondary-fixed-dim)",
+            "on-secondary-fixed": "var(--color-on-secondary-fixed)",
+            "on-secondary-fixed-variant": "var(--color-on-secondary-fixed-variant)",
+            "tertiary-fixed": "var(--color-tertiary-fixed)",
+            "tertiary-fixed-dim": "var(--color-tertiary-fixed-dim)",
+            "on-tertiary-fixed": "var(--color-on-tertiary-fixed)",
+            "on-tertiary-fixed-variant": "var(--color-on-tertiary-fixed-variant)",
+            "surface-variant": "var(--color-surface-variant)"
+          },
+          borderRadius: {
+            "sm": "var(--radius-sm)",
+            "DEFAULT": "var(--radius-default)",
+            "md": "var(--radius-md)",
+            "lg": "var(--radius-lg)",
+            "xl": "var(--radius-xl)",
+            "full": "var(--radius-full)"
+          },
+          spacing: {
+            "gutter": "var(--spacing-gutter)",
+            "margin-mobile": "var(--spacing-margin-mobile)",
+            "margin-desktop": "var(--spacing-margin-desktop)",
+            "section-mobile": "var(--spacing-section-mobile)",
+            "base": "var(--spacing-base)",
+            "section-desktop": "var(--spacing-section-desktop)"
+          },
+          fontFamily: {
+            "body-lg": ["Outfit"],
+            "label-sm": ["Outfit"],
+            "display-lg-mobile": ["Syne", "Clash Display"],
+            "display-lg": ["Syne", "Clash Display"],
+            "headline-xl": ["Syne", "Clash Display"],
+            "headline-lg": ["Syne", "Clash Display"],
+            "body-md": ["Outfit"],
+            "label-md": ["Outfit"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed pt-[88px]">
+
+  <!-- WORDPRESS TEMPLATE START: template-parts/navbar.html -->
+  <nav class="fixed top-0 w-full z-50 navbar-glass">
+    <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-[1440px] mx-auto">
+      <div class="flex-1 hidden md:flex gap-8 items-center">
+        <a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-secondary-fixed-dim after:rounded-full" href="shop.html">SHOP</a>
+        <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="our-story.html">ABOUT</a>
+        <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="index.html#journal">JOURNAL</a>
+      </div>
+      <div class="flex-shrink-0 text-center">
+        <a href="index.html" class="font-display text-2xl md:text-3xl font-bold tracking-tighter text-primary">MK GLAMZ</a>
+      </div>
+      <div class="flex-1 flex justify-end items-center gap-6">
+        <div class="hidden md:flex gap-8 items-center mr-8">
+          <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="coming-soon.html">HAIR SERVICES</a>
+          <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="account.html">ACCOUNT</a>
+        </div>
+        <button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 bg-transparent border-0">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+        <button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 relative bg-transparent border-0" data-cart-trigger>
+          <span class="material-symbols-outlined">shopping_bag</span>
+          <span class="absolute -top-1 -right-1 w-4 h-4 bg-secondary-fixed-dim text-primary text-[9px] font-bold flex items-center justify-center rounded-full hidden" data-cart-count>0</span>
+        </button>
+        <button class="md:hidden bg-transparent border-0" data-menu-trigger>
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-outline-variant/30 px-6 py-8 flex flex-col gap-6">
+      <a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold" href="shop.html">SHOP ALL</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="our-story.html">OUR STORY</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="coming-soon.html">HAIR SERVICES</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="index.html#journal">JOURNAL</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="account.html">MY ACCOUNT</a>
+    </div>
+  </nav>
+  <!-- WORDPRESS TEMPLATE END: template-parts/navbar.html -->
+
+  <!-- Main Content -->
+  <main class="pt-16 pb-section-desktop">
+    <!-- Collection Header -->
+    <header class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto mb-16 mt-12">
+      <!-- Breadcrumbs -->
+      <nav class="flex items-center gap-2 text-xs uppercase tracking-widest text-on-surface-variant/60 mb-6 font-semibold">
+        <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-primary font-bold">Shop All</span>
+      </nav>
+      <h1 class="font-display text-5xl md:text-8xl mb-4">The Collection</h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+        Elevate your daily ritual with our curated selection of high-performance beauty essentials. Each formula is crafted for editorial longevity and effortless radiance.
+      </p>
+    </header>
+
+    <!-- Category & Sort Filter Bar -->
+    <section class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto mb-12 sticky top-20 z-40 bg-background/95 py-4 backdrop-blur-md border-b border-outline-variant/20">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-2">
+        <!-- Categories -->
+        <div class="flex flex-wrap items-center gap-x-8 gap-y-4 font-label-md text-label-md uppercase tracking-widest">
+          <button class="text-primary font-bold border-b-2 border-primary pb-1">All</button>
+          <button class="text-on-surface-variant hover:text-primary transition-colors hover-underline-gold relative">Face</button>
+          <button class="text-on-surface-variant hover:text-primary transition-colors hover-underline-gold relative">Eyes</button>
+          <button class="text-on-surface-variant hover:text-primary transition-colors hover-underline-gold relative">Lips</button>
+          <button class="text-on-surface-variant hover:text-primary transition-colors hover-underline-gold relative">Brushes</button>
+          <div class="flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full opacity-70">
+            <span class="text-on-surface-variant text-[11px] font-bold">Hair Line</span>
+            <span class="text-[9px] font-bold text-secondary">COMING SOON</span>
+          </div>
+        </div>
+        <!-- Sorting -->
+        <div class="flex items-center gap-4">
+          <span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Sort By:</span>
+          <select class="bg-transparent border-none font-label-md text-label-md text-primary focus:ring-0 cursor-pointer pr-8">
+            <option>Newest Arrivals</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Best Selling</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-gutter">
+        
+        <!-- Product Card 1 -->
+        <article class="group product-card-hover cursor-pointer" onclick="location.href='product-detail.html'">
+          <div class="relative aspect-[3/4] mb-6 overflow-hidden bg-surface-container-low rounded-md">
+            <div class="absolute top-4 right-4 z-10">
+              <button aria-label="Add to wishlist" class="w-10 h-10 flex items-center justify-center bg-surface/80 backdrop-blur rounded-full hover:bg-white transition-all duration-300 shadow-sm" onclick="event.stopPropagation();">
+                <span class="material-symbols-outlined text-[20px]">favorite</span>
+              </button>
+            </div>
+            <img class="product-image w-full h-full object-cover transition-transform duration-700 ease-out" alt="Luminous Skin Silk foundation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgYGRIjXHVRTNVFQjxdFX_9J9DBlGKpDYVs7w5mZQe5c3hoKrjpVODwOuyqlrDrs0-DqPINl62wUdDfYAyx-6VRj9iiuIHr8sn02t7Sss50grTkLq5NrIJkLR0ammXGqd5EXs-EyaTLb__o9YgXrFG0vm95c1ssNbmR4lK44MCNMyHC9fQiQesTMA0wZehFQojeYMGB5R88R4E2ig999hrIX41hI8XQ_roGbMH8XJqf5fzLJp0irc4moek_tpeQQFLczzsojs0tAT0"/>
+            <div class="quick-view-btn absolute bottom-0 left-0 w-full p-4 opacity-0 transform translate-y-4 transition-all duration-300">
+              <button class="w-full bg-primary text-on-primary py-4 font-label-md text-label-md uppercase tracking-widest hover:bg-neutral-800 transition-colors" onclick="event.stopPropagation(); addToCart({id: 'luminous-silk', name: 'Luminous Skin Silk', price: 58.00, image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBgYGRIjXHVRTNVFQjxdFX_9J9DBlGKpDYVs7w5mZQe5c3hoKrjpVODwOuyqlrDrs0-DqPINl62wUdDfYAyx-6VRj9iiuIHr8sn02t7Sss50grTkLq5NrIJkLR0ammXGqd5EXs-EyaTLb__o9YgXrFG0vm95c1ssNbmR4lK44MCNMyHC9fQiQesTMA0wZehFQojeYMGB5R88R4E2ig999hrIX41hI8XQ_roGbMH8XJqf5fzLJp0irc4moek_tpeQQFLczzsojs0tAT0'});">Add to Bag</button>
+            </div>
+          </div>
+          <div class="text-left">
+            <h3 class="font-display text-xl mb-1">Luminous Skin Silk</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-2">Foundation • 30ml</p>
+            <p class="font-body-lg text-body-lg font-bold text-primary">$58.00</p>
+          </div>
+        </article>
+
+        <!-- Product Card 2 -->
+        <article class="group product-card-hover cursor-pointer" onclick="location.href='product-detail.html'">
+          <div class="relative aspect-[3/4] mb-6 overflow-hidden bg-surface-container-low rounded-md">
+            <div class="absolute top-4 right-4 z-10">
+              <button aria-label="Add to wishlist" class="w-10 h-10 flex items-center justify-center bg-surface/80 backdrop-blur rounded-full hover:bg-white transition-all duration-300 shadow-sm" onclick="event.stopPropagation();">
+                <span class="material-symbols-outlined text-[20px]">favorite</span>
+              </button>
+            </div>
+            <img class="product-image w-full h-full object-cover transition-transform duration-700 ease-out" alt="Velvet Quad Palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATmGneVNKKhjfqWfWEZIDQQ-fiS3LIeY7he6kHODAYyky_vQU0nevCA2FIpOF8uu96G7Z19-fgls6awhMHKXjUuoiM_rSYCy_IfJ8nFsj0v7fWxTt4DqbRLBRCEsEiHsuMEq9Ewy2GVDFJx1Tp3nLebNVkgF1V6lrK57dhV22pVKstbQ2nWr3a3ICy61rVU0oSjqcwv9PeMXdAoZTNal4tLlD5aaSQktcGi_rWMJSSHzh2ppMjixyJx-DAPN6Te7Mep3zHOpx5pv7M"/>
+            <div class="quick-view-btn absolute bottom-0 left-0 w-full p-4 opacity-0 transform translate-y-4 transition-all duration-300">
+              <button class="w-full bg-primary text-on-primary py-4 font-label-md text-label-md uppercase tracking-widest hover:bg-neutral-800 transition-colors" onclick="event.stopPropagation(); addToCart({id: 'velvet-quad', name: 'Velvet Quad Palette', price: 42.00, image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuATmGneVNKKhjfqWfWEZIDQQ-fiS3LIeY7he6kHODAYyky_vQU0nevCA2FIpOF8uu96G7Z19-fgls6awhMHKXjUuoiM_rSYCy_IfJ8nFsj0v7fWxTt4DqbRLBRCEsEiHsuMEq9Ewy2GVDFJx1Tp3nLebNVkgF1V6lrK57dhV22pVKstbQ2nWr3a3ICy61rVU0oSjqcwv9PeMXdAoZTNal4tLlD5aaSQktcGi_rWMJSSHzh2ppMjixyJx-DAPN6Te7Mep3zHOpx5pv7M'});">Add to Bag</button>
+            </div>
+          </div>
+          <div class="text-left">
+            <h3 class="font-display text-xl mb-1">Velvet Quad Palette</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-2">Eyeshadow • Eternal Nude</p>
+            <p class="font-body-lg text-body-lg font-bold text-primary">$42.00</p>
+          </div>
+        </article>
+
+        <!-- Product Card 3 -->
+        <article class="group product-card-hover cursor-pointer" onclick="location.href='product-detail.html'">
+          <div class="relative aspect-[3/4] mb-6 overflow-hidden bg-surface-container-low rounded-md">
+            <div class="absolute top-4 right-4 z-10">
+              <button aria-label="Add to wishlist" class="w-10 h-10 flex items-center justify-center bg-surface/80 backdrop-blur rounded-full hover:bg-white transition-all duration-300 shadow-sm" onclick="event.stopPropagation();">
+                <span class="material-symbols-outlined text-[20px]">favorite</span>
+              </button>
+            </div>
+            <img class="product-image w-full h-full object-cover transition-transform duration-700 ease-out" alt="Elite Sculpting Set" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuYybsHt5KNhZBKuG2s9OeMnzKcdJ_hJFcAC5cYRk4iBHCC5npYOxH4l7XjgxFqvc11O1WQkXNzYLUsO66Bglv5YH0QOUOlmOfWTeC65MJkhWLr_2arDSnBV8Q2pgu8X1EToYXoK0cPW6ciHCuwy6TtpHUHNtHEuVqkswgemgV-vSpyyU5pBPKMAg2NdCm0Ry54EN3_sbzIEMJ1qrZc0mFzOVMZ4cqQihf3YYp0S71Ufo2oA7C75y9WrXrYmm1MkEIBCpQWQxH3rIZ"/>
+            <div class="quick-view-btn absolute bottom-0 left-0 w-full p-4 opacity-0 transform translate-y-4 transition-all duration-300">
+              <button class="w-full bg-primary text-on-primary py-4 font-label-md text-label-md uppercase tracking-widest hover:bg-neutral-800 transition-colors" onclick="event.stopPropagation(); addToCart({id: 'elite-brushes', name: 'Elite Sculpting Set', price: 95.00, image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCuYybsHt5KNhZBKuG2s9OeMnzKcdJ_hJFcAC5cYRk4iBHCC5npYOxH4l7XjgxFqvc11O1WQkXNzYLUsO66Bglv5YH0QOUOlmOfWTeC65MJkhWLr_2arDSnBV8Q2pgu8X1EToYXoK0cPW6ciHCuwy6TtpHUHNtHEuVqkswgemgV-vSpyyU5pBPKMAg2NdCm0Ry54EN3_sbzIEMJ1qrZc0mFzOVMZ4cqQihf3YYp0S71Ufo2oA7C75y9WrXrYmm1MkEIBCpQWQxH3rIZ'});">Add to Bag</button>
+            </div>
+          </div>
+          <div class="text-left">
+            <h3 class="font-display text-xl mb-1">Elite Sculpting Set</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-2">Brushes • 5-Piece Set</p>
+            <p class="font-body-lg text-body-lg font-bold text-primary">$95.00</p>
+          </div>
+        </article>
+
+        <!-- Product Card 4 -->
+        <article class="group product-card-hover cursor-pointer" onclick="location.href='product-detail.html'">
+          <div class="relative aspect-[3/4] mb-6 overflow-hidden bg-surface-container-low rounded-md">
+            <div class="absolute top-4 right-4 z-10">
+              <button aria-label="Add to wishlist" class="w-10 h-10 flex items-center justify-center bg-surface/80 backdrop-blur rounded-full hover:bg-white transition-all duration-300 shadow-sm" onclick="event.stopPropagation();">
+                <span class="material-symbols-outlined text-[20px]">favorite</span>
+              </button>
+            </div>
+            <img class="product-image w-full h-full object-cover transition-transform duration-700 ease-out" alt="Satin Lip Couture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXhRpRxPhYZAp1RoW2rcMUmbwXEkvAStPouOjLbmofwm3rAdbUOIF1vn-1mQh5AMSFDXvQL_-dEVSzRVsIWZ49Abk0OVBdnTtQxrXy6QAaXc9aJVbCvFWH_Eg01d86dV7i1WjeP2aRLgVKHP77m0Ag304kjh713zSNHPIVNSCPu2maf6NE9gbtMJI2LLWjHDhTu_Qs1Nz7Uowr2-BZzkTSoAtDPH2xQ2YH6Xwin90qJv0SUWm1N5LzM0NM9u9QtdApBvCMGHrMDW0r"/>
+            <div class="quick-view-btn absolute bottom-0 left-0 w-full p-4 opacity-0 transform translate-y-4 transition-all duration-300">
+              <button class="w-full bg-primary text-on-primary py-4 font-label-md text-label-md uppercase tracking-widest hover:bg-neutral-800 transition-colors" onclick="event.stopPropagation(); addToCart({id: 'lip-couture', name: 'Satin Lip Couture', price: 34.00, image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBXhRpRxPhYZAp1RoW2rcMUmbwXEkvAStPouOjLbmofwm3rAdbUOIF1vn-1mQh5AMSFDXvQL_-dEVSzRVsIWZ49Abk0OVBdnTtQxrXy6QAaXc9aJVbCvFWH_Eg01d86dV7i1WjeP2aRLgVKHP77m0Ag304kjh713zSNHPIVNSCPu2maf6NE9gbtMJI2LLWjHDhTu_Qs1Nz7Uowr2-BZzkTSoAtDPH2xQ2YH6Xwin90qJv0SUWm1N5LzM0NM9u9QtdApBvCMGHrMDW0r'});">Add to Bag</button>
+            </div>
+          </div>
+          <div class="text-left">
+            <h3 class="font-display text-xl mb-1">Satin Lip Couture</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-2">Lips • Rosewood Noir</p>
+            <p class="font-body-lg text-body-lg font-bold text-primary">$34.00</p>
+          </div>
+        </article>
+
+        <!-- Product Card 5 -->
+        <article class="group product-card-hover cursor-pointer" onclick="location.href='product-detail.html'">
+          <div class="relative aspect-[3/4] mb-6 overflow-hidden bg-surface-container-low rounded-md">
+            <div class="absolute top-4 right-4 z-10">
+              <button aria-label="Add to wishlist" class="w-10 h-10 flex items-center justify-center bg-surface/80 backdrop-blur rounded-full hover:bg-white transition-all duration-300 shadow-sm" onclick="event.stopPropagation();">
+                <span class="material-symbols-outlined text-[20px]">favorite</span>
+              </button>
+            </div>
+            <img class="product-image w-full h-full object-cover transition-transform duration-700 ease-out" alt="Glow Veil Primer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGr93OtT4w2QvOQFj4VAvJi0UsPSQRSZVGB4HrMzVz_VUEJ2sAmbOt4O3XaAzh0CV795iJd_31idA_SDsP0T7jajV0O6M2qnyORl1J0WH4vTgyvXeL2RP1tjZvvwSoXyCE7ByRmEF22YCGXEBkzTmckROBHQ1qSxQJtU8wD1JbwVabkSj51iwHWYqADhXvsn2_m8-mMHnJ2NWLi0Aqz-3bP0NlDs313eady7ybdmJ6wipDq9mGLg6IQ0_sft7mEHKI9jrebKeAVzkF"/>
+            <div class="quick-view-btn absolute bottom-0 left-0 w-full p-4 opacity-0 transform translate-y-4 transition-all duration-300">
+              <button class="w-full bg-primary text-on-primary py-4 font-label-md text-label-md uppercase tracking-widest hover:bg-neutral-800 transition-colors" onclick="event.stopPropagation(); addToCart({id: 'glow-primer', name: 'Glow Veil Primer', price: 48.00, image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAGr93OtT4w2QvOQFj4VAvJi0UsPSQRSZVGB4HrMzVz_VUEJ2sAmbOt4O3XaAzh0CV795iJd_31idA_SDsP0T7jajV0O6M2qnyORl1J0WH4vTgyvXeL2RP1tjZvvwSoXyCE7ByRmEF22YCGXEBkzTmckROBHQ1qSxQJtU8wD1JbwVabkSj51iwHWYqADhXvsn2_m8-mMHnJ2NWLi0Aqz-3bP0NlDs313eady7ybdmJ6wipDq9mGLg6IQ0_sft7mEHKI9jrebKeAVzkF'});">Add to Bag</button>
+            </div>
+          </div>
+          <div class="text-left">
+            <h3 class="font-display text-xl mb-1">Glow Veil Primer</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-2">Face • Hydrating Base</p>
+            <p class="font-body-lg text-body-lg font-bold text-primary">$48.00</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- WORDPRESS TEMPLATE START: template-parts/footer.html -->
+  <footer class="bg-surface-container-high py-section-desktop border-t border-outline-variant/30 text-on-surface">
+    <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <div>
+          <h3 class="font-display text-2xl font-bold tracking-tighter text-primary mb-6">MK GLAMZ</h3>
+          <p class="font-body-md text-on-surface-variant/80 max-w-xs mb-6">Prestige beauty and curated luxury for the modern and editorial lifestyle.</p>
+          <div class="flex gap-4">
+            <a href="#" class="hover:text-secondary-fixed-dim transition-colors" aria-label="Instagram"><span class="material-symbols-outlined">camera</span></a>
+            <a href="#" class="hover:text-secondary-fixed-dim transition-colors" aria-label="Pinterest"><span class="material-symbols-outlined">dynamic_feed</span></a>
+            <a href="#" class="hover:text-secondary-fixed-dim transition-colors" aria-label="TikTok"><span class="material-symbols-outlined">music_note</span></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">SHOP</h4>
+          <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+            <li><a href="shop.html" class="hover:text-primary transition-colors">Face Products</a></li>
+            <li><a href="shop.html" class="hover:text-primary transition-colors">Lip Products</a></li>
+            <li><a href="shop.html" class="hover:text-primary transition-colors">Luminous Powders</a></li>
+            <li><a href="shop.html" class="hover:text-primary transition-colors">Prestige Collection</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">OUR STORY</h4>
+          <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+            <li><a href="our-story.html" class="hover:text-primary transition-colors">The Brand</a></li>
+            <li><a href="index.html#journal" class="hover:text-primary transition-colors">Editorial Journal</a></li>
+            <li><a href="coming-soon.html" class="hover:text-primary transition-colors">Hair Services</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">SUPPORT</h4>
+          <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+            <li><a href="#" class="hover:text-primary transition-colors">Shipping & Returns</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">FAQ</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Contact Us</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-outline-variant/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 font-label-sm text-label-sm text-on-surface-variant/60 uppercase tracking-widest">
+        <p>&copy; 2026 MK GLAMZ. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-primary transition-colors">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- WORDPRESS TEMPLATE END: template-parts/footer.html -->
+
+  <!-- WORDPRESS TEMPLATE START: template-parts/cart-drawer.html -->
+  <div id="cart-backdrop" class="drawer-backdrop"></div>
+  <div id="cart-drawer" class="drawer">
+    <div class="flex justify-between items-center p-6 border-b border-outline-variant/30">
+      <h3 class="font-display text-lg font-bold tracking-tight text-primary">SHOPPING BAG (<span data-cart-count>0</span>)</h3>
+      <button data-cart-close class="text-primary hover:opacity-75 transition-opacity bg-transparent border-0 cursor-pointer">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </button>
+    </div>
+    <div id="cart-drawer-items" class="flex-1 overflow-y-auto hide-scrollbar"></div>
+    <div class="p-6 border-t border-outline-variant/30 bg-surface-container-low">
+      <div class="flex justify-between items-center mb-6">
+        <span class="font-label-md text-label-md tracking-wider uppercase text-on-surface-variant">Estimated Subtotal</span>
+        <span id="cart-drawer-subtotal" class="font-body text-lg font-bold">$0.00</span>
+      </div>
+      <p class="text-xs text-on-surface-variant/80 mb-6">Shipping, taxes, and discounts will be calculated at checkout.</p>
+      <div class="flex flex-col gap-3">
+        <a href="checkout.html" class="w-full bg-primary text-on-primary text-center py-5 uppercase font-label-md text-label-md tracking-widest hover:bg-neutral-800 transition-colors block">Proceed to Checkout</a>
+        <a href="shop.html" class="w-full text-center py-3 uppercase font-label-sm text-label-sm tracking-widest hover:text-primary transition-colors block">Continue Shopping</a>
+      </div>
+    </div>
+  </div>
+  <!-- WORDPRESS TEMPLATE END: template-parts/cart-drawer.html -->
+
+  <!-- Shared Javascript -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

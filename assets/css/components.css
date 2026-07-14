@@ -1,0 +1,147 @@
+/* Editorial Reveal Effect */
+.editorial-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Glassmorphism Navigation */
+.navbar-glass {
+  background-color: rgba(251, 249, 248, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(207, 196, 197, 0.3);
+}
+
+/* Champagne Gradient */
+.champagne-gradient {
+  background: linear-gradient(135deg, var(--color-secondary-fixed-dim) 0%, var(--color-secondary-fixed) 50%, var(--color-secondary-fixed-dim) 100%);
+}
+
+/* Underline effect on hover */
+.hover-underline-gold {
+  position: relative;
+}
+
+.hover-underline-gold::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-secondary);
+  transition: width 0.3s ease;
+}
+
+.hover-underline-gold:hover::after {
+  width: 100%;
+}
+
+/* Card Zoom Effect */
+.product-card-hover {
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card-hover:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-card-hover:hover .quick-view-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom Sliding Drawer */
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+  background-color: var(--color-surface-container-lowest);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer.open {
+  transform: translateX(0);
+}
+
+.drawer-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 90;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.drawer-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* FAQ Accordion Styles */
+.accordion-item {
+  border-bottom: 1px solid var(--color-outline-variant);
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.accordion-content-inner {
+  padding-bottom: 24px;
+}
+
+.accordion-icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+/* Grid layout matching design */
+.grid-bento {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--spacing-gutter);
+}
+
+@media (max-width: 768px) {
+  .grid-bento {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,24 @@
+/*
+Theme Name: MK GLAMZ
+Theme URI: https://github.com/google-deepmind/mk-glamz-theme
+Author: Antigravity Team
+Author URI: https://deepmind.google/
+Description: A modern minimalist, editorial luxury custom WordPress theme built for MK GLAMZ, featuring full WooCommerce and BookingPress compatibility.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mk-glamz
+Tags: e-commerce, two-columns, left-sidebar, translation-ready, custom-menu, custom-logo, featured-images
+
+This theme is designed to work out of the box with WooCommerce and other modern WordPress plugins.
+*/
+
+/* WordPress admin bar adjustment */
+body.admin-bar nav {
+    top: 32px !important;
+}
+@media screen and (max-width: 782px) {
+    body.admin-bar nav {
+        top: 46px !important;
+    }
+}

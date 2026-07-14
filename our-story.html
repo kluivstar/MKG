@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Brand Story | MK GLAMZ</title>
+  
+  <!-- CSS Stylesheets -->
+  <link href="assets/css/variables.css" rel="stylesheet" />
+  <link href="assets/css/main.css" rel="stylesheet" />
+  <link href="assets/css/components.css" rel="stylesheet" />
+  
+  <!-- Tailwind CSS Play CDN & Configuration -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "var(--color-primary)",
+            "secondary": "var(--color-secondary)",
+            "background": "var(--color-background)",
+            "on-background": "var(--color-on-background)",
+            "surface": "var(--color-surface)",
+            "surface-dim": "var(--color-surface-dim)",
+            "surface-bright": "var(--color-surface-bright)",
+            "surface-container-lowest": "var(--color-surface-container-lowest)",
+            "surface-container-low": "var(--color-surface-container-low)",
+            "surface-container": "var(--color-surface-container)",
+            "surface-container-high": "var(--color-surface-container-high)",
+            "surface-container-highest": "var(--color-surface-container-highest)",
+            "on-surface": "var(--color-on-surface)",
+            "on-surface-variant": "var(--color-on-surface-variant)",
+            "inverse-surface": "var(--color-inverse-surface)",
+            "inverse-on-surface": "var(--color-inverse-on-surface)",
+            "outline": "var(--color-outline)",
+            "outline-variant": "var(--color-outline-variant)",
+            "surface-tint": "var(--color-surface-tint)",
+            "on-primary": "var(--color-on-primary)",
+            "primary-container": "var(--color-primary-container)",
+            "on-primary-container": "var(--color-on-primary-container)",
+            "inverse-primary": "var(--color-inverse-primary)",
+            "on-secondary": "var(--color-on-secondary)",
+            "secondary-container": "var(--color-secondary-container)",
+            "on-secondary-container": "var(--color-on-secondary-container)",
+            "tertiary": "var(--color-tertiary)",
+            "on-tertiary": "var(--color-on-tertiary)",
+            "tertiary-container": "var(--color-tertiary-container)",
+            "on-tertiary-container": "var(--color-on-tertiary-container)",
+            "error": "var(--color-error)",
+            "on-error": "var(--color-on-error)",
+            "error-container": "var(--color-error-container)",
+            "on-error-container": "var(--color-on-error-container)",
+            "primary-fixed": "var(--color-primary-fixed)",
+            "primary-fixed-dim": "var(--color-primary-fixed-dim)",
+            "on-primary-fixed": "var(--color-on-primary-fixed)",
+            "on-primary-fixed-variant": "var(--color-on-primary-fixed-variant)",
+            "secondary-fixed": "var(--color-secondary-fixed)",
+            "secondary-fixed-dim": "var(--color-secondary-fixed-dim)",
+            "on-secondary-fixed": "var(--color-on-secondary-fixed)",
+            "on-secondary-fixed-variant": "var(--color-on-secondary-fixed-variant)",
+            "tertiary-fixed": "var(--color-tertiary-fixed)",
+            "tertiary-fixed-dim": "var(--color-tertiary-fixed-dim)",
+            "on-tertiary-fixed": "var(--color-on-tertiary-fixed)",
+            "on-tertiary-fixed-variant": "var(--color-on-tertiary-fixed-variant)",
+            "surface-variant": "var(--color-surface-variant)"
+          },
+          borderRadius: {
+            "sm": "var(--radius-sm)",
+            "DEFAULT": "var(--radius-default)",
+            "md": "var(--radius-md)",
+            "lg": "var(--radius-lg)",
+            "xl": "var(--radius-xl)",
+            "full": "var(--radius-full)"
+          },
+          spacing: {
+            "gutter": "var(--spacing-gutter)",
+            "margin-mobile": "var(--spacing-margin-mobile)",
+            "margin-desktop": "var(--spacing-margin-desktop)",
+            "section-mobile": "var(--spacing-section-mobile)",
+            "base": "var(--spacing-base)",
+            "section-desktop": "var(--spacing-section-desktop)"
+          },
+          fontFamily: {
+            "body-lg": ["Outfit"],
+            "label-sm": ["Outfit"],
+            "display-lg-mobile": ["Syne", "Clash Display"],
+            "display-lg": ["Syne", "Clash Display"],
+            "headline-xl": ["Syne", "Clash Display"],
+            "headline-lg": ["Syne", "Clash Display"],
+            "body-md": ["Outfit"],
+            "label-md": ["Outfit"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed pt-[88px]">
+
+  <!-- WORDPRESS TEMPLATE START: template-parts/navbar.html -->
+  <nav class="fixed top-0 w-full z-50 navbar-glass">
+    <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-[1440px] mx-auto">
+      <div class="flex-1 hidden md:flex gap-8 items-center">
+        <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="shop.html">SHOP</a>
+        <a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-secondary-fixed-dim after:rounded-full" href="our-story.html">ABOUT</a>
+        <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="index.html#journal">JOURNAL</a>
+      </div>
+      <div class="flex-shrink-0 text-center">
+        <a href="index.html" class="font-display text-2xl md:text-3xl font-bold tracking-tighter text-primary">MK GLAMZ</a>
+      </div>
+      <div class="flex-1 flex justify-end items-center gap-6">
+        <div class="hidden md:flex gap-8 items-center mr-8">
+          <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="coming-soon.html">HAIR SERVICES</a>
+          <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="account.html">ACCOUNT</a>
+        </div>
+        <button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 bg-transparent border-0">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+        <button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 relative bg-transparent border-0" data-cart-trigger>
+          <span class="material-symbols-outlined">shopping_bag</span>
+          <span class="absolute -top-1 -right-1 w-4 h-4 bg-secondary-fixed-dim text-primary text-[9px] font-bold flex items-center justify-center rounded-full hidden" data-cart-count>0</span>
+        </button>
+        <button class="md:hidden bg-transparent border-0" data-menu-trigger>
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-outline-variant/30 px-6 py-8 flex flex-col gap-6">
+      <a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold" href="shop.html">SHOP ALL</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="our-story.html">OUR STORY</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="coming-soon.html">HAIR SERVICES</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="index.html#journal">JOURNAL</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="account.html">MY ACCOUNT</a>
+    </div>
+  </nav>
+  <!-- WORDPRESS TEMPLATE END: template-parts/navbar.html -->
+
+  <!-- Hero Section -->
+  <header class="relative w-full h-[600px] md:h-[800px] flex items-end overflow-hidden pt-24">
+    <div class="absolute inset-0 z-0">
+      <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAw4WS-IKveooabN5YOrTqs6yV0UvsuQws5AEdusl9gmveHrUTHXpyo1sXGcnXjvq-cXRHwCezXvEYDZqXb7iSbKiXrZ5arNblwoBltpm_iG3reDd1Zxon3PpYWGPo5-nKVENaXytt3l7Pxmg7b7nD64CjDpQ6eqPOLNrLnAZxiRihnPa4Tw1qyVs5OOx9SBL5mGm6LQvv-Ix7EkbFDcRWaRZL-SkI6Tz1UHUjm9c452qRBxxuylYhPRvPnoU5wPH7sRG-Ol3SlNnfW')"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent"></div>
+    </div>
+    <div class="relative z-10 px-margin-mobile md:px-margin-desktop pb-section-desktop max-w-[1440px] mx-auto w-full">
+      <div class="max-w-3xl editorial-reveal visible">
+        <span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface/60 block mb-4">ESTABLISHED 2018</span>
+        <h1 class="font-display text-5xl md:text-8xl text-primary mb-8 leading-none">The Art of <br/>Curated Beauty.</h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mission & Vision - Asymmetric Bento Grid -->
+  <section class="px-margin-mobile md:px-margin-desktop py-section-desktop max-w-[1440px] mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+      <div class="md:col-span-7 mb-12 md:mb-0">
+        <div class="aspect-[4/5] bg-surface-container overflow-hidden rounded-lg">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Prestige makeup texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLxryS5HtBK7niFTj4LMTsjA7Qe083eI_ukCyepAsg-RHOrT9iBGZd2quh9cC-YfzGKexIEJKfK04ayOmzc7L5dZ71BvMYjpszw53s593V9v8i6X0x3hnAkY-aur4S6y62okLx-EciJIVZwsi9WjOA4rLCaA9XL203_1KfUbOLeMBYrJM9hos9MTaEcRsXSUEd311rekDCCrRt-cDUKlMTK0novECwc7t38Og52vTZQsg5guVMCtN0_VxFQ_tvUvDNnz5jnotl8fqh"/>
+        </div>
+      </div>
+      <div class="md:col-span-5 md:pt-24">
+        <h2 class="font-display text-3xl md:text-5xl text-primary mb-8">Our Mission</h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-12">
+          To redefine luxury through the lens of intentionality. MK GLAMZ exists to bridge the gap between high-performance artistry and the effortless grace of daily ritual. We believe beauty is not an addition, but an unveiling.
+        </p>
+        <div class="h-px w-24 bg-secondary-fixed-dim mb-12"></div>
+        <h2 class="font-display text-3xl md:text-5xl text-primary mb-8">The Vision</h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          A global flagship for the modern minimalist. We aspire to create a sanctuary where sophisticated products meet architectural design, fostering a community that values quality over quantity and soul over trend.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Narrative Section - Full Width Editorial -->
+  <section class="bg-surface-container-low py-section-desktop">
+    <div class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+        <div class="md:col-span-4 flex flex-col justify-center mb-8 md:mb-0">
+          <h3 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary mb-4">PROFESSIONAL ARTISTRY</h3>
+          <p class="font-display text-3xl text-primary leading-tight">
+            Crafted by hands that understand the dialogue between light and skin.
+          </p>
+        </div>
+        <div class="md:col-span-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+            <p class="font-body-md text-body-md text-on-surface-variant/80">
+              The MK GLAMZ journey began in the high-pressure wings of international fashion weeks. Our founder, driven by the need for products that could withstand the intensity of the spotlight while maintaining the delicacy of a second skin, began formulating a bespoke collection.
+            </p>
+            <p class="font-body-md text-body-md text-on-surface-variant/80">
+              Today, that same commitment to professional-grade integrity defines every formula we release. We don't just create cosmetics; we architect experiences that empower the wearer to command their space with quiet confidence and radiant clarity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values - Iconographic & Minimalist -->
+  <section class="px-margin-mobile md:px-margin-desktop py-section-desktop max-w-[1440px] mx-auto">
+    <div class="text-center mb-24">
+      <h2 class="font-display text-3xl md:text-5xl text-primary mb-4">Core Principles</h2>
+      <div class="w-12 h-1 bg-secondary-fixed-dim mx-auto"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+      <div class="group cursor-default">
+        <div class="mb-8 overflow-hidden inline-block">
+          <span class="material-symbols-outlined text-[48px] text-primary group-hover:translate-y-[-4px] transition-transform duration-300">unfold_more</span>
+        </div>
+        <h4 class="font-display text-2xl text-primary mb-4">Purity</h4>
+        <p class="font-body-md text-body-md text-on-surface-variant">Clean formulations that prioritize skin health without compromising on the saturated pigment or longevity required by the world's leading artists.</p>
+      </div>
+      <div class="group cursor-default">
+        <div class="mb-8 overflow-hidden inline-block">
+          <span class="material-symbols-outlined text-[48px] text-primary group-hover:translate-y-[-4px] transition-transform duration-300">architecture</span>
+        </div>
+        <h4 class="font-display text-2xl text-primary mb-4">Precision</h4>
+        <p class="font-body-md text-body-md text-on-surface-variant">Every brush stroke, every shade, and every packaging detail is meticulously considered to provide an unparalleled tactile and visual experience.</p>
+      </div>
+      <div class="group cursor-default">
+        <div class="mb-8 overflow-hidden inline-block">
+          <span class="material-symbols-outlined text-[48px] text-primary group-hover:translate-y-[-4px] transition-transform duration-300">auto_awesome</span>
+        </div>
+        <h4 class="font-display text-2xl text-primary mb-4">Elegance</h4>
+        <p class="font-body-md text-body-md text-on-surface-variant">Beyond the physical, we strive for an elegance of spirit—treating every customer as a patron of the arts and every interaction as a curated moment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Studio Showcase - Mixed Media -->
+  <section class="px-margin-mobile md:px-margin-desktop pb-section-desktop max-w-[1440px] mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter h-[auto] md:h-[600px]">
+      <div class="md:col-span-2 h-[300px] md:h-full overflow-hidden rounded-lg">
+        <img class="w-full h-full object-cover" alt="Flagship studio view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYOmQp-CxxLQCdv9WpxPVDMQWKcOc1hOdRJPD1bJ7-GUQ60KpSjvBjrK2srtwUrApsdYCJBxlsEh4IvNGR8sq0MQovWydQUUQrmVj8s6TE901MaxbmfyzkNSGJMV6Eyxk8M8TDZF8gMQcuKygqWNAz4Me52zo4lismutpvZDOhHrJ9oMbNQs8hiNcAf09or7aFTJh7XNafvtSaDt-a8J2LbTZn-YtvIxVVULvy2xEYfJD8WeItlEsTRw022JcAB9FASylCFkO0qRnw"/>
+      </div>
+      <div class="hidden md:flex flex-col gap-gutter h-full">
+        <div class="h-1/2 overflow-hidden rounded-lg">
+          <img class="w-full h-full object-cover" alt="Artistry detail application" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeZ65Ibwx22marEO6NxhoZgIQDYo2q6_AzdGWtYVSm8vM4gmcDnw95fNmzC6HfI1MXjZwMtTPqo3Xg4ZsKSTcyi_94898ro6mZeFUGWNtK4pPt_dAJu7aQXD5bB9AAvCmvWMg_qMZXDKWw_gIhCHojJhhKxSWSZGGDJB3Rw0hPA-dxCuDrbFBnesKkUpJbXzuB_p00_CqWWTTeVHaLPOuT7udqblerVuOBG2TG9ZC4wI_IRZX3lmbaRGlbPGsQ959qnTg44zBs5HDh"/>
+        </div>
+        <div class="h-1/2 overflow-hidden rounded-lg">
+          <img class="w-full h-full object-cover" alt="Minimalist architectural staircase" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_e4yqN0pKYkRRPjmgRjIj-5PfKMwHmD_9zTr5VF9VVoRGqTNKhaSKUcEYz4rfAy0fnYdNr6Gg9Vo5CNialmwgNRn7WYXNr6030kU1joPoJB6PO1UGBA-mJdPCZRDUADvbI0r1K_88mZuGhUP1NClOsklxyzBMTw_38EYYaUH0gcx0Va87x1teQZnpYx72mxMXqc8Wt6-wc0FW99_7dVxi_TQkXmSFUbjuc1OZKvzJqWvQeBgxMlGmrG8AfPn0ZLyNE_yKGCaVJTEn"/>
+        </div>
+      </div>
+      <div class="hidden md:block h-full overflow-hidden rounded-lg">
+        <img class="w-full h-full object-cover" alt="Model reflecting in studio mirror" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpiKrwPS9xV3RL8h3A2AzH0nGK17Ph32LIKJhbV4bs2bT807HDDU8Vm10H67ZIuC9IqgVuHp72GZM_IKTr13nNFXJKd9g6bwY4z0DtTmftEYxAj1L3Tww4c5hQDDazgxB0Twd5WSpALK4L4USLpbDZtChzmXD-2FkXMlw7gJiy6pPFAFbHYpAqdQJZmYlFW_XeuIKNMbnAGNaqQZptDc7vGfwMVnE-Tu5VZGh_Iec6B7IKr1pt27MxKBUlOnp4KPVvhlI1ROMbfDZT"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORDPRESS TEMPLATE START: template-parts/footer.html -->
+  <footer class="bg-surface-container-high py-section-desktop border-t border-outline-variant/30 text-on-surface">
+    <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <div>
+          <h3 class="font-display text-2xl font-bold tracking-tighter text-primary mb-6">MK GLAMZ</h3>
+          <p class="font-body-md text-on-surface-variant/80 max-w-xs mb-6">Prestige beauty and curated luxury for the modern and editorial lifestyle.</p>
+          <div class="flex gap-4">
+            <a href="#" class="hover:text-secondary-fixed-dim transition-colors" aria-label="Instagram"><span class="material-symbols-outlined">camera</span></a>
+            <a href="#" class="hover:text-secondary-fixed-dim transition-colors" aria-label="Pinterest"><span class="material-symbols-outlined">dynamic_feed</span></a>
+            <a href="#" class="hover:text-secondary-fixed-dim transition-colors" aria-label="TikTok"><span class="material-symbols-outlined">music_note</span></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">SHOP</h4>
+          <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+            <li><a href="shop.html" class="hover:text-primary transition-colors">Face Products</a></li>
+            <li><a href="shop.html" class="hover:text-primary transition-colors">Lip Products</a></li>
+            <li><a href="shop.html" class="hover:text-primary transition-colors">Luminous Powders</a></li>
+            <li><a href="shop.html" class="hover:text-primary transition-colors">Prestige Collection</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">OUR STORY</h4>
+          <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+            <li><a href="our-story.html" class="hover:text-primary transition-colors">The Brand</a></li>
+            <li><a href="index.html#journal" class="hover:text-primary transition-colors">Editorial Journal</a></li>
+            <li><a href="coming-soon.html" class="hover:text-primary transition-colors">Hair Services</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">SUPPORT</h4>
+          <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+            <li><a href="#" class="hover:text-primary transition-colors">Shipping & Returns</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">FAQ</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Contact Us</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-outline-variant/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 font-label-sm text-label-sm text-on-surface-variant/60 uppercase tracking-widest">
+        <p>&copy; 2026 MK GLAMZ. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-primary transition-colors">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- WORDPRESS TEMPLATE END: template-parts/footer.html -->
+
+  <!-- WORDPRESS TEMPLATE START: template-parts/cart-drawer.html -->
+  <div id="cart-backdrop" class="drawer-backdrop"></div>
+  <div id="cart-drawer" class="drawer">
+    <div class="flex justify-between items-center p-6 border-b border-outline-variant/30">
+      <h3 class="font-display text-lg font-bold tracking-tight text-primary">SHOPPING BAG (<span data-cart-count>0</span>)</h3>
+      <button data-cart-close class="text-primary hover:opacity-75 transition-opacity bg-transparent border-0 cursor-pointer">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </button>
+    </div>
+    <div id="cart-drawer-items" class="flex-1 overflow-y-auto hide-scrollbar"></div>
+    <div class="p-6 border-t border-outline-variant/30 bg-surface-container-low">
+      <div class="flex justify-between items-center mb-6">
+        <span class="font-label-md text-label-md tracking-wider uppercase text-on-surface-variant">Estimated Subtotal</span>
+        <span id="cart-drawer-subtotal" class="font-body text-lg font-bold">$0.00</span>
+      </div>
+      <p class="text-xs text-on-surface-variant/80 mb-6">Shipping, taxes, and discounts will be calculated at checkout.</p>
+      <div class="flex flex-col gap-3">
+        <a href="checkout.html" class="w-full bg-primary text-on-primary text-center py-5 uppercase font-label-md text-label-md tracking-widest hover:bg-neutral-800 transition-colors block">Proceed to Checkout</a>
+        <a href="shop.html" class="w-full text-center py-3 uppercase font-label-sm text-label-sm tracking-widest hover:text-primary transition-colors block">Continue Shopping</a>
+      </div>
+    </div>
+  </div>
+  <!-- WORDPRESS TEMPLATE END: template-parts/cart-drawer.html -->
+
+  <!-- Shared Javascript -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>MK GLAMZ | The Art of Elegance</title>
+  
+  <!-- CSS Stylesheets -->
+  <link href="assets/css/variables.css" rel="stylesheet" />
+  <link href="assets/css/main.css" rel="stylesheet" />
+  <link href="assets/css/components.css" rel="stylesheet" />
+  
+  <!-- Tailwind CSS Play CDN & Configuration -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "var(--color-primary)",
+            "secondary": "var(--color-secondary)",
+            "background": "var(--color-background)",
+            "on-background": "var(--color-on-background)",
+            "surface": "var(--color-surface)",
+            "surface-dim": "var(--color-surface-dim)",
+            "surface-bright": "var(--color-surface-bright)",
+            "surface-container-lowest": "var(--color-surface-container-lowest)",
+            "surface-container-low": "var(--color-surface-container-low)",
+            "surface-container": "var(--color-surface-container)",
+            "surface-container-high": "var(--color-surface-container-high)",
+            "surface-container-highest": "var(--color-surface-container-highest)",
+            "on-surface": "var(--color-on-surface)",
+            "on-surface-variant": "var(--color-on-surface-variant)",
+            "inverse-surface": "var(--color-inverse-surface)",
+            "inverse-on-surface": "var(--color-inverse-on-surface)",
+            "outline": "var(--color-outline)",
+            "outline-variant": "var(--color-outline-variant)",
+            "surface-tint": "var(--color-surface-tint)",
+            "on-primary": "var(--color-on-primary)",
+            "primary-container": "var(--color-primary-container)",
+            "on-primary-container": "var(--color-on-primary-container)",
+            "inverse-primary": "var(--color-inverse-primary)",
+            "on-secondary": "var(--color-on-secondary)",
+            "secondary-container": "var(--color-secondary-container)",
+            "on-secondary-container": "var(--color-on-secondary-container)",
+            "tertiary": "var(--color-tertiary)",
+            "on-tertiary": "var(--color-on-tertiary)",
+            "tertiary-container": "var(--color-tertiary-container)",
+            "on-tertiary-container": "var(--color-on-tertiary-container)",
+            "error": "var(--color-error)",
+            "on-error": "var(--color-on-error)",
+            "error-container": "var(--color-error-container)",
+            "on-error-container": "var(--color-on-error-container)",
+            "primary-fixed": "var(--color-primary-fixed)",
+            "primary-fixed-dim": "var(--color-primary-fixed-dim)",
+            "on-primary-fixed": "var(--color-on-primary-fixed)",
+            "on-primary-fixed-variant": "var(--color-on-primary-fixed-variant)",
+            "secondary-fixed": "var(--color-secondary-fixed)",
+            "secondary-fixed-dim": "var(--color-secondary-fixed-dim)",
+            "on-secondary-fixed": "var(--color-on-secondary-fixed)",
+            "on-secondary-fixed-variant": "var(--color-on-secondary-fixed-variant)",
+            "tertiary-fixed": "var(--color-tertiary-fixed)",
+            "tertiary-fixed-dim": "var(--color-tertiary-fixed-dim)",
+            "on-tertiary-fixed": "var(--color-on-tertiary-fixed)",
+            "on-tertiary-fixed-variant": "var(--color-on-tertiary-fixed-variant)",
+            "surface-variant": "var(--color-surface-variant)"
+          },
+          borderRadius: {
+            "sm": "var(--radius-sm)",
+            "DEFAULT": "var(--radius-default)",
+            "md": "var(--radius-md)",
+            "lg": "var(--radius-lg)",
+            "xl": "var(--radius-xl)",
+            "full": "var(--radius-full)"
+          },
+          spacing: {
+            "gutter": "var(--spacing-gutter)",
+            "margin-mobile": "var(--spacing-margin-mobile)",
+            "margin-desktop": "var(--spacing-margin-desktop)",
+            "section-mobile": "var(--spacing-section-mobile)",
+            "base": "var(--spacing-base)",
+            "section-desktop": "var(--spacing-section-desktop)"
+          },
+          fontFamily: {
+            "body-lg": ["Outfit"],
+            "label-sm": ["Outfit"],
+            "display-lg-mobile": ["Syne", "Clash Display"],
+            "display-lg": ["Syne", "Clash Display"],
+            "headline-xl": ["Syne", "Clash Display"],
+            "headline-lg": ["Syne", "Clash Display"],
+            "body-md": ["Outfit"],
+            "label-md": ["Outfit"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed pt-[88px]">
+
+  <!-- WORDPRESS TEMPLATE START: template-parts/navbar.html -->
+  <nav class="fixed top-0 w-full z-50 navbar-glass">
+    <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-[1440px] mx-auto">
+      <div class="flex-1 hidden md:flex gap-8 items-center">
+        <a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-secondary-fixed-dim after:rounded-full" href="shop.html">SHOP</a>
+        <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="our-story.html">ABOUT</a>
+        <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="#journal">JOURNAL</a>
+      </div>
+      <div class="flex-shrink-0 text-center">
+        <a href="index.html" class="font-display text-2xl md:text-3xl font-bold tracking-tighter text-primary">MK GLAMZ</a>
+      </div>
+      <div class="flex-1 flex justify-end items-center gap-6">
+        <div class="hidden md:flex gap-8 items-center mr-8">
+          <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="coming-soon.html">HAIR SERVICES</a>
+          <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="account.html">ACCOUNT</a>
+        </div>
+        <button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 bg-transparent border-0">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+        <button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 relative bg-transparent border-0" data-cart-trigger>
+          <span class="material-symbols-outlined">shopping_bag</span>
+          <span class="absolute -top-1 -right-1 w-4 h-4 bg-secondary-fixed-dim text-primary text-[9px] font-bold flex items-center justify-center rounded-full hidden" data-cart-count>0</span>
+        </button>
+        <button class="md:hidden bg-transparent border-0" data-menu-trigger>
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-outline-variant/30 px-6 py-8 flex flex-col gap-6">
+      <a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold" href="shop.html">SHOP ALL</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="our-story.html">OUR STORY</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="coming-soon.html">HAIR SERVICES</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="#journal">JOURNAL</a>
+      <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="account.html">MY ACCOUNT</a>
+    </div>
+  </nav>
+  <!-- WORDPRESS TEMPLATE END: template-parts/navbar.html -->
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full flex items-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover object-center scale-105 transition-transform duration-[10s] hover:scale-100" alt="MK GLAMZ Hero Makeup Shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlc56HnJc5WkgZyzoTnPcn-WHNk87XJoTz3gNPWBTWq_5upzHdaoboslmCUre2zsdFCJwEM2RLwM7-MJJIWe_BlTiV6NUuo7cEV5wNdZcCzeZOYEO7kwI7blul5CAFpM_v1IUGRXO5ToGEjbNuuLAFvcG9xz6SdqGfkyAetpHyKzHRAwJwi-ZroGmAYCMD0FARJtKWyfeN_QeNaGOVnIjP5DGsQXWyRD18HbqGGBDANt02tZbi_E1Q_OkjMOwYuZis8N1Aj2j8r5Y8"/>
+        <div class="absolute inset-0 bg-gradient-to-r from-background/40 to-transparent"></div>
+      </div>
+      <div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full">
+        <div class="max-w-2xl editorial-reveal visible">
+          <span class="font-label-md text-label-md tracking-[0.3em] uppercase text-on-surface-variant mb-6 block">The Inaugural Collection</span>
+          <h2 class="font-display text-5xl md:text-8xl text-primary mb-8 leading-none">The Art of <br/>Elegance</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">Curating prestige beauty for the discerning individual. Discover a symphony of texture, light, and artistry in our limited release series.</p>
+          <div class="flex gap-4">
+            <a href="shop.html" class="bg-primary text-on-primary px-10 py-5 rounded-none font-label-md text-label-md tracking-widest hover:bg-neutral-800 transition-all duration-500 uppercase text-center">Shop Now</a>
+            <a href="#booking" class="border border-primary text-primary px-10 py-5 rounded-none font-label-md text-label-md tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-500 uppercase text-center">BOOK US</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Collections (Bento Style) -->
+    <section class="py-section-desktop px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+        <h3 class="font-display text-4xl md:text-5xl text-primary">Signature Tones</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant max-w-sm text-right">Meticulously developed formulas for professional-grade results at home.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-[auto] md:h-[800px]">
+        <!-- Col 1 -->
+        <div class="md:col-span-8 relative overflow-hidden group cursor-pointer h-[400px] md:h-full">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Face collection preview" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuxPXCIAJDif5PwIIksEX7ZuyzYC6F9T7vtPOuuj6-UVpzXQC91uiYpajHdbU9iAxCaawRTcnpaDTCSwS6TcwP7qYF5lorcT-FJkXniErOiQQYgrC23LsC5hENgAoSUIUTz-qAPaRAvZzcPP84OwmIfl2cm0SWmzrjpAU6iXzKF_SNqVKeWxRU9YNcs0-ZUW_Fqnq8c3EtyEq6PnCbGJGrWGpjr0u4RmEKqpSG546ZSGtGbbiwlRe_D0_kVRIh3aVMsP2IthH11xdI"/>
+          <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
+          <div class="absolute bottom-10 left-10 text-white">
+            <span class="font-label-sm text-label-sm uppercase tracking-widest block mb-2">Collection 01</span>
+            <h4 class="font-display text-3xl md:text-5xl mb-4">Face</h4>
+            <a href="shop.html" class="text-white border-b border-white pb-1 font-label-md text-label-md tracking-widest uppercase hover:opacity-70 transition-opacity">Explore Line</a>
+          </div>
+        </div>
+        
+        <!-- Col 2 -->
+        <div class="md:col-span-4 flex flex-col gap-gutter h-[800px] md:h-full">
+          <div class="relative overflow-hidden group cursor-pointer flex-1 h-[400px]">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Lips collection preview" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOsX6nxh7IgKj7r3enVghuiZDbee2W97G3K6Ma9U37eHXchXDzLTj_NEUJlBTHDZiXfm9iOeXZz67VAcYN-8whfeoLs8fevrqG7fZ-76FDQOpBseYqdxBVUiwiM1wbpmk6Lv5hAUJGf5ZY5yEkZDdPNbeqToroAyJvEFpDGMC9b9r9phygupAkXg4RnMebUJVqOG1vvU7Oaw9lrz7matdlhPOux7OLmRduIRLn0h8IyQvRhhgSwmt34N0rZEXUrLlEDlxRDL53ZS4r"/>
+            <div class="absolute inset-0 bg-black/5 group-hover:bg-black/15 transition-colors"></div>
+            <div class="absolute bottom-8 left-8 text-white">
+              <h4 class="font-display text-2xl md:text-3xl mb-2">Lips</h4>
+              <a href="shop.html" class="text-white border-b border-white pb-1 font-label-sm text-label-sm tracking-widest uppercase hover:opacity-70 transition-opacity">Shop Now</a>
+            </div>
+          </div>
+          <div class="relative overflow-hidden group cursor-pointer flex-1 h-[400px]">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Eyes collection preview" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3RUMFSf52Lq895LPVQlSYabYadYWj7Hp9NAtllIXk0ctGN82QU8IEAgjYnB9Op6Aey6KplWPxJq-avmkPrRcu-KcroIWfGrWJN1RdQQ7_zZQyf3xIcqcyCsL8ZGHCYru16I3rNaSmpuTS1R_uAOdsM_UL90iaZqcNkZr3W9slgKX8d2kpFcDPgEJkL6n9_uLTLtStUUcEzhuFZNw-CwON0EjjDfiYz8nUCljwRu0hV8opYysF1ygnPCVVjDdLvEzu5_bpQribHCZ2"/>
+            <div class="absolute inset-0 bg-black/5 group-hover:bg-black/15 transition-colors"></div>
+            <div class="absolute bottom-8 left-8 text-white">
+              <h4 class="font-display text-2xl md:text-3xl mb-2">Eyes</h4>
+              <a href="shop.html" class="text-white border-b border-white pb-1 font-label-sm text-label-sm tracking-widest uppercase hover:opacity-70 transition-opacity">Discover</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Sellers & New Arrivals -->
+    <section class="bg-surface-container-low py-section-desktop overflow-hidden">
+      <div class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto mb-12 flex justify-between items-baseline">
+        <h3 class="font-display text-3xl md:text-5xl text-primary">Best Sellers</h3>
+        <a class="font-label-md text-label-md text-primary hover:opacity-50 transition-opacity uppercase tracking-widest border-b border-primary pb-1" href="shop.html">View All Arrivals</a>
+      </div>
+      
+      <div class="flex gap-gutter overflow-x-auto hide-scrollbar px-margin-mobile md:px-margin-desktop pb-8">
+        <!-- Product Card 1 -->
+        <div class="min-w-[320px] md:min-w-[400px] group cursor-pointer" onclick="location.href='product-detail.html'">
+          <div class="relative overflow-hidden bg-white mb-6">
+            <img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" alt="Velvet Skin Fluid foundation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSc4q6a0pFvNa3VTS7shBcgks6PxZOtBOWyCf54qzZX9KAFp8a_GpXdtl_cFVXwIaNCLZH9Qk4Nt-qszqif9BIZJ788t4IX9rfWM71RHLmfuI23kgxdElLUYZ9TPaHmlkPFHISfrAxelnit6MPDvGzWiGYy4yRKdxY0k2UF8Ib1A2Dh3QdG6lssxcaiNf6ToBDDiaUD-kRCbFagbBfTv7HCIYszx4vof51q-qZ4qqzrggxe1zrVkoorl4dt1RPH0xVyFYTmczgj-bn"/>
+            <div class="absolute top-4 left-4">
+              <span class="bg-primary text-on-primary px-3 py-1 font-label-sm text-label-sm uppercase tracking-widest">Award Winning</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">Face</p>
+            <h4 class="font-display text-xl md:text-2xl text-primary mb-2">Velvet Skin Fluid</h4>
+            <p class="font-body-md text-body-md text-on-surface-variant">$62.00</p>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="min-w-[320px] md:min-w-[400px] group cursor-pointer" onclick="location.href='product-detail.html'">
+          <div class="relative overflow-hidden bg-white mb-6">
+            <img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" alt="Satin Petal Lipstick" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGYx0R3up-CWY_53ISGIXIeIGS37weK3M_sU_plXRCXTYy0I0QavV5cncffSRK6m-_4e3owjd9EiIp37IApIfDi4A8hJ-awQC4uvxBwIJVWLHYSCUMFyRi3KsbO_Bae9v1I2l7DP3EKeySmXxUPRwMujCesk8MLmmh4kl8Owmu3uXRPEuWfYCh4-p4elebFZ4qCLNDZjfpv3hTUHlCLqvGsS1PJI6cQIbWgKz5adCjngCWT652HzFTRnq2odPTZNup58cdeUijmSrg"/>
+          </div>
+          <div class="text-center">
+            <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">Lips</p>
+            <h4 class="font-display text-xl md:text-2xl text-primary mb-2">Satin Petal Lipstick</h4>
+            <p class="font-body-md text-body-md text-on-surface-variant">$38.00</p>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="min-w-[320px] md:min-w-[400px] group cursor-pointer" onclick="location.href='product-detail.html'">
+          <div class="relative overflow-hidden bg-white mb-6">
+            <img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" alt="Obsidian Palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0nxsiuxVaGN9t60Onkjyi5M8aldaNwIvHO7B8eWzBZ0Gci3NYF2qw6GXBpA9Kru8nCG1KrOOQh_FTZTP1PgDMJbJdUXd8k_1hjCCWVgTo74sxVqoPGQ0diu9tJYNJX6osu9xgl24b-6Baha3Xdc1cGCCHIlbEiumLSCDI5J9duen1IFC_6nF_CyBOHsjnxMNLdBgmIbzCyYIRRj0lAzUFDQVDEKMJeDUAJV59yb8IT340heOUuTXBghsASpq9i9pmm_rFnD-JyJv4"/>
+            <div class="absolute top-4 left-4">
+              <span class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 font-label-sm text-label-sm uppercase tracking-widest">New</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">Eyes</p>
+            <h4 class="font-display text-xl md:text-2xl text-primary mb-2">Obsidian Palette</h4>
+            <p class="font-body-md text-body-md text-on-surface-variant">$84.00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Artistry (Emphasized) -->
+    <section id="booking" class="my-16 md:my-24 py-12 md:py-20 px-8 md:px-16 bg-surface-container-low rounded-lg max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-section-desktop items-center">
+      <div class="order-2 md:order-1">
+        <div class="relative">
+          <img class="w-full aspect-[4/5] object-cover" alt="Makeup artistry service" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHwIKeoqy6E04wAFnmlhpKkzVawU_haqFhl7KrHG0lKiwNLY0UZjl41JoHmHG5uyh3vS07c0hxTelNlEygtJ49WQ9q5orBj9VcXl4-XYvGhYkDHSntxolU6vltVS83LRa96_8po-7d5z7ZIRGwllU1RuRjOg1xJmVH3HqQZeWlRkCqMjGrN1u1prCVVU358-YbTnBTHXoh84jQ26Nm7jE34dObJw30MhqMQ6hgjpo7e1phVNrNV7l-HdbaivNXEZC69530gCe_yIgn"/>
+          <div class="absolute -bottom-10 -right-10 w-64 h-64 border-8 border-surface-container hidden lg:block -z-10"></div>
+        </div>
+      </div>
+      <div class="order-1 md:order-2">
+        <span class="font-label-md text-label-md tracking-[0.3em] uppercase text-on-surface-variant mb-6 block">Artistry Services</span>
+        <h3 class="font-display text-3xl md:text-5xl text-primary mb-8 leading-tight">Mastering Your <br/>Unique Canvas</h3>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Our master artists provide bespoke beauty consultations and full-service makeup applications for your most significant moments. From bridal elegance to editorial avant-garde, we bring prestige artistry to life.</p>
+        <ul class="space-y-4 mb-10">
+          <li class="flex items-center gap-4 font-label-md text-label-md uppercase tracking-widest text-primary">
+            <span class="material-symbols-outlined text-secondary-fixed-dim">check_circle</span>
+            Bridal Artistry Consultations
+          </li>
+          <li class="flex items-center gap-4 font-label-md text-label-md uppercase tracking-widest text-primary">
+            <span class="material-symbols-outlined text-secondary-fixed-dim">check_circle</span>
+            Editorial &amp; Red Carpet Styling
+          </li>
+          <li class="flex items-center gap-4 font-label-md text-label-md uppercase tracking-widest text-primary">
+            <span class="material-symbols-outlined text-secondary-fixed-dim">check_circle</span>
+            Private Artistry Masterclasses
+          </li>
+        </ul>
+        <button class="bg-primary text-on-primary px-10 py-5 rounded-none font-label-md text-label-md tracking-widest uppercase hover:bg-neutral-800 transition-all duration-500">Book A Session</button>
+      </div>
+    </section>
+
+    <!-- The Hair Collection Preview -->
+    <section class="relative h-[600px] w-full flex items-center overflow-hidden bg-black text-white">
+      <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover opacity-60" alt="Flowing hair model" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK5sZs89OeYLqHWcWmKtpcM7wIbC7MGXFdmKlnTUxBDsVVZu2kjltPd70ElBrLipUitVF_LQV67iAwH3w00xmQRDwUjZbS3oB3PRKMa2-crxem_47UYa6l3bkQtsIhSARBGed6lX0eR4LWyw-OLs6JhuFSdKCjoD1iB3xqDl7ifYYUXZD7DZ2w7O3Js359UOoj5E_7aGHzVJkI7xd4LF5nkw3Nqp4YWRNlwYaBiO8YG5eoJFQPeTNpYTdeVGfO-p2qgu5Zk3u3tPiV"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+      </div>
+      <div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full text-center">
+        <div class="inline-block champagne-gradient text-primary px-4 py-1 font-label-sm text-label-sm uppercase tracking-widest mb-6 font-bold">Coming Soon</div>
+        <h3 class="font-display text-4xl md:text-5xl mb-4">The Hair Collection</h3>
+        <p class="font-body-lg text-body-lg text-neutral-300 max-w-xl mx-auto mb-10">Extending our philosophy of elegance to the crown. A curated system of care and styling, launching Winter 2026.</p>
+        <a href="coming-soon.html" class="border border-white/40 hover:border-white text-white px-10 py-5 font-label-md text-label-md tracking-widest uppercase transition-all duration-500 inline-block">Join the Waitlist</a>
+      </div>
+    </section>
+
+    <!-- Brand Story Snippet -->
+    <section class="py-section-desktop bg-surface">
+      <div class="max-w-3xl mx-auto text-center px-margin-mobile">
+        <span class="font-label-md text-label-md tracking-[0.3em] uppercase text-on-surface-variant mb-6 block">Our Ethos</span>
+        <h3 class="font-display text-4xl md:text-5xl text-primary mb-8 leading-tight">Purity in Craft</h3>
+        <p class="font-body-lg text-body-lg text-on-surface-variant italic mb-10">"Beauty is not about addition, but the careful curation of what makes you singular. At MK GLAMZ, we don't create trends; we define lasting elegance through uncompromising quality and artistic vision."</p>
+        <a class="font-label-md text-label-md text-primary tracking-widest uppercase border-b border-primary pb-2 hover:opacity-70 transition-all inline-block" href="our-story.html">The Full Story</a>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-section-desktop px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto overflow-hidden">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+        <div class="p-12 border border-outline-variant/30 flex flex-col justify-between h-[400px]">
+          <div class="flex gap-1 mb-8">
+            <span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+          </div>
+          <p class="font-body-lg text-body-lg text-primary mb-12">"The Velvet Skin Fluid is, without question, the most sophisticated formula I have ever used in my 15-year career. It is invisible yet transformative."</p>
+          <div>
+            <p class="font-label-md text-label-md uppercase tracking-widest text-primary">Elena Rossi</p>
+            <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.2em]">Global Lead Artist, Vogue Italy</p>
+          </div>
+        </div>
+        <div class="p-12 border border-outline-variant/30 flex flex-col justify-between h-[400px]">
+          <div class="flex gap-1 mb-8">
+            <span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+          </div>
+          <p class="font-body-lg text-body-lg text-primary mb-12">"MK GLAMZ has managed to capture the essence of editorial luxury and put it into a bottle. Every texture is considered, every pigment is intentional."</p>
+          <div>
+            <p class="font-label-md text-label-md uppercase tracking-widest text-primary">Marcus Thorne</p>
+            <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.2em]">Celebrity MUA</p>
+          </div>
+        </div>
+        <div class="p-12 border border-outline-variant/30 flex flex-col justify-between h-[400px]">
+          <div class="flex gap-1 mb-8">
+            <span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-secondary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+          </div>
+          <p class="font-body-lg text-body-lg text-primary mb-12">"Finally, a brand that respects the skin's natural architecture while delivering professional-grade high-fashion results. A masterpiece."</p>
+          <div>
+            <p class="font-label-md text-label-md uppercase tracking-widest text-primary">Sasha Vane</p>
+            <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.2em]">Editor, Beauty Archive</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beauty Journal Preview -->
+    <section id="journal" class="py-section-desktop px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-baseline mb-16">
+        <h3 class="font-display text-3xl md:text-5xl text-primary">The Beauty Journal</h3>
+        <a class="font-label-md text-label-md text-primary tracking-widest uppercase border-b border-primary pb-1 mt-4 md:mt-0" href="#">Read More Editorial</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+        <article class="group cursor-pointer" onclick="location.href='index.html#journal'">
+          <div class="overflow-hidden mb-8 bg-surface-container-low rounded-md">
+            <img class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700" alt="Morning canvas routine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX0lSy0SVL_OnTtMOJO67P-yVwYWVIs0PJWQRb4nnsHL1unb0aSYpamzwXNz4Jp8dAkc2bzx4mIKUt4ExAFEq73jkgLxYWw32_hTei1dhAfQCJsrufoOLVAw1PZcpeD1vGSpqz4OWLUuCeaDqM40Lw3ezQg90gzPEML38jwrTrs3h-SbOK9ihZB2WYUMGPrOoOc0wjTb2wiOAXKctSV4JQnoh3bdgCzyouodl_D9kqDN-Tc7utVrJOmdQwm7L7wMWLrYhmxq34yhWt"/>
+          </div>
+          <span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant mb-4 block">Artistry • 12 MIN READ</span>
+          <h4 class="font-display text-2xl text-primary mb-4 group-hover:text-secondary-fixed-dim transition-colors">The 7 AM Ritual: Prepping the Canvas</h4>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-6">Discover the morning skincare and priming secrets used by our lead artists to ensure makeup longevity and that signature MK glow.</p>
+          <a href="index.html#journal" class="font-label-md text-label-md tracking-widest uppercase text-primary border-b border-primary pb-1 group-hover:pb-2 transition-all inline-block">Read Article</a>
+        </article>
+        <article class="group cursor-pointer" onclick="location.href='index.html#journal'">
+          <div class="overflow-hidden mb-8 bg-surface-container-low rounded-md">
+            <img class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700" alt="Evening beauty look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_eExlSMUgRLgTK1SCT80BjIUXBLtnFxjxk5v2tL4EOToxamCd7UnLwzb6hWkj7Q--3iQ91Rifj27zUdePiULtx8S1J-cTwJBL7f3BahM79JOhiN9JyOmhLprYg81QdZPzvQm-_fL8OX9BF1tXvt9nJf2fX46-j9F0OsMSFuwze0gmiuuULi142_j2Ymg5cwp4Bjx2RHBGymQj_LQ03nM3zxYx_I5DJ5rM9KqXUYFcXJPolzqfkSnK6KxygdlJQxp8hHK8c75PrmW1"/>
+          </div>
+          <span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant mb-4 block">Seasonal • 08 MIN READ</span>
+          <h4 class="font-display text-2xl text-primary mb-4 group-hover:text-secondary-fixed-dim transition-colors">After Dark: Obsidian &amp; Gold Accents</h4>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-6">Mastering the transition from daylight elegance to evening drama using the limited edition Obsidian palette.</p>
+          <a href="index.html#journal" class="font-label-md text-label-md tracking-widest uppercase text-primary border-b border-primary pb-1 group-hover:pb-2 transition-all inline-block">Read Article</a>
+        </article>
+      </div>
+    </section>
+
+
+
+    <!-- Newsletter Signup -->
+    <section class="py-section-desktop bg-primary text-on-primary">
+      <div class="px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto text-center">
+        <h3 class="font-display text-3xl md:text-5xl mb-6">The Inner Circle</h3>
+        <p class="font-body-lg text-body-lg text-neutral-400 mb-10">Sign up to receive early access to new collections, exclusive artistry tutorials, and invitations to private boutique events.</p>
+        <form class="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto">
+          <input class="flex-1 bg-transparent border-b border-white/30 focus:border-white border-x-0 border-t-0 p-4 font-label-md text-label-md tracking-widest placeholder:text-neutral-600 focus:ring-0 outline-none transition-all" placeholder="EMAIL ADDRESS" type="email" required/>
+          <button class="bg-white text-primary px-10 py-4 font-label-md text-label-md tracking-widest uppercase hover:bg-neutral-200 transition-colors" type="submit">Join Now</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- WORDPRESS TEMPLATE START: template-parts/footer.html -->
+  <footer class="bg-surface-container-high py-section-desktop border-t border-outline-variant/30 text-on-surface">
+    <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <div>
+          <h3 class="font-display text-2xl font-bold tracking-tighter text-primary mb-6">MK GLAMZ</h3>
+          <p class="font-body-md text-on-surface-variant/80 max-w-xs mb-6">Prestige beauty and curated luxury for the modern and editorial lifestyle.</p>
+          <div class="flex gap-4">
+            <a href="#" class="hover:text-secondary-fixed-dim transition-colors" aria-label="Instagram"><span class="material-symbols-outlined">camera</span></a>
+            <a href="#" class="hover:text-secondary-fixed-dim transition-colors" aria-label="Pinterest"><span class="material-symbols-outlined">dynamic_feed</span></a>
+            <a href="#" class="hover:text-secondary-fixed-dim transition-colors" aria-label="TikTok"><span class="material-symbols-outlined">music_note</span></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">SHOP</h4>
+          <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+            <li><a href="shop.html" class="hover:text-primary transition-colors">Face Products</a></li>
+            <li><a href="shop.html" class="hover:text-primary transition-colors">Lip Products</a></li>
+            <li><a href="shop.html" class="hover:text-primary transition-colors">Luminous Powders</a></li>
+            <li><a href="shop.html" class="hover:text-primary transition-colors">Prestige Collection</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">OUR STORY</h4>
+          <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+            <li><a href="our-story.html" class="hover:text-primary transition-colors">The Brand</a></li>
+            <li><a href="#journal" class="hover:text-primary transition-colors">Editorial Journal</a></li>
+            <li><a href="coming-soon.html" class="hover:text-primary transition-colors">Hair Services</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">SUPPORT</h4>
+          <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
+            <li><a href="#" class="hover:text-primary transition-colors">Shipping & Returns</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">FAQ</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Contact Us</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-outline-variant/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 font-label-sm text-label-sm text-on-surface-variant/60 uppercase tracking-widest">
+        <p>&copy; 2026 MK GLAMZ. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-primary transition-colors">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- WORDPRESS TEMPLATE END: template-parts/footer.html -->
+
+  <!-- WORDPRESS TEMPLATE START: template-parts/cart-drawer.html -->
+  <div id="cart-backdrop" class="drawer-backdrop"></div>
+  <div id="cart-drawer" class="drawer">
+    <div class="flex justify-between items-center p-6 border-b border-outline-variant/30">
+      <h3 class="font-display text-lg font-bold tracking-tight text-primary">SHOPPING BAG (<span data-cart-count>0</span>)</h3>
+      <button data-cart-close class="text-primary hover:opacity-75 transition-opacity bg-transparent border-0 cursor-pointer">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </button>
+    </div>
+    <div id="cart-drawer-items" class="flex-1 overflow-y-auto hide-scrollbar"></div>
+    <div class="p-6 border-t border-outline-variant/30 bg-surface-container-low">
+      <div class="flex justify-between items-center mb-6">
+        <span class="font-label-md text-label-md tracking-wider uppercase text-on-surface-variant">Estimated Subtotal</span>
+        <span id="cart-drawer-subtotal" class="font-body text-lg font-bold">$0.00</span>
+      </div>
+      <p class="text-xs text-on-surface-variant/80 mb-6">Shipping, taxes, and discounts will be calculated at checkout.</p>
+      <div class="flex flex-col gap-3">
+        <a href="checkout.html" class="w-full bg-primary text-on-primary text-center py-5 uppercase font-label-md text-label-md tracking-widest hover:bg-neutral-800 transition-colors block">Proceed to Checkout</a>
+        <a href="shop.html" class="w-full text-center py-3 uppercase font-label-sm text-label-sm tracking-widest hover:text-primary transition-colors block">Continue Shopping</a>
+      </div>
+    </div>
+  </div>
+  <!-- WORDPRESS TEMPLATE END: template-parts/cart-drawer.html -->
+
+  <!-- Shared Javascript -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

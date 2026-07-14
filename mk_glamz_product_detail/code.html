@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MK GLAMZ | Luxury Editorial Beauty</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .product-image-container:hover img {
+            transform: scale(1.05);
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#eae8e7",
+                        "surface-container": "#f0eded",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "tertiary-container": "#1b1c1b",
+                        "on-primary-fixed": "#1b1b1b",
+                        "primary": "#000000",
+                        "on-primary-container": "#848484",
+                        "tertiary": "#000000",
+                        "outline-variant": "#cfc4c5",
+                        "surface-variant": "#e4e2e1",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-tertiary-fixed": "#1b1c1b",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#464746",
+                        "on-surface": "#1b1c1c",
+                        "on-secondary-container": "#745c00",
+                        "background": "#fbf9f8",
+                        "surface-tint": "#5e5e5e",
+                        "on-tertiary-container": "#848482",
+                        "inverse-surface": "#303030",
+                        "tertiary-fixed-dim": "#c7c6c4",
+                        "on-secondary-fixed": "#241a00",
+                        "on-primary-fixed-variant": "#474747",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#e2e2e2",
+                        "tertiary-fixed": "#e4e2e0",
+                        "primary-container": "#1b1b1b",
+                        "surface-dim": "#dcd9d9",
+                        "surface-container-highest": "#e4e2e1",
+                        "secondary-fixed": "#ffe088",
+                        "surface-bright": "#fbf9f8",
+                        "on-error": "#ffffff",
+                        "outline": "#7e7576",
+                        "secondary": "#735c00",
+                        "on-surface-variant": "#4c4546",
+                        "on-background": "#1b1c1c",
+                        "surface-container-low": "#f6f3f2",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#c6c6c6",
+                        "surface": "#fbf9f8",
+                        "inverse-on-surface": "#f3f0f0",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#fed65b",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px",
+                        "section-mobile": "64px",
+                        "base": "8px",
+                        "section-desktop": "120px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Outfit"],
+                        "label-sm": ["Outfit"],
+                        "display-lg-mobile": ["Syne"],
+                        "display-lg": ["Syne"],
+                        "headline-xl": ["Syne"],
+                        "headline-lg": ["Syne"],
+                        "body-md": ["Outfit"],
+                        "label-md": ["Outfit"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "display-lg": ["80px", {"lineHeight": "88px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30">
+<div class="flex justify-between items-center px-margin-desktop py-6 max-w-[1440px] mx-auto">
+<!-- Brand Logo -->
+<a class="font-display-lg text-headline-lg font-bold tracking-tighter text-primary" href="#">MK GLAMZ</a>
+<!-- Navigation Links -->
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-primary font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-secondary-fixed-dim after:rounded-full font-label-md text-label-md uppercase tracking-widest" href="#">SHOP</a>
+<a class="text-on-surface-variant/70 hover:text-primary transition-colors duration-300 font-label-md text-label-md uppercase tracking-widest" href="#">ABOUT</a>
+<a class="text-on-surface-variant/70 hover:text-primary transition-colors duration-300 font-label-md text-label-md uppercase tracking-widest" href="#">JOURNAL</a>
+<a class="text-on-surface-variant/70 hover:text-primary transition-colors duration-300 font-label-md text-label-md uppercase tracking-widest" href="#">HAIR SERVICES</a>
+<a class="text-on-surface-variant/70 hover:text-primary transition-colors duration-300 font-label-md text-label-md uppercase tracking-widest" href="#">CONTACT</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity" data-icon="favorite">favorite</button>
+<div class="relative">
+<button class="material-symbols-outlined text-primary hover:opacity-70 transition-opacity" data-icon="shopping_bag">shopping_bag</button>
+<span class="absolute -top-1 -right-1 bg-primary text-on-primary text-[10px] w-4 h-4 flex items-center justify-center rounded-full">2</span>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-section-desktop max-w-[1440px] mx-auto px-margin-desktop">
+<!-- Product Section -->
+<div class="grid grid-cols-12 gap-gutter lg:items-start">
+<!-- Gallery (Column 1-7) -->
+<div class="col-span-12 lg:col-span-7 grid grid-cols-12 gap-4">
+<div class="col-span-2 space-y-4">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden cursor-pointer border border-outline-variant/30">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="Close up high-resolution product photography of a sleek, minimalist glass makeup bottle. The lighting is soft and high-key, emphasizing the premium textures and clean lines of the packaging. The background is a subtle, warm white, maintaining a luxury editorial aesthetic consistent with a high-end digital flagship store." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnfWAJKy4B5fAYHYS8XzP26wYdmt7C_N-G3bWyLglfp0UOxuHxwXZtznjzuXriiyngZhy12w4RnnFPxSzbBJasGG8w7F7appRpRQOht_6iE52hq7UVlPX4ru4DZEhhZiJMfSSK8lj94ogTqQ7ktCB92-wSM_VSc5t0_TXeVJslnwjx10zc0qL3OvXM9W2M2g_pakKKbQU5zZEXsOmG7ZSTJXF87-jU3yPHxgpZPIADegDB5RO2UcPOp9NpIXn6k8eDuyESHXonIFKc"/>
+</div>
+<div class="aspect-[3/4] bg-surface-container overflow-hidden cursor-pointer border border-transparent hover:border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="Macro shot of a silk-textured beauty serum droplet on a minimalist reflective surface. The lighting is ethereal and diffused, creating a serene and aspirational mood. The color palette is restricted to soft creams and warm whites, perfectly aligning with the modern minimalist style of the MK Glamz brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH9ilrIu6PrfkrE68y96ycmvCYDux6S_uqJSd7uHsMSFJDVVfV5QZI5m4V-BgKpxMsB-ZiiF02Uj30iqUqzx7oDC6R4K5wB7WHFCa02URiErUT2S1XqTuxdLmayjaaJO6kGUIkpffTwUYLwq3q8rMjEBC9bxLTbCX_qgTxx79PmTR1BL9fVLebLMqphyHroMFxnuI3GfaxKgZx8VfgPYvmZtuqaSDm85Oia1t1tZ7zFIKCoYNU8zOZYbcV2ycyEVmL3LWU-aP6_Eu2"/>
+</div>
+<div class="aspect-[3/4] bg-surface-container overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover" data-alt="A fashion-forward model with luminous, dewy skin looking thoughtfully away from the camera. The setting is a minimalist studio with soft, natural lighting. The aesthetic is editorial and sophisticated, showcasing the product's finish on skin in a high-contrast, premium photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArbRbop8U7f1b2RI2uvRd53JvAOL9YUu5DxTvMd_WDtRpunGxZ_WEIG_C9cqE31eFFKpczX_Tqu1EIdMMvIzdbe1ngswc_sbKZmM7uiGZ4antD_osk7Tld9bMVUIcte1djFxXlpQ2Pp8RJX9q--JUlx2kCP7awP1jyTL-CDYj2G1UVudK1n7z5SkRQNT_Y129blBUKrBNlLoTZdOSkaNHlyxUOMKBVqMpVVpfs209Pd7KwPV4Jtyd5iV4Vy93HTsdqJHyNDihZQ8sT"/>
+</div>
+</div>
+<div class="col-span-10">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden relative product-image-container transition-all duration-700">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out" data-alt="The primary hero shot of a luxury beauty product in a minimalist glass container. Centered in a bright, airy editorial composition with soft ambient shadows. The image captures the essence of indulgence and purity, using a warm white and deep black palette to emphasize the sophisticated MK Glamz branding." id="main-product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3mw7FDqb4Z6KHBHNbDgIYP84k9qenPaefM8Uxeef-p_JnZMkhGwJnfzjRJ6eUL0R_lzFBHejLPRcUxG2UbW-8_QxJu5Em7doww0TDfvhW8Q8KQj6jqOL1nXgEF9mupdFD_lTzlyv2q2Jlxhtixgi7TxMMTPi5MPensoOfmbiJk17FLCl0cTWdR6q6aB3VpJgvvjfdtECQcy8Ck7dZ_nF9aoyKsPrnFlLyvjxvX9LPeBMLs7QAjOyD_ESVEY0o2btLgFcCRIDfLP7g"/>
+</div>
+</div>
+</div>
+<!-- Product Info (Column 8-12) -->
+<div class="col-span-12 lg:col-span-5 lg:sticky lg:top-32 space-y-10">
+<div class="space-y-4">
+<div class="flex items-center space-x-2">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(4.8 / 124 REVIEWS)</span>
+</div>
+<h1 class="font-display-lg text-headline-xl leading-tight">VELVET LUMIÈRE FOUNDATION</h1>
+<p class="font-display-lg text-headline-lg text-primary">$68.00</p>
+</div>
+<!-- Shade Selector -->
+<div class="space-y-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Select Shade: <span class="text-on-surface font-bold" id="shade-name">ALABASTER 01</span></span>
+<div class="flex space-x-3">
+<button class="w-10 h-10 rounded-full bg-[#F9F1E6] border-2 border-primary ring-2 ring-offset-2 ring-transparent transition-all" onclick="updateShade('ALABASTER 01')"></button>
+<button class="w-10 h-10 rounded-full bg-[#F3E5D8] border border-outline-variant hover:border-primary transition-all" onclick="updateShade('IVORY 02')"></button>
+<button class="w-10 h-10 rounded-full bg-[#EBD3BC] border border-outline-variant hover:border-primary transition-all" onclick="updateShade('SAND 03')"></button>
+<button class="w-10 h-10 rounded-full bg-[#D9B695] border border-outline-variant hover:border-primary transition-all" onclick="updateShade('HONEY 04')"></button>
+<button class="w-10 h-10 rounded-full bg-[#A67B5B] border border-outline-variant hover:border-primary transition-all" onclick="updateShade('SIENNA 05')"></button>
+</div>
+</div>
+<!-- Quantity & Add to Bag -->
+<div class="flex flex-col sm:flex-row gap-4">
+<div class="flex items-center border border-outline-variant h-14 px-4 bg-white">
+<button class="p-2 hover:opacity-50 transition-opacity"><span class="material-symbols-outlined">remove</span></button>
+<input class="w-12 text-center border-none focus:ring-0 font-body-md" readonly="" type="number" value="1"/>
+<button class="p-2 hover:opacity-50 transition-opacity"><span class="material-symbols-outlined">add</span></button>
+</div>
+<button class="flex-1 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest h-14 hover:bg-neutral-800 transition-colors">
+                        ADD TO BAG
+                    </button>
+</div>
+<!-- Expandable Details -->
+<div class="divide-y divide-outline-variant/30 border-t border-b border-outline-variant/30">
+<details class="group py-6" open="">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<span class="font-label-md text-label-md uppercase tracking-widest">Description</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-4 text-on-surface-variant leading-relaxed font-body-md max-w-md">
+                            A weightless, breathable foundation that fuses with your skin for a seamless, second-skin finish. Formulated with light-diffusing pigments and botanical extracts to provide 24-hour hydration and a luminous, natural glow.
+                        </div>
+</details>
+<details class="group py-6">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<span class="font-label-md text-label-md uppercase tracking-widest">Benefits</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-4 text-on-surface-variant font-body-md">
+<ul class="space-y-2 list-disc list-inside">
+<li>Long-wearing, 12-hour buildable coverage</li>
+<li>Infused with Hyaluronic Acid for deep hydration</li>
+<li>Non-comedogenic and dermatologically tested</li>
+<li>SPF 20 protection against daily environmental stressors</li>
+</ul>
+</div>
+</details>
+<details class="group py-6">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<span class="font-label-md text-label-md uppercase tracking-widest">Ingredients</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-4 text-on-surface-variant font-body-md text-sm leading-loose">
+                            Aqua (Water), Cyclopentasiloxane, Glycerin, Isododecane, Trimethylsiloxysilicate, Butylene Glycol, PEG-10 Dimethicone, Magnesium Sulfate, Silica, Sodium Hyaluronate, Rosa Canina Fruit Oil, Phenoxyethanol, Ethylhexylglycerin, [+/- May Contain: CI 77891 (Titanium Dioxide), CI 77491, CI 77492, CI 77499 (Iron Oxides)].
+                        </div>
+</details>
+<details class="group py-6">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<span class="font-label-md text-label-md uppercase tracking-widest">Application Guide</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-4 text-on-surface-variant font-body-md leading-relaxed">
+                            For a natural finish, apply one pump to the back of your hand and blend with a damp beauty sponge. For full coverage, use a dense foundation brush and apply in circular motions starting from the center of the face.
+                        </div>
+</details>
+</div>
+</div>
+</div>
+<!-- Sticky Mobile Add to Bag (Mobile Only) -->
+<div class="lg:hidden fixed bottom-0 left-0 w-full p-4 bg-white/90 backdrop-blur-lg border-t border-outline-variant/30 z-[60] flex gap-3">
+<div class="flex items-center border border-outline-variant h-14 px-2">
+<button class="p-1"><span class="material-symbols-outlined">remove</span></button>
+<input class="w-8 text-center border-none bg-transparent" readonly="" type="number" value="1"/>
+<button class="p-1"><span class="material-symbols-outlined">add</span></button>
+</div>
+<button class="flex-1 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest h-14">ADD TO BAG — $68</button>
+</div>
+<!-- Reviews Section -->
+<section class="mt-section-desktop space-y-12">
+<div class="flex justify-between items-end border-b border-outline-variant/30 pb-8">
+<div class="space-y-2">
+<h2 class="font-display-lg text-headline-xl">COMMUNITY REVIEWS</h2>
+<p class="font-body-lg text-on-surface-variant">Real voices, real results.</p>
+</div>
+<button class="underline font-label-md text-label-md uppercase tracking-widest hover:text-secondary-fixed-dim transition-colors">WRITE A REVIEW</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Review Item -->
+<div class="space-y-6">
+<div class="flex space-x-1 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg italic">"The texture is unlike anything else. It feels like wearing nothing but gives my skin this incredible architectural glow."</p>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of a customer with glowing skin, showcasing a realistic user-generated photo style. The photo is candid, taken in natural light, reinforcing the authenticity of the brand community. The aesthetic is clean and modern, fitting the MK Glamz editorial guidelines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo33rEyoreaWmQRS6nieHLqSrPblT2TNo_bI6XX9nFQLI4v5FsfaSpR-hh5ju4xxDTcnm6Yd85oHoVj3mdRlTxVzlM4d_My8ld7kOBW53cU7mdLPcvGM6WIEtl5JxzlxFGz4Vb-dYwtLTu4U6v5NkFiSZn0XuI1Pz_h454C0RWnwu3qo9-Li_HOUeLaxdyMpTfqW9_kbaRj_QeufMqOKuDrvXMG8oWPsXwa_GEFn0ooXEDgVA-qLi7okM4o0sIMBe0PJiDhcCVUT81"/>
+</div>
+<div>
+<p class="font-label-md text-label-md uppercase">ELEANOR V.</p>
+<p class="text-xs text-on-surface-variant uppercase">VERIFIED BUYER</p>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="flex space-x-1 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<p class="font-body-lg italic">"I finally found my perfect shade. The undertones are so well-balanced. It stays put all day through meetings and evening events."</p>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A small square photo of a customer smiling, highlighting their flawless makeup finish. The image has a soft, natural aesthetic, avoiding heavy filters. It looks like a premium social media post, contributing to the trustworthy and aspirational mood of the product page reviews." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ4_ZsEVyTBED2o2mcuYr5AkjoD1L2ZoNeT2nXm0K4iM6XdKzF_g_pBAMr4L5VT69PFwFiEqnISIyry-MKTpp8KDBrmM6HCoi0Z6ZOUDjGaA16HEPVj5SZoKwhoHa8Bg7NzivCeN6fOBCiFSiV1Zz_x6UJx3RgjDpp2Gabx7aI9it4J-20tisVTAgzTebYMMz_PT8O6IxRSemY8ZsKejzH8ajlR_OfG88QC61LwBsCJmaEgGgfeY68Ax6IC355STfvu_Jvepob70xR"/>
+</div>
+<div>
+<p class="font-label-md text-label-md uppercase">SARAH J.</p>
+<p class="text-xs text-on-surface-variant uppercase">VERIFIED BUYER</p>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="flex space-x-1 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg italic">"A true digital flagship experience. Packaging is stunning and the product itself is high-end quality. Worth every penny."</p>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Detailed macro photo of a consumer's hand holding the luxury foundation bottle, emphasizing the high-end packaging. The lighting is crisp and clear, showcasing the minimalist design details. The color palette is neutral and sophisticated, perfectly matching the overall MK Glamz brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjYrog9vZy8KFrN0FIMFMIJlglma7LAl4ZasHXy-SaHHqlb4ad_-tko3Lz7LW8qb6OmPpdDfSdR9zRdSPeT1iowctkUwQ6xso9Xm-N11sZpVVxaBUxzO6tPLSkXeXjPS2I3PtfW7HNkEVmnRWr0NhAZ7jjnz5VB9rq_RITWp5-TFEb0Nq4mZAeK92Q3UykIZkwurLnoJbaO3JQXv4571Zg7Ce4ZNjIsyYBR4f4auKz2PoA7CF1ITaiNgbOs5rHJgcXehBCMnlbHjpd"/>
+</div>
+<div>
+<p class="font-label-md text-label-md uppercase">MARCUS T.</p>
+<p class="text-xs text-on-surface-variant uppercase">VERIFIED BUYER</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Complete the Look -->
+<section class="mt-section-desktop">
+<div class="text-center space-y-4 mb-16">
+<h2 class="font-display-lg text-headline-xl">COMPLETE THE LOOK</h2>
+<p class="font-body-lg text-on-surface-variant max-w-xl mx-auto">Curated essentials to enhance your Velvet Lumière routine and achieve the signature MK Glamz finish.</p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Related Product -->
+<div class="group space-y-6 cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container relative border border-outline-variant/20">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="High-end studio photography of a sleek beauty primer tube in a minimalist setting. The composition uses high-contrast shadows and clean lines. The lighting is soft and luxurious, emphasizing the premium quality of the product within the MK Glamz modern minimalist universe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC63Ib7fSszWUjgOvziBFfTeyTbbpjaEpCG5pRrRjkyRKsaf8h5fgke2PoPM9i7q28-5YGdaNWLw4ATDiqsitSzQCyiAId9i7OqSggJGJIHR5J4lgEEuKImtIDOm-jJV3FQVMUXnM64j7ymIESUAENU2PdEK5vkzhXbyyDVWP9QmPp8Kt7akYS49amqsWBGXCyLH79OE8NagT_zH-L7r4chKSC1D9oC-vGwFfgG5AJVSdPmOl0Y7p7Cy5fOR8pxIdF0kd6fYX8e_gYN"/>
+<div class="absolute bottom-4 left-4 right-4 translate-y-12 group-hover:translate-y-0 transition-transform duration-500">
+<button class="w-full bg-white/90 backdrop-blur px-4 py-3 font-label-sm text-label-sm uppercase tracking-widest text-primary border border-primary">QUICK ADD</button>
+</div>
+</div>
+<div class="text-center space-y-1">
+<h3 class="font-display-lg text-headline-lg-mobile text-lg">HYDRA-GLOW PRIMER</h3>
+<p class="font-body-md text-on-surface-variant">$45.00</p>
+</div>
+</div>
+<div class="group space-y-6 cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container relative border border-outline-variant/20">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Premium close-up photography of an elegant makeup brush with high-quality synthetic bristles. The design is architectural and minimalist, with a matte black handle. The lighting is dramatic and directional, creating a sophisticated editorial look consistent with the brand's luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6jUwq1MEV9CDROye9E4xSf4lMGjVEteT8COjNIWZP7ojUyzUngDglMmw3j4cU4kU6mqTxquBQePaPi5nCgNeSl2_xqUHBMg4PjYoTm0SugvY83T50W7UqzL0TW98hAKugYB0gd2YyfQJ8k_R360rrvsN8jFrcjatYvgPbcuIR7mVpfV3BHthMNEMa-JtrqMycO8_YoM3Zmdg5ctysLwq5XdzRd3lT_sPSMwbaSwi35VsH1DootN7BokJ4HPLXezpjnJ1rcg3E-Gg9"/>
+<div class="absolute bottom-4 left-4 right-4 translate-y-12 group-hover:translate-y-0 transition-transform duration-500">
+<button class="w-full bg-white/90 backdrop-blur px-4 py-3 font-label-sm text-label-sm uppercase tracking-widest text-primary border border-primary">QUICK ADD</button>
+</div>
+</div>
+<div class="text-center space-y-1">
+<h3 class="font-display-lg text-headline-lg-mobile text-lg">NO. 01 PRECISION BRUSH</h3>
+<p class="font-body-md text-on-surface-variant">$32.00</p>
+</div>
+</div>
+<div class="group space-y-6 cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container relative border border-outline-variant/20">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Sophisticated product shot of a translucent setting powder in a luxurious, low-profile jar. The setting is bright and ethereal with a warm white color palette. Subtle reflections and soft ambient shadows contribute to the high-end editorial feel of the image, aligning with the modern minimalist style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfbuMnqWfUgA-BjuNT1vVBnc3iWtdLQwBeelvH5WWW0LdubCnWEc4QqhVVfAOPOe9-7k5d7zcO8fXVwZka9qBg0uEiqVavK53jX-qnNubD1sdNTZZtRsuu77saeZAPDz551qGXKHrmreKh0j38AE4xhpQK4cvULysWJve4vGEy6srbI7RnMLYMcidp5P3vXfBi2kjNLKo2d_W1CJHvlu4goRJY0CChEvqTHI9eqISQ_fllGOTlHWrIsQ1xUIQnprKngSzJjLhXEF_i"/>
+<div class="absolute bottom-4 left-4 right-4 translate-y-12 group-hover:translate-y-0 transition-transform duration-500">
+<button class="w-full bg-white/90 backdrop-blur px-4 py-3 font-label-sm text-label-sm uppercase tracking-widest text-primary border border-primary">QUICK ADD</button>
+</div>
+</div>
+<div class="text-center space-y-1">
+<h3 class="font-display-lg text-headline-lg-mobile text-lg">SILK FINISH POWDER</h3>
+<p class="font-body-md text-on-surface-variant">$52.00</p>
+</div>
+</div>
+<div class="group space-y-6 cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container relative border border-outline-variant/20">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="High-contrast photography of a minimalist facial mist bottle on a sleek stone surface. The lighting is sharp, creating crisp shadows that emphasize the architectural shape of the packaging. The mood is fresh and luxurious, perfectly capturing the premium essence of the MK Glamz beauty line." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfX_VnaeCR2EoQqHEFyjUHQGGY74U9JJwxVfF6XJYJwK-68ntKIO48Ps0xQgQZlpU0hgM7ORroCfhKreUGcsYcLoqe2n7ge82S6q1nN9f8bQD9tczUD79p90d6BY7EWlqbNKhf-I-ECsXtENMxv4BAURaP_Qo4CVbdmsetrydDtuwCYeLJ-R9Sz8IX6sF0NFbi1tofOQ3QrvuwnpoINAsuRxo8gAdFaoaqbqpGhdBtNs278AEPr7lqppOhop3dLaCOibiP6PrzsA3x"/>
+<div class="absolute bottom-4 left-4 right-4 translate-y-12 group-hover:translate-y-0 transition-transform duration-500">
+<button class="w-full bg-white/90 backdrop-blur px-4 py-3 font-label-sm text-label-sm uppercase tracking-widest text-primary border border-primary">QUICK ADD</button>
+</div>
+</div>
+<div class="text-center space-y-1">
+<h3 class="font-display-lg text-headline-lg-mobile text-lg">DEWY SETTING MIST</h3>
+<p class="font-body-md text-on-surface-variant">$38.00</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-section-desktop pb-gutter bg-surface-container-low border-t border-outline-variant/20">
+<div class="grid grid-cols-12 gap-gutter px-margin-desktop max-w-[1440px] mx-auto">
+<!-- Brand & Info -->
+<div class="col-span-12 lg:col-span-4 space-y-8">
+<a class="font-display-lg text-headline-xl text-primary" href="#">MK GLAMZ</a>
+<p class="font-body-md text-on-surface-variant max-w-sm leading-relaxed">
+                    Redefining beauty through a lens of high-end editorial luxury and modern minimalism. Join our world of curated sophistication.
+                </p>
+<div class="flex space-x-6">
+<a class="material-symbols-outlined text-primary hover:text-secondary-fixed-dim transition-colors" href="#">public</a>
+<a class="material-symbols-outlined text-primary hover:text-secondary-fixed-dim transition-colors" href="#">camera_enhance</a>
+<a class="material-symbols-outlined text-primary hover:text-secondary-fixed-dim transition-colors" href="#">movie</a>
+</div>
+</div>
+<!-- Links Column 1 -->
+<div class="col-span-6 lg:col-span-2 space-y-6">
+<p class="font-label-md text-label-md uppercase tracking-[0.2em] font-bold text-primary">COLLECTION</p>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-body-md" href="#">Face</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-body-md" href="#">Eyes</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-body-md" href="#">Lips</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-body-md" href="#">Skincare</a></li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div class="col-span-6 lg:col-span-2 space-y-6">
+<p class="font-label-md text-label-md uppercase tracking-[0.2em] font-bold text-primary">SUPPORT</p>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-body-md uppercase" href="#">SHIPPING &amp; RETURNS</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-body-md uppercase" href="#">FAQ</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-body-md uppercase" href="#">TERMS OF SERVICE</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-body-md uppercase" href="#">PRIVACY POLICY</a></li>
+</ul>
+</div>
+<!-- Newsletter -->
+<div class="col-span-12 lg:col-span-4 space-y-6">
+<p class="font-label-md text-label-md uppercase tracking-[0.2em] font-bold text-primary">NEWSLETTER</p>
+<p class="font-body-md text-on-surface-variant">Subscribe to receive exclusive editorial content and early access to new launches.</p>
+<div class="flex border-b border-primary py-2 group">
+<input class="flex-1 bg-transparent border-none focus:ring-0 font-label-md placeholder:text-on-surface-variant/50 uppercase" placeholder="YOUR EMAIL" type="email"/>
+<button class="material-symbols-outlined hover:translate-x-2 transition-transform duration-300">arrow_forward</button>
+</div>
+</div>
+<!-- Bottom Copyright -->
+<div class="col-span-12 pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-on-surface-variant/60 tracking-widest uppercase">
+<p>© 2024 MK GLAMZ. ALL RIGHTS RESERVED.</p>
+<div class="mt-4 md:mt-0 flex space-x-8">
+<span>SUSTAINABILITY</span>
+<span>MADE IN ITALY</span>
+<span>CRUELTY FREE</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        function updateShade(name) {
+            document.getElementById('shade-name').innerText = name;
+            
+            // Visual feedback for selected swatch
+            const swatches = document.querySelectorAll('button[onclick^="updateShade"]');
+            swatches.forEach(swatch => {
+                swatch.classList.remove('border-primary', 'ring-2', 'ring-offset-2', 'ring-transparent');
+                swatch.classList.add('border-outline-variant');
+            });
+            
+            event.currentTarget.classList.remove('border-outline-variant');
+            event.currentTarget.classList.add('border-primary', 'ring-2', 'ring-offset-2', 'ring-transparent');
+        }
+
+        // Simple thumbnail switcher logic
+        const thumbnails = document.querySelectorAll('.aspect-\\[3\\/4\\] img');
+        const mainImage = document.getElementById('main-product-image');
+
+        thumbnails.forEach(thumb => {
+            thumb.parentElement.addEventListener('click', () => {
+                // Apply a quick fade effect
+                mainImage.style.opacity = '0';
+                setTimeout(() => {
+                    mainImage.src = thumb.src;
+                    mainImage.setAttribute('data-alt', thumb.getAttribute('data-alt'));
+                    mainImage.style.opacity = '1';
+                }, 300);
+            });
+        });
+    </script>
+</body></html>

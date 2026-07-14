@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MK GLAMZ | Checkout</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;family=Outfit:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#eae8e7",
+                    "surface-container": "#f0eded",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "tertiary-container": "#1b1c1b",
+                    "on-primary-fixed": "#1b1b1b",
+                    "primary": "#000000",
+                    "on-primary-container": "#848484",
+                    "tertiary": "#000000",
+                    "outline-variant": "#cfc4c5",
+                    "surface-variant": "#e4e2e1",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-tertiary-fixed": "#1b1c1b",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#464746",
+                    "on-surface": "#1b1c1c",
+                    "on-secondary-container": "#745c00",
+                    "background": "#fbf9f8",
+                    "surface-tint": "#5e5e5e",
+                    "on-tertiary-container": "#848482",
+                    "inverse-surface": "#303030",
+                    "tertiary-fixed-dim": "#c7c6c4",
+                    "on-secondary-fixed": "#241a00",
+                    "on-primary-fixed-variant": "#474747",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#e2e2e2",
+                    "tertiary-fixed": "#e4e2e0",
+                    "primary-container": "#1b1b1b",
+                    "surface-dim": "#dcd9d9",
+                    "surface-container-highest": "#e4e2e1",
+                    "secondary-fixed": "#ffe088",
+                    "surface-bright": "#fbf9f8",
+                    "on-error": "#ffffff",
+                    "outline": "#7e7576",
+                    "secondary": "#735c00",
+                    "on-surface-variant": "#4c4546",
+                    "on-background": "#1b1c1c",
+                    "surface-container-low": "#f6f3f2",
+                    "error-container": "#ffdad6",
+                    "inverse-primary": "#c6c6c6",
+                    "surface": "#fbf9f8",
+                    "inverse-on-surface": "#f3f0f0",
+                    "on-tertiary": "#ffffff",
+                    "secondary-container": "#fed65b",
+                    "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "80px",
+                    "section-mobile": "64px",
+                    "base": "8px",
+                    "section-desktop": "120px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Outfit"],
+                    "label-sm": ["Outfit"],
+                    "display-lg-mobile": ["Syne"],
+                    "display-lg": ["Syne"],
+                    "headline-xl": ["Syne"],
+                    "headline-lg": ["Syne"],
+                    "body-md": ["Outfit"],
+                    "label-md": ["Outfit"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display-lg": ["80px", {"lineHeight": "88px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .cart-slide-in {
+            transform: translateX(100%);
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .cart-slide-in.active {
+            transform: translateX(0);
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        input:focus {
+            outline: none;
+            border-color: #e9c349 !important; /* Champagne Gold from config secondary-fixed-dim */
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- Navigation Shell (TopNavBar) -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30">
+<div class="flex justify-between items-center px-margin-desktop py-6 max-w-[1440px] mx-auto">
+<div class="flex items-center gap-12">
+<a class="font-display-lg text-headline-lg font-bold tracking-tighter text-primary" href="#">MK GLAMZ</a>
+<div class="hidden md:flex gap-8">
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="#">SHOP</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="#">ABOUT</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="#">JOURNAL</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="#">HAIR SERVICES</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="#">CONTACT</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70">
+<span class="material-symbols-outlined text-primary" data-icon="favorite">favorite</span>
+</button>
+<button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 relative" onclick="toggleCart()">
+<span class="material-symbols-outlined text-primary" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-primary text-on-primary text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Side Cart Drawer -->
+<div class="fixed inset-0 bg-primary/20 backdrop-blur-sm z-[60] opacity-0 pointer-events-none transition-opacity duration-500" id="cartOverlay" onclick="toggleCart()"></div>
+<aside class="fixed top-0 right-0 h-full w-full max-w-[480px] bg-surface z-[70] cart-slide-in shadow-2xl flex flex-col" id="sideCart">
+<div class="p-8 border-b border-outline-variant/20 flex justify-between items-center">
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tight">Your Cart (2)</h2>
+<button class="hover:rotate-90 transition-transform duration-300" onclick="toggleCart()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Shipping Progress -->
+<div class="px-8 py-6 bg-surface-container-low">
+<div class="flex justify-between mb-3">
+<p class="font-label-md text-label-md">Spend $20.00 more for free shipping</p>
+<p class="font-label-md text-label-md font-bold">80%</p>
+</div>
+<div class="w-full h-1 bg-outline-variant/30 rounded-full overflow-hidden">
+<div class="h-full bg-secondary-fixed-dim w-[80%]"></div>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto hide-scrollbar px-8 py-6 space-y-8">
+<!-- Cart Item 1 -->
+<div class="flex gap-6 group">
+<div class="w-24 h-32 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-end studio photograph of a luxury hair serum bottle with a minimalist gold cap. The bottle is placed on a reflective white surface with soft editorial lighting creating elegant shadows. The MK GLAMZ logo is subtly visible on the glass. The background is a warm, neutral ivory tone reflecting a sophisticated spa-like atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyRlBEdpCdQhTZMvYln9eJsTq1rf5fwypXPe_2gfD-9Cd4CvU5IJl_uIMOGijk54pSIe5lADn7caMwHxbAecGVgk_cJPDriLMaVa2LtValcOHa4J8f8gpWui-7OfnIHgRHUyfF0lqIg-zzBh_XO3KZXeYjkMFZyFIVjTsyaLnruDbwrNVZN43TQd1dqfZEKovb_jdNCD4sPG0BZT_KpekJpmPCbGaiDh6hUgpGEhvFs9LkWolK5e6vXkfUbieqXrtbz4OPqWfwaxRU"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-headline-lg text-[18px] uppercase">Silk infusion serum</h3>
+<button class="text-on-surface-variant hover:text-error transition-colors"><span class="material-symbols-outlined text-[20px]">delete</span></button>
+</div>
+<p class="text-on-surface-variant text-label-md mt-1">50ml / Standard</p>
+</div>
+<div class="flex justify-between items-center">
+<div class="flex items-center border border-outline-variant/30 rounded-full px-3 py-1">
+<button class="px-1 hover:text-secondary">-</button>
+<span class="px-4 font-label-md">1</span>
+<button class="px-1 hover:text-secondary">+</button>
+</div>
+<span class="font-body-lg text-body-lg">$48.00</span>
+</div>
+</div>
+</div>
+<!-- Cart Item 2 -->
+<div class="flex gap-6 group">
+<div class="w-24 h-32 bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional product shot of a premium ceramic hair brush with gold-tipped bristles. The brush is elegantly angled on a clean, off-white background with a soft ambient shadow. The aesthetic is clean and modern, highlighting the high-quality materials and MK GLAMZ branding. Lighting is soft and directional, creating a premium feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXEOnQXDtNai5JJsUXJvDBXZDLMWwcHFTV3qSRGRADDGQzOF2Qih1NIzODLtHQmYqAqq8kbQIAxlaJgDjrZFH8AjrHeWPV_Z8YmWmHCdhD0hk1WmwXxn_ltcG48TPhtRfz0i84uLfRIvEsNCVuhCr1PJVpsaMu-8vG_Ovj8l_a5yt_Mq5q8HLpsrXR2B6KyARbrKCPll34bedy12gHgWIhLwWZzUO05o5ZTBrT7Eg_hLiSPzogEgP9Cl7E4a5ZmHuVLUDeyWpF9hdJ"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-headline-lg text-[18px] uppercase">Sculpting Ceramic Brush</h3>
+<button class="text-on-surface-variant hover:text-error transition-colors"><span class="material-symbols-outlined text-[20px]">delete</span></button>
+</div>
+<p class="text-on-surface-variant text-label-md mt-1">Universal / Champagne Gold</p>
+</div>
+<div class="flex justify-between items-center">
+<div class="flex items-center border border-outline-variant/30 rounded-full px-3 py-1">
+<button class="px-1 hover:text-secondary">-</button>
+<span class="px-4 font-label-md">1</span>
+<button class="px-1 hover:text-secondary">+</button>
+</div>
+<span class="font-body-lg text-body-lg">$32.00</span>
+</div>
+</div>
+</div>
+<!-- Upsell -->
+<div class="pt-8 mt-8 border-t border-outline-variant/20">
+<h4 class="font-label-md text-label-md uppercase tracking-widest mb-6">Recommended for You</h4>
+<div class="flex gap-4 overflow-x-auto hide-scrollbar pb-4">
+<div class="flex-none w-32 group cursor-pointer">
+<div class="w-full h-40 bg-surface-container-high mb-3">
+<img class="w-full h-full object-cover" data-alt="A minimalist product display of a luxury conditioning mask in a frosted glass jar. The jar has a matte black lid and is sitting on a white stone pedestal. The lighting is high-key and editorial, emphasizing the texture of the product and the premium packaging. Soft shadows and a neutral color palette dominate the scene." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1heqT7YZcybpn5jyVneig-smIYRnEVYqOnCKVXjy1HLP7mnjby02uDaIBnocIDoB3JZbOHrbb2X98UgnfBW7ouJlnFfdr0X2s-RUXd-McaFsliEgJjZsPNKjYkvQx2lTd3HBqT3zUyiKnFlZWvEVsEA7stZ3dJz2JNhGGHYxYvmvgcmMYktErkItwcpWq3W3hHJFMW7udzhBnY9Or2UvuvB2D_9S-noiPPRd0_l_5YOixKF40pwe8Nmo8sDJPgMD3QR2v2chF4pYh"/>
+</div>
+<p class="text-label-sm truncate">Deep Gloss Mask</p>
+<p class="text-label-sm font-bold">$55.00</p>
+</div>
+<div class="flex-none w-32 group cursor-pointer">
+<div class="w-full h-40 bg-surface-container-high mb-3">
+<img class="w-full h-full object-cover" data-alt="A macro shot of a sleek black travel-sized shampoo bottle with gold lettering. The bottle is nestled in soft, white silk fabric, suggesting luxury and portability. The lighting is moody and focused, highlighting the premium finish of the MK GLAMZ travel collection. The composition is elegant and minimal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg7UpJ5Deev5zlhTsE8i3xqDefsCdrl56aWHj3wd79aDo6pH3uVik4GG606ntn0yeoAI1wSFOBlwtf2JQ9iyj4hgVVfRnxonRoE4Vjiy4jTAqhVpXVXJCkLK9UXCwRTASwPUh_vv79Dxc3yrP5uAvpEJnsRx9FnLvy8w9x5l_iGwpKJFMJozBNyc0suh9TRvXJ2ZOKCm3qG-0bHmlnpkjpzFlf5MSyRkDoYceXqjx3PLXciJyLVuIIJVsE4yFvenscZwYbZTY_rw1i"/>
+</div>
+<p class="text-label-sm truncate">Travel Ritual Kit</p>
+<p class="text-label-sm font-bold">$28.00</p>
+</div>
+</div>
+</div>
+</div>
+<div class="p-8 bg-surface-container-lowest border-t border-outline-variant/20 space-y-4">
+<div class="flex justify-between text-body-lg font-bold">
+<span>Subtotal</span>
+<span>$80.00</span>
+</div>
+<p class="text-label-sm text-on-surface-variant">Shipping and taxes calculated at checkout.</p>
+<a class="block w-full bg-primary text-on-primary py-5 text-center font-label-md tracking-widest uppercase hover:bg-on-primary-container transition-colors duration-300" href="#checkout-section" onclick="toggleCart()">
+                Secure Checkout
+            </a>
+</div>
+</aside>
+<!-- Main Checkout Section -->
+<main class="pt-32 pb-section-desktop px-margin-desktop max-w-[1440px] mx-auto" id="checkout-section">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Left Column: Details -->
+<div class="lg:col-span-7 space-y-12">
+<div class="space-y-6">
+<h1 class="font-headline-xl text-headline-xl uppercase">Checkout</h1>
+<!-- Express Checkout -->
+<div class="p-8 border border-outline-variant/30 bg-surface-container-lowest">
+<p class="text-label-sm uppercase tracking-widest text-center mb-6">Express Checkout</p>
+<div class="grid grid-cols-2 gap-4">
+<button class="bg-[#5A31F4] text-white py-3 flex items-center justify-center rounded-lg hover:opacity-90 transition-opacity">
+<span class="font-bold italic text-lg">ShopPay</span>
+</button>
+<button class="bg-black text-white py-3 flex items-center justify-center rounded-lg hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined mr-2">apps</span> Pay
+                            </button>
+</div>
+</div>
+<div class="flex items-center gap-4 py-4">
+<div class="flex-1 h-px bg-outline-variant/30"></div>
+<span class="text-label-sm text-on-surface-variant uppercase">OR</span>
+<div class="flex-1 h-px bg-outline-variant/30"></div>
+</div>
+<!-- Shipping Form -->
+<form class="space-y-8">
+<section>
+<h2 class="font-headline-lg text-[20px] uppercase mb-6 flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-sm">1</span>
+                                Contact Information
+                            </h2>
+<div class="space-y-4">
+<input class="w-full bg-transparent border-b border-outline-variant py-4 px-0 text-body-lg focus:border-secondary-fixed-dim transition-colors placeholder:text-outline" placeholder="Email Address" type="email"/>
+<div class="flex items-center gap-2 pt-2">
+<input class="w-5 h-5 border-outline-variant rounded bg-transparent checked:bg-primary" id="newsletter" type="checkbox"/>
+<label class="text-label-md text-on-surface-variant" for="newsletter">Keep me updated on exclusive salon offers and new arrivals</label>
+</div>
+</div>
+</section>
+<section>
+<h2 class="font-headline-lg text-[20px] uppercase mb-6 flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-sm">2</span>
+                                Shipping Address
+                            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<input class="w-full bg-transparent border-b border-outline-variant py-4 px-0 text-body-lg" placeholder="First Name" type="text"/>
+<input class="w-full bg-transparent border-b border-outline-variant py-4 px-0 text-body-lg" placeholder="Last Name" type="text"/>
+<input class="md:col-span-2 w-full bg-transparent border-b border-outline-variant py-4 px-0 text-body-lg" placeholder="Address" type="text"/>
+<input class="md:col-span-2 w-full bg-transparent border-b border-outline-variant py-4 px-0 text-body-lg" placeholder="Apartment, suite, etc. (optional)" type="text"/>
+<input class="w-full bg-transparent border-b border-outline-variant py-4 px-0 text-body-lg" placeholder="City" type="text"/>
+<select class="w-full bg-transparent border-b border-outline-variant py-4 px-0 text-body-lg focus:ring-0">
+<option>United States</option>
+<option>Canada</option>
+<option>United Kingdom</option>
+</select>
+</div>
+</section>
+<section>
+<h2 class="font-headline-lg text-[20px] uppercase mb-6 flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-sm">3</span>
+                                Payment Method
+                            </h2>
+<div class="border border-outline-variant/30 p-8 space-y-6">
+<div class="flex justify-between items-center pb-4 border-b border-outline-variant/10">
+<div class="flex items-center gap-4">
+<input checked="" class="w-5 h-5 text-primary" name="payment" type="radio"/>
+<span class="font-label-md">Credit Card</span>
+</div>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-on-surface-variant">credit_card</span>
+</div>
+</div>
+<div class="space-y-4">
+<input class="w-full bg-transparent border-b border-outline-variant py-4 px-0 text-body-lg" placeholder="Card Number" type="text"/>
+<div class="grid grid-cols-2 gap-6">
+<input class="w-full bg-transparent border-b border-outline-variant py-4 px-0 text-body-lg" placeholder="Expiration (MM/YY)" type="text"/>
+<input class="w-full bg-transparent border-b border-outline-variant py-4 px-0 text-body-lg" placeholder="Security Code" type="text"/>
+</div>
+</div>
+</div>
+</section>
+<button class="w-full bg-primary text-on-primary py-6 text-center font-label-md tracking-widest uppercase hover:bg-on-primary-container transition-all transform hover:-translate-y-1" type="submit">
+                            Complete Purchase — $85.00
+                        </button>
+</form>
+<!-- Trust Indicators -->
+<div class="pt-8 flex flex-wrap justify-center gap-12 border-t border-outline-variant/20">
+<div class="flex items-center gap-2 text-on-surface-variant/60">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="text-label-sm uppercase tracking-tighter">Secure Payment</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant/60">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+<span class="text-label-sm uppercase tracking-tighter">Premium Shipping</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant/60">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span class="text-label-sm uppercase tracking-tighter">Data Encryption</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Order Summary -->
+<div class="lg:col-span-5 lg:sticky lg:top-32">
+<div class="bg-surface-container-low p-10 space-y-8">
+<h2 class="font-headline-lg text-[24px] uppercase border-b border-outline-variant/20 pb-6">Order Summary</h2>
+<div class="space-y-6">
+<!-- Product Item 1 -->
+<div class="flex gap-4">
+<div class="relative w-20 h-24 bg-surface-container flex-none">
+<img class="w-full h-full object-cover" data-alt="A close-up studio shot of a high-end MK GLAMZ hair serum bottle, focusing on the refined gold-finished cap and the minimalist text on the frosted glass. The setting is clean, with soft shadows cast on a light grey background. The image exudes a sense of luxury, quality, and professional beauty care." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIkGRTqiud26lbf1ll3qyeo2aN6fFScGLZzFFjrR5aDFA9OzM6efFx5ZwcnSnBGmVjbBb0FlS54gix3p-S1AUD8yMnhy2EUeLyuGrakVRQXpviJkdyWR380HL83BZ8gtmzVIUnpyk8TP5t5-1LThMyZ6BxWa4Uds3xdoMQh0sf-uQudQxctJVEBt2cbOE2jXnHlaj6XbVisZXKZ1LbqoMTQU4FFpXm8CBmBYqN5L8kmkMaJj4qdzFISgFKZ52fkjzB8DYqh6yx-hNP"/>
+<span class="absolute -top-2 -right-2 bg-primary text-on-primary text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold">1</span>
+</div>
+<div class="flex-1">
+<p class="font-label-md uppercase">Silk infusion serum</p>
+<p class="text-label-sm text-on-surface-variant">50ml</p>
+</div>
+<p class="font-body-md">$48.00</p>
+</div>
+<!-- Product Item 2 -->
+<div class="flex gap-4">
+<div class="relative w-20 h-24 bg-surface-container flex-none">
+<img class="w-full h-full object-cover" data-alt="An artistic photograph of a high-quality ceramic hair brush from the MK GLAMZ collection. The brush features elegant champagne gold detailing and is shown against a minimalist, warm-toned backdrop. Soft, diffuse lighting highlights the ergonomic design and the premium build quality. The mood is sophisticated and clean." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE0-drhtO_fmxzUg8c-EUwWIdMc-0cR4R2mSqme0SdS8SXe1nj6bTHzYzw_gtJpQu7LdBXw_FRm4G_MbQhm8juWKBmhw6t5OH9eub62TbPzGFvlTV7YkqtScb4aidLWqtVzi6f5eOJ54-VONNVguAj4OuKVB3uTblDWoIffo19NFwCDX7GEDKGEV6CblIyO6LHTuz-0kN-CXUdFm7SRuKi6QrUDS_6fIruoWOkMTbXeC0Jpqd-LI581r0WF7C1siEATdAm7R_yI3ZG"/>
+<span class="absolute -top-2 -right-2 bg-primary text-on-primary text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold">1</span>
+</div>
+<div class="flex-1">
+<p class="font-label-md uppercase">Sculpting Ceramic Brush</p>
+<p class="text-label-sm text-on-surface-variant">Champagne Gold</p>
+</div>
+<p class="font-body-md">$32.00</p>
+</div>
+</div>
+<!-- Discount Code -->
+<div class="flex gap-3 pt-6 border-t border-outline-variant/20">
+<input class="flex-1 bg-transparent border-b border-outline-variant py-3 text-label-md" placeholder="Gift card or discount code" type="text"/>
+<button class="bg-outline-variant/20 px-6 font-label-md uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-colors">Apply</button>
+</div>
+<!-- Calculations -->
+<div class="space-y-3 pt-6">
+<div class="flex justify-between text-on-surface-variant">
+<span class="text-label-md">Subtotal</span>
+<span class="font-body-md">$80.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span class="text-label-md">Shipping</span>
+<span class="font-body-md">$5.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span class="text-label-md">Estimated Taxes</span>
+<span class="font-body-md">$0.00</span>
+</div>
+<div class="flex justify-between text-body-lg font-bold border-t border-outline-variant/30 pt-4 mt-4">
+<span class="uppercase tracking-widest">Total</span>
+<span class="text-[24px]">$85.00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-section-desktop pb-gutter bg-surface-container-low border-t border-outline-variant/20">
+<div class="grid grid-cols-12 gap-gutter px-margin-desktop max-w-[1440px] mx-auto">
+<div class="col-span-12 lg:col-span-4 mb-12 lg:mb-0">
+<a class="font-display-lg text-headline-xl text-primary block mb-6" href="#">MK GLAMZ</a>
+<p class="text-on-surface-variant max-w-xs">Curating excellence in hair care and editorial styling services since 2024.</p>
+</div>
+<div class="col-span-6 lg:col-span-2 space-y-4">
+<h5 class="font-label-md text-label-md uppercase tracking-widest font-bold">SHOP</h5>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">All Products</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Serums</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Tools</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Kits</a></li>
+</ul>
+</div>
+<div class="col-span-6 lg:col-span-2 space-y-4">
+<h5 class="font-label-md text-label-md uppercase tracking-widest font-bold">SUPPORT</h5>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 uppercase" href="#">SHIPPING &amp; RETURNS</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 uppercase" href="#">FAQ</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 uppercase" href="#">CONTACT</a></li>
+</ul>
+</div>
+<div class="col-span-12 lg:col-span-4 mt-12 lg:mt-0">
+<h5 class="font-label-md text-label-md uppercase tracking-widest font-bold mb-6">NEWSLETTER</h5>
+<p class="text-on-surface-variant mb-4">Join our inner circle for editorial updates.</p>
+<div class="flex border-b border-outline">
+<input class="flex-1 bg-transparent py-2 border-none focus:ring-0" placeholder="Email Address" type="email"/>
+<button class="material-symbols-outlined px-4 hover:text-secondary transition-colors">arrow_forward</button>
+</div>
+</div>
+<div class="col-span-12 pt-12 mt-12 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-label-sm uppercase tracking-widest text-on-surface-variant/60">© 2024 MK GLAMZ. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-8">
+<a class="text-label-sm uppercase tracking-widest text-on-surface-variant/60 hover:text-primary transition-colors" href="#">PRIVACY POLICY</a>
+<a class="text-label-sm uppercase tracking-widest text-on-surface-variant/60 hover:text-primary transition-colors" href="#">TERMS OF SERVICE</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        function toggleCart() {
+            const sideCart = document.getElementById('sideCart');
+            const cartOverlay = document.getElementById('cartOverlay');
+            const isOpen = sideCart.classList.contains('active');
+            
+            if (isOpen) {
+                sideCart.classList.remove('active');
+                cartOverlay.classList.remove('opacity-100');
+                cartOverlay.classList.add('opacity-0', 'pointer-events-none');
+                document.body.style.overflow = 'auto';
+            } else {
+                sideCart.classList.add('active');
+                cartOverlay.classList.add('opacity-100');
+                cartOverlay.classList.remove('opacity-0', 'pointer-events-none');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        // Initialize smooth transitions for inputs
+        document.querySelectorAll('input, select').forEach(el => {
+            el.classList.add('transition-all', 'duration-300', 'ease-in-out');
+        });
+    </script>
+</body></html>

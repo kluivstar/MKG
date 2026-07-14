@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MK GLAMZ | The Art of Elegance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&amp;family=Syne:wght@400..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#eae8e7",
+                        "surface-container": "#f0eded",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "tertiary-container": "#1b1c1b",
+                        "on-primary-fixed": "#1b1b1b",
+                        "primary": "#000000",
+                        "on-primary-container": "#848484",
+                        "tertiary": "#000000",
+                        "outline-variant": "#cfc4c5",
+                        "surface-variant": "#e4e2e1",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-tertiary-fixed": "#1b1c1b",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#464746",
+                        "on-surface": "#1b1c1c",
+                        "on-secondary-container": "#745c00",
+                        "background": "#fbf9f8",
+                        "surface-tint": "#5e5e5e",
+                        "on-tertiary-container": "#848482",
+                        "inverse-surface": "#303030",
+                        "tertiary-fixed-dim": "#c7c6c4",
+                        "on-secondary-fixed": "#241a00",
+                        "on-primary-fixed-variant": "#474747",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#e2e2e2",
+                        "tertiary-fixed": "#e4e2e0",
+                        "primary-container": "#1b1b1b",
+                        "surface-dim": "#dcd9d9",
+                        "surface-container-highest": "#e4e2e1",
+                        "secondary-fixed": "#ffe088",
+                        "surface-bright": "#fbf9f8",
+                        "on-error": "#ffffff",
+                        "outline": "#7e7576",
+                        "secondary": "#735c00",
+                        "on-surface-variant": "#4c4546",
+                        "on-background": "#1b1c1c",
+                        "surface-container-low": "#f6f3f2",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#c6c6c6",
+                        "surface": "#fbf9f8",
+                        "inverse-on-surface": "#f3f0f0",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#fed65b",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px",
+                        "section-mobile": "64px",
+                        "base": "8px",
+                        "section-desktop": "120px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Outfit"],
+                        "label-sm": ["Outfit"],
+                        "display-lg-mobile": ["Syne"],
+                        "display-lg": ["Syne"],
+                        "headline-xl": ["Syne"],
+                        "headline-lg": ["Syne"],
+                        "body-md": ["Outfit"],
+                        "label-md": ["Outfit"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "display-lg": ["80px", {"lineHeight": "88px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .editorial-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .editorial-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .champagne-gradient {
+            background: linear-gradient(135deg, #e9c349 0%, #ffe088 50%, #e9c349 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30">
+<div class="flex justify-between items-center px-margin-desktop py-6 max-w-[1440px] mx-auto">
+<div class="flex-1 hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-secondary-fixed-dim after:rounded-full" href="#">SHOP</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="#">ABOUT</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="#">JOURNAL</a>
+</div>
+<div class="flex-shrink-0 text-center">
+<h1 class="font-display-lg text-headline-lg font-bold tracking-tighter text-primary">MK GLAMZ</h1>
+</div>
+<div class="flex-1 flex justify-end items-center gap-6">
+<div class="hidden md:flex gap-8 items-center mr-8">
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="#">HAIR SERVICES</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="#">CONTACT</a>
+</div>
+<button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+<button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 relative">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-1 -right-1 w-2 h-2 bg-secondary-fixed-dim rounded-full"></span>
+</button>
+<button class="md:hidden">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover object-center scale-105 transition-transform duration-[10s] hover:scale-100" data-alt="A high-end editorial makeup photography shot featuring a model with flawless, dewy skin and avant-garde metallic eyeliner. The lighting is dramatic and cinematic, using high-contrast shadows and soft-box highlights to emphasize the texture of the prestige makeup products. The background is a minimalist warm beige studio setting, perfectly complementing the modern luxury aesthetic of MK GLAMZ. The model's expression is poised and sophisticated, embodying the brand's 'Art of Elegance' philosophy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlc56HnJc5WkgZyzoTnPcn-WHNk87XJoTz3gNPWBTWq_5upzHdaoboslmCUre2zsdFCJwEM2RLwM7-MJJIWe_BlTiV6NUuo7cEV5wNdZcCzeZOYEO7kwI7blul5CAFpM_v1IUGRXO5ToGEjbNuuLAFvcG9xz6SdqGfkyAetpHyKzHRAwJwi-ZroGmAYCMD0FARJtKWyfeN_QeNaGOVnIjP5DGsQXWyRD18HbqGGBDANt02tZbi_E1Q_OkjMOwYuZis8N1Aj2j8r5Y8"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-desktop max-w-[1440px] mx-auto w-full">
+<div class="max-w-2xl editorial-reveal visible">
+<span class="font-label-md text-label-md tracking-[0.3em] uppercase text-on-surface-variant mb-6 block">The Inaugural Collection</span>
+<h2 class="font-display-lg text-display-lg text-primary mb-8 leading-none">The Art of <br/>Elegance</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">Curating prestige beauty for the discerning individual. Discover a symphony of texture, light, and artistry in our limited release series.</p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-none font-label-md text-label-md tracking-widest hover:bg-neutral-800 transition-all duration-500 uppercase">Shop Now</button>
+<button class="border border-primary text-primary px-10 py-5 rounded-none font-label-md text-label-md tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-500 uppercase">The Film</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Collections (Bento Style) -->
+<section class="py-section-desktop px-margin-desktop max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<h3 class="font-display-lg text-headline-xl text-primary">Signature Tones</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm text-right">Meticulously developed formulas for professional-grade results at home.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-[800px]">
+<div class="md:col-span-8 relative overflow-hidden group cursor-pointer h-full">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A close-up artistic product shot of prestige face foundation bottles and palettes resting on a smooth marble surface. The lighting is soft and ethereal, capturing the creamy texture of the liquids and the fine grain of the powders. The color palette consists of neutral skin tones, warm beige, and subtle gold accents. The atmosphere is quiet, expensive, and deeply professional, aligning with the editorial luxury style of MK GLAMZ." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuxPXCIAJDif5PwIIksEX7ZuyzYC6F9T7vtPOuuj6-UVpzXQC91uiYpajHdbU9iAxCaawRTcnpaDTCSwS6TcwP7qYF5lorcT-FJkXniErOiQQYgrC23LsC5hENgAoSUIUTz-qAPaRAvZzcPP84OwmIfl2cm0SWmzrjpAU6iXzKF_SNqVKeWxRU9YNcs0-ZUW_Fqnq8c3EtyEq6PnCbGJGrWGpjr0u4RmEKqpSG546ZSGtGbbiwlRe_D0_kVRIh3aVMsP2IthH11xdI"/>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
+<div class="absolute bottom-10 left-10 text-white">
+<span class="font-label-sm text-label-sm uppercase tracking-widest block mb-2">Collection 01</span>
+<h4 class="font-headline-xl text-headline-xl mb-4">Face</h4>
+<button class="text-white border-b border-white pb-1 font-label-md text-label-md tracking-widest uppercase hover:opacity-70 transition-opacity">Explore Line</button>
+</div>
+</div>
+<div class="md:col-span-4 flex flex-col gap-gutter h-full">
+<div class="relative overflow-hidden group cursor-pointer flex-1">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A macro shot of vibrant, luxurious lipstick textures smeared artistically on a pure white surface. The colors range from deep bordeaux to soft nude pinks. The lighting highlights the satin finish of the product. The composition is clean and focused, reflecting a modern minimalist aesthetic with high-end editorial flair. The image is crisp, emphasizing the rich pigmentation and quality of the MK GLAMZ lip collection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOsX6nxh7IgKj7r3enVghuiZDbee2W97G3K6Ma9U37eHXchXDzLTj_NEUJlBTHDZiXfm9iOeXZz67VAcYN-8whfeoLs8fevrqG7fZ-76FDQOpBseYqdxBVUiwiM1wbpmk6Lv5hAUJGf5ZY5yEkZDdPNbeqToroAyJvEFpDGMC9b9r9phygupAkXg4RnMebUJVqOG1vvU7Oaw9lrz7matdlhPOux7OLmRduIRLn0h8IyQvRhhgSwmt34N0rZEXUrLlEDlxRDL53ZS4r"/>
+<div class="absolute inset-0 bg-black/5 group-hover:bg-black/15 transition-colors"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<h4 class="font-headline-lg text-headline-lg mb-2">Lips</h4>
+<button class="text-white border-b border-white pb-1 font-label-sm text-label-sm tracking-widest uppercase hover:opacity-70 transition-opacity">Shop Now</button>
+</div>
+</div>
+<div class="relative overflow-hidden group cursor-pointer flex-1">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An editorial shot of dramatic eye makeup artistry, focusing on a single eye with intricate graphic liner and shimmering champagne eyeshadow. The surrounding skin is flawlessly matte. High-key lighting accentuates the detail and precision of the MK GLAMZ eye products. The aesthetic is futuristic yet elegant, using a palette of deep blacks and soft gold tones to create a sophisticated, aspirational mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3RUMFSf52Lq895LPVQlSYabYadYWj7Hp9NAtllIXk0ctGN82QU8IEAgjYnB9Op6Aey6KplWPxJq-avmkPrRcu-KcroIWfGrWJN1RdQQ7_zZQyf3xIcqcyCsL8ZGHCYru16I3rNaSmpuTS1R_uAOdsM_UL90iaZqcNkZr3W9slgKX8d2kpFcDPgEJkL6n9_uLTLtStUUcEzhuFZNw-CwON0EjjDfiYz8nUCljwRu0hV8opYysF1ygnPCVVjDdLvEzu5_bpQribHCZ2"/>
+<div class="absolute inset-0 bg-black/5 group-hover:bg-black/15 transition-colors"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<h4 class="font-headline-lg text-headline-lg mb-2">Eyes</h4>
+<button class="text-white border-b border-white pb-1 font-label-sm text-label-sm tracking-widest uppercase hover:opacity-70 transition-opacity">Discover</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Best Sellers & New Arrivals -->
+<section class="bg-surface-container-low py-section-desktop overflow-hidden">
+<div class="px-margin-desktop max-w-[1440px] mx-auto mb-12 flex justify-between items-baseline">
+<h3 class="font-headline-xl text-headline-xl text-primary">Best Sellers</h3>
+<a class="font-label-md text-label-md text-primary hover:opacity-50 transition-opacity uppercase tracking-widest border-b border-primary pb-1" href="#">View All Arrivals</a>
+</div>
+<div class="flex gap-gutter overflow-x-auto hide-scrollbar px-margin-desktop pb-8">
+<!-- Product Card 1 -->
+<div class="min-w-[320px] md:min-w-[400px] group cursor-pointer">
+<div class="relative overflow-hidden bg-white mb-6">
+<img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A minimalist product showcase of a sleek, black MK GLAMZ matte foundation bottle on a pedestal of light grey stone. The lighting is soft but directed, creating subtle shadows that define the bottle's elegant silhouette. The background is a clean, warm-white studio wall. The overall image is high-end, uncluttered, and focuses entirely on the luxury packaging and brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSc4q6a0pFvNa3VTS7shBcgks6PxZOtBOWyCf54qzZX9KAFp8a_GpXdtl_cFVXwIaNCLZH9Qk4Nt-qszqif9BIZJ788t4IX9rfWM71RHLmfuI23kgxdElLUYZ9TPaHmlkPFHISfrAxelnit6MPDvGzWiGYy4yRKdxY0k2UF8Ib1A2Dh3QdG6lssxcaiNf6ToBDDiaUD-kRCbFagbBfTv7HCIYszx4vof51q-qZ4qqzrggxe1zrVkoorl4dt1RPH0xVyFYTmczgj-bn"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-on-primary px-3 py-1 font-label-sm text-label-sm uppercase tracking-widest">Award Winning</span>
+</div>
+</div>
+<div class="text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">Face</p>
+<h4 class="font-headline-lg text-headline-lg text-primary mb-2">Velvet Skin Fluid</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">$62.00</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="min-w-[320px] md:min-w-[400px] group cursor-pointer">
+<div class="relative overflow-hidden bg-white mb-6">
+<img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A luxurious MK GLAMZ gold-cased lipstick standing vertically on a reflective black surface. A slight wisp of silk fabric in a matching champagne gold color drifts behind it. The lighting is warm and inviting, highlighting the metallic sheen of the case. The image exudes indulgence and exclusivity, using a restricted palette of gold, black, and warm white." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGYx0R3up-CWY_53ISGIXIeIGS37weK3M_sU_plXRCXTYy0I0QavV5cncffSRK6m-_4e3owjd9EiIp37IApIfDi4A8hJ-awQC4uvxBwIJVWLHYSCUMFyRi3KsbO_Bae9v1I2l7DP3EKeySmXxUPRwMujCesk8MLmmh4kl8Owmu3uXRPEuWfYCh4-p4elebFZ4qCLNDZjfpv3hTUHlCLqvGsS1PJI6cQIbWgKz5adCjngCWT652HzFTRnq2odPTZNup58cdeUijmSrg"/>
+</div>
+<div class="text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">Lips</p>
+<h4 class="font-headline-lg text-headline-lg text-primary mb-2">Satin Petal Lipstick</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">$38.00</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="min-w-[320px] md:min-w-[400px] group cursor-pointer">
+<div class="relative overflow-hidden bg-white mb-6">
+<img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A high-contrast macro photograph of an MK GLAMZ eyeshadow palette, open to reveal a range of shimmering earth tones and rich blacks. The lighting creates a sparkling effect on the metallic shadows. The product is surrounded by small, dark obsidian stones, adding a touch of natural elegance. The design is modern and editorial, focusing on the luxury texture and pigmentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0nxsiuxVaGN9t60Onkjyi5M8aldaNwIvHO7B8eWzBZ0Gci3NYF2qw6GXBpA9Kru8nCG1KrOOQh_FTZTP1PgDMJbJdUXd8k_1hjCCWVgTo74sxVqoPGQ0diu9tJYNJX6osu9xgl24b-6Baha3Xdc1cGCCHIlbEiumLSCDI5J9duen1IFC_6nF_CyBOHsjnxMNLdBgmIbzCyYIRRj0lAzUFDQVDEKMJeDUAJV59yb8IT340heOUuTXBghsASpq9i9pmm_rFnD-JyJv4"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 font-label-sm text-label-sm uppercase tracking-widest">New</span>
+</div>
+</div>
+<div class="text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">Eyes</p>
+<h4 class="font-headline-lg text-headline-lg text-primary mb-2">Obsidian Palette</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">$84.00</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="min-w-[320px] md:min-w-[400px] group cursor-pointer">
+<div class="relative overflow-hidden bg-white mb-6">
+<img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A minimalist digital showcase of an MK GLAMZ setting powder jar on a clean white surface. A light dusting of the fine powder is scattered artistically around the base. The lighting is high-key and airy, creating a sense of purity and lightness. The photography style is modern and high-end, typical of a luxury digital flagship store experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2nhr6hyR2UOtZR5o9w3PdvjdAq0tqxAoX8cZXhUbLlp1mCcKyJAA_gBqvkZVGgHEdub6pfyYAfeZR9wayEEkVAmdjSI6Ltg_yLJNwbcJws1yCzW98TNvIAzHUTj1lVsMXAp8qSLQZHeh0AkwKfjBbER4P3gM2fQm9RuT8Sh1P_NZBJP40RYrL2Ux7ciPWnIQe0pxUrRKPGm0p3KL7prK1QTqnEl_VX4NUdPAY-cuJXCIsdW3-rHzDT_zt_E_iVTOjnC2D62vg7Ktk"/>
+</div>
+<div class="text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">Face</p>
+<h4 class="font-headline-lg text-headline-lg text-primary mb-2">Air Mist Powder</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">$55.00</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Professional Artistry -->
+<section class="py-section-desktop px-margin-desktop max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-section-desktop items-center">
+<div class="order-2 md:order-1">
+<div class="relative">
+<img class="w-full aspect-[4/5] object-cover" data-alt="A professional makeup artist at work, carefully applying eyeliner to a client in a high-end, minimalist studio. The studio features sleek black furniture and large windows letting in soft, natural light. The artist is dressed in professional black attire, and the focus is on the precision and artistry of the makeup application. The mood is calm, creative, and highly professional, reflecting MK GLAMZ's commitment to prestige artistry services." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHwIKeoqy6E04wAFnmlhpKkzVawU_haqFhl7KrHG0lKiwNLY0UZjl41JoHmHG5uyh3vS07c0hxTelNlEygtJ49WQ9q5orBj9VcXl4-XYvGhYkDHSntxolU6vltVS83LRa96_8po-7d5z7ZIRGwllU1RuRjOg1xJmVH3HqQZeWlRkCqMjGrN1u1prCVVU358-YbTnBTHXoh84jQ26Nm7jE34dObJw30MhqMQ6hgjpo7e1phVNrNV7l-HdbaivNXEZC69530gCe_yIgn"/>
+<div class="absolute -bottom-10 -right-10 w-64 h-64 border-8 border-surface-container hidden lg:block -z-10"></div>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<span class="font-label-md text-label-md tracking-[0.3em] uppercase text-on-surface-variant mb-6 block">Artistry Services</span>
+<h3 class="font-display-lg text-headline-xl text-primary mb-8 leading-tight">Mastering Your <br/>Unique Canvas</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Our master artists provide bespoke beauty consultations and full-service makeup applications for your most significant moments. From bridal elegance to editorial avant-garde, we bring prestige artistry to life.</p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-4 font-label-md text-label-md uppercase tracking-widest text-primary">
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="check_circle">check_circle</span>
+                        Bridal Artistry Consultations
+                    </li>
+<li class="flex items-center gap-4 font-label-md text-label-md uppercase tracking-widest text-primary">
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="check_circle">check_circle</span>
+                        Editorial &amp; Red Carpet Styling
+                    </li>
+<li class="flex items-center gap-4 font-label-md text-label-md uppercase tracking-widest text-primary">
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="check_circle">check_circle</span>
+                        Private Artistry Masterclasses
+                    </li>
+</ul>
+<button class="bg-primary text-on-primary px-10 py-5 rounded-none font-label-md text-label-md tracking-widest uppercase hover:bg-neutral-800 transition-all duration-500">Book A Session</button>
+</div>
+</section>
+<!-- The Hair Collection Preview -->
+<section class="relative h-[600px] w-full flex items-center overflow-hidden bg-black text-white">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60" data-alt="A moody, high-contrast silhouette of a model with voluminous, flowing hair in a dark, atmospheric setting. Subtle glints of light catch the hair's texture, implying a sense of luxury and health. The lighting is dramatic and low-key, with champagne gold highlights breaking through the darkness. The aesthetic is extremely premium and editorial, creating a sense of mystery and anticipation for the upcoming MK GLAMZ hair collection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK5sZs89OeYLqHWcWmKtpcM7wIbC7MGXFdmKlnTUxBDsVVZu2kjltPd70ElBrLipUitVF_LQV67iAwH3w00xmQRDwUjZbS3oB3PRKMa2-crxem_47UYa6l3bkQtsIhSARBGed6lX0eR4LWyw-OLs6JhuFSdKCjoD1iB3xqDl7ifYYUXZD7DZ2w7O3Js359UOoj5E_7aGHzVJkI7xd4LF5nkw3Nqp4YWRNlwYaBiO8YG5eoJFQPeTNpYTdeVGfO-p2qgu5Zk3u3tPiV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-desktop max-w-[1440px] mx-auto w-full text-center">
+<div class="inline-block champagne-gradient text-primary px-4 py-1 font-label-sm text-label-sm uppercase tracking-widest mb-6 font-bold">Coming Soon</div>
+<h3 class="font-display-lg text-headline-xl mb-4">The Hair Collection</h3>
+<p class="font-body-lg text-body-lg text-neutral-300 max-w-xl mx-auto mb-10">Extending our philosophy of elegance to the crown. A curated system of care and styling, launching Winter 2024.</p>
+<button class="border border-white/40 hover:border-white text-white px-10 py-5 font-label-md text-label-md tracking-widest uppercase transition-all duration-500">Join the Waitlist</button>
+</div>
+</section>
+<!-- Brand Story Snippet -->
+<section class="py-section-desktop bg-surface">
+<div class="max-w-3xl mx-auto text-center px-margin-mobile">
+<span class="font-label-md text-label-md tracking-[0.3em] uppercase text-on-surface-variant mb-6 block">Our Ethos</span>
+<h3 class="font-display-lg text-headline-xl text-primary mb-8 leading-tight">Purity in Craft</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic mb-10">"Beauty is not about addition, but the careful curation of what makes you singular. At MK GLAMZ, we don't create trends; we define lasting elegance through uncompromising quality and artistic vision."</p>
+<a class="font-label-md text-label-md text-primary tracking-widest uppercase border-b border-primary pb-2 hover:opacity-70 transition-all" href="#">The Full Story</a>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-desktop px-margin-desktop max-w-[1440px] mx-auto overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="p-12 border border-outline-variant/30 flex flex-col justify-between h-[400px]">
+<div class="flex gap-1 mb-8">
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-primary mb-12">"The Velvet Skin Fluid is, without question, the most sophisticated formula I have ever used in my 15-year career. It is invisible yet transformative."</p>
+<div>
+<p class="font-label-md text-label-md uppercase tracking-widest text-primary">Elena Rossi</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.2em]">Global Lead Artist, Vogue Italy</p>
+</div>
+</div>
+<div class="p-12 border border-outline-variant/30 flex flex-col justify-between h-[400px]">
+<div class="flex gap-1 mb-8">
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-primary mb-12">"MK GLAMZ has managed to capture the essence of editorial luxury and put it into a bottle. Every texture is considered, every pigment is intentional."</p>
+<div>
+<p class="font-label-md text-label-md uppercase tracking-widest text-primary">Marcus Thorne</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.2em]">Celebrity MUA</p>
+</div>
+</div>
+<div class="p-12 border border-outline-variant/30 flex flex-col justify-between h-[400px]">
+<div class="flex gap-1 mb-8">
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-primary mb-12">"Finally, a brand that respects the skin's natural architecture while delivering professional-grade high-fashion results. A masterpiece."</p>
+<div>
+<p class="font-label-md text-label-md uppercase tracking-widest text-primary">Sasha Vane</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.2em]">Editor, Beauty Archive</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Beauty Journal Preview -->
+<section class="py-section-desktop px-margin-desktop max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-16">
+<h3 class="font-display-lg text-headline-xl text-primary">The Beauty Journal</h3>
+<a class="font-label-md text-label-md text-primary tracking-widest uppercase border-b border-primary pb-1 mt-4 md:mt-0" href="#">Read More Editorial</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<article class="group cursor-pointer">
+<div class="overflow-hidden mb-8">
+<img class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An editorial blog header image showing a minimalist flat-lay of makeup brushes, a high-end face cream, and a sprig of white jasmine flowers. The lighting is bright and clean, with a modern lifestyle aesthetic. The focus is sharp on the textures of the products, creating an aspirational and informative mood for a beauty journal article about morning routines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX0lSy0SVL_OnTtMOJO67P-yVwYWVIs0PJWQRb4nnsHL1unb0aSYpamzwXNz4Jp8dAkc2bzx4mIKUt4ExAFEq73jkgLxYWw32_hTei1dhAfQCJsrufoOLVAw1PZcpeD1vGSpqz4OWLUuCeaDqM40Lw3ezQg90gzPEML38jwrTrs3h-SbOK9ihZB2WYUMGPrOoOc0wjTb2wiOAXKctSV4JQnoh3bdgCzyouodl_D9kqDN-Tc7utVrJOmdQwm7L7wMWLrYhmxq34yhWt"/>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant mb-4 block">Artistry • 12 MIN READ</span>
+<h4 class="font-headline-lg text-headline-lg text-primary mb-4 group-hover:text-secondary-fixed-dim transition-colors">The 7 AM Ritual: Prepping the Canvas</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Discover the morning skincare and priming secrets used by our lead artists to ensure makeup longevity and that signature MK glow.</p>
+<button class="font-label-md text-label-md tracking-widest uppercase text-primary border-b border-primary pb-1 group-hover:pb-2 transition-all">Read Article</button>
+</article>
+<article class="group cursor-pointer">
+<div class="overflow-hidden mb-8">
+<img class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A moody editorial image featuring a model with bold, dark lip color and sleek, wet-look hair. The lighting is low-key, with strong highlights defining the model's features. This image serves as the header for a journal post about evening beauty looks and professional styling tips. The aesthetic is dark, luxurious, and highly sophisticated, reflecting the prestige nature of the MK GLAMZ brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_eExlSMUgRLgTK1SCT80BjIUXBLtnFxjxk5v2tL4EOToxamCd7UnLwzb6hWkj7Q--3iQ91Rifj27zUdePiULtx8S1J-cTwJBL7f3BahM79JOhiN9JyOmhLprYg81QdZPzvQm-_fL8OX9BF1tXvt9nJf2fX46-j9F0OsMSFuwze0gmiuuULi142_j2Ymg5cwp4Bjx2RHBGymQj_LQ03nM3zxYx_I5DJ5rM9KqXUYFcXJPolzqfkSnK6KxygdlJQxp8hHK8c75PrmW1"/>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant mb-4 block">Seasonal • 08 MIN READ</span>
+<h4 class="font-headline-lg text-headline-lg text-primary mb-4 group-hover:text-secondary-fixed-dim transition-colors">After Dark: Obsidian &amp; Gold Accents</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Mastering the transition from daylight elegance to evening drama using the limited edition Obsidian palette.</p>
+<button class="font-label-md text-label-md tracking-widest uppercase text-primary border-b border-primary pb-1 group-hover:pb-2 transition-all">Read Article</button>
+</article>
+</div>
+</section>
+<!-- Instagram Gallery -->
+<section class="pb-section-desktop overflow-hidden">
+<div class="px-margin-desktop max-w-[1440px] mx-auto mb-8 flex items-center justify-between">
+<p class="font-label-md text-label-md tracking-widest uppercase text-on-surface-variant">Follow @MKGLAMZ</p>
+<div class="h-[1px] flex-1 mx-8 bg-outline-variant/30 hidden md:block"></div>
+<p class="font-headline-lg text-headline-lg text-primary">#TheArtOfElegance</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
+<div class="aspect-square relative group overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A social media style photograph of a modern, white vanity table featuring MK GLAMZ products and a vase of fresh white lilies. The lighting is natural and soft, coming from a side window. The overall aesthetic is clean, minimalist, and very curated, typical of a high-end luxury beauty Instagram feed." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBreQntTsszTMIoJyu-dddoeKhPvLvEnEbPtDGdILooU4Vkh7Tynq3yZIDXKiBMaquxHVyhdGRhY-KUQtfUxALS_b5CrjaQhvD1OQjK4KCb4Ln-dmzMkm1pw96epWOQhTFEC2CEOPIhq3ZEmIZ6H7ZHn9X2Slid1v5rsneRjk0qj8h1A0z-tjwmmh9cU9nk1PwyoXnhipu2s9KaBg9OetIbBFkvRDncRfeXql8sNp8YTo9k1eV5hVag5l-PMa_NpGC6PvtNAIhL8gh9"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="favorite">favorite</span>
+</div>
+</div>
+<div class="aspect-square relative group overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A close-up shot of a model's eye with shimmering gold eyeshadow and perfectly groomed brows. The focus is incredibly sharp, showing the fine shimmer of the MK GLAMZ product. The lighting is bright and clinical but glamorous. This image represents the high-quality, professional-grade results of the brand's artistry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiuhfno0XStUoCGlh3hKwB6zEd8j-hniM71CVLEoVepQ5fqihbE5b9Uy1YxUVZVZqYVPy-8FshZPOtWd3ZaMutNEgLfGImBgToXtVZVEXGoX0eMi-86hIcT0QtqZOLsOcHfkxvi9NOtS6xA36i-LKeyswBzI4Zx7N8wQfYbRqUpnEIGXZ23-lPZHV0xFOI2Cf03wVD6rVm2yh9OX9TXEXRGv0l6qpS8aePz7cADMtJUTkXTp4RNo1fG5_nzm8Ro1fQQKCvXAkuIFT0"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="favorite">favorite</span>
+</div>
+</div>
+<div class="aspect-square relative group overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="An artistic shot of a MK GLAMZ foundation bottle being held by a hand with perfectly manicured, nude nails. The background is a soft-focus beige fabric. The image is warm, intimate, and luxury-focused, highlighting the tactile experience of the prestige packaging." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQMbbxxaK18nA-EAFtMntyg1nKOIWfLWluE8qay3rUd8Z1gg78n2i82S3ANaHflVDqFrBl5v6r-JEVAoBqWRww5nO-amjJltvAr4kJVddzDfufuhpFlFWRdHPyPnwXLZJosFM5rh3H5nZLmTF4jUx0Lws2KA_48EKkS0h6mJoNxRzRqnAXQBPMg1UZ3ZDim63fxzS6NEjHOcmYc-yCN0zrSIUqBfaE8oEmimWFf2WiKw2MGaOSXmnyStJiWX-hSw1wt8TwfPKfQyRl"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="favorite">favorite</span>
+</div>
+</div>
+<div class="aspect-square relative group overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A wide-angle shot of the interior of a luxury MK GLAMZ flagship store. The design is sleek and modern, with white marble floors, black shelving, and warm ambient lighting. Customers are seen browsing the minimalist product displays. The vibe is exclusive and high-end." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ_LJXxMmk-mF5S4rzDN8IMzz1FSoe2oP5GF-PLwTTJoaobzXcPrfBR1nsqKKiqJdf-2S7X7dueQSg8DozCqhaFA2i_IDUUOhOLP4pn92odPSC1e5WXJ_W4FbMocPhzclTxZi3hGMb8iBnIkk-bj6xpcpCTNgp6DVIB9CCSAYTzUXecNtDbrWCM3ePvtMrWjreiJh6d6QFJ7peUfynXdHQX28Z_qljdIE-92UkST4UpAD3s2de_KB9QbxUtMtjeVCs3bLGCrS1mb4n"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="favorite">favorite</span>
+</div>
+</div>
+<div class="aspect-square relative group overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A flat-lay of several MK GLAMZ lipsticks in various shades of red and nude, arranged in a neat geometric pattern on a black velvet surface. The lighting is dramatic, catching the highlights on the metallic gold cases and the rich texture of the velvet." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsTDCxKuZ3fGCRZmQ5iE4ksC0KGk2RFtU1iUKWt1ZOzg6N5eWWrvDPD3pCczxAx171NsYrmxqJbbZ75hE5AhWcl2P88Y5rt4wqSg0g1tIHAjIK-1larbXGTNI7ryao_p9V6d8K6tgmtGbB9y_oz2UNQlYpoeXAJbEUVlJZ7_z7MZRXIAm6XLmHTkV7xNLHrNAb6Kc3N-GWu5qkZ9kXV8gq23lTHcfpST09mjkzswhEwzzCbn5bW8dSY82R03xJm7caqiVmvO3aUC-E"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="favorite">favorite</span>
+</div>
+</div>
+<div class="aspect-square relative group overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A model laughing during an editorial shoot, wearing MK GLAMZ makeup that looks natural yet radiant. The image is candid and joyful, capturing a different side of elegance. The lighting is warm and sunny, giving a soft, golden-hour feel to the photograph." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjy_orV5LdDqUoTBXaDzl6cj_rzmC1PiDE40SXh6XZjsjENcHBOhPidRi9wvcYAFzKREwTqrEvNOJGNqpGTAC9lj8tUd1mImRT92JMI9DqZsL8JoV2pwPUd6dSuhclUUahtlrlNds3dAxVzpEMCQlGmUzLru0DT_xa4sDUGbJVQEKk8AGiI373ZG6N1e3QhQaqlTK8iexmrwgA9zGy61icQdFmYILE7DIZn3oXW1Q0Do6uvcA98E1enrGlYw9V-pwbyCdfeGUoi9WC"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="favorite">favorite</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Signup -->
+<section class="py-section-desktop bg-primary text-on-primary">
+<div class="px-margin-desktop max-w-4xl mx-auto text-center">
+<h3 class="font-display-lg text-headline-xl mb-6">The Inner Circle</h3>
+<p class="font-body-lg text-body-lg text-neutral-400 mb-10">Sign up to receive early access to new collections, exclusive artistry tutorials, and invitations to private boutique events.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto">
+<input class="flex-1 bg-transparent border-b border-white/30 focus:border-white border-x-0 border-t-0 p-4 font-label-md text-label-md tracking-widest placeholder:text-neutral-600 focus:ring-0 outline-none transition-all" placeholder="EMAIL ADDRESS" type="email"/>
+<button class="bg-white text-primary px-10 py-4 font-label-md text-label-md tracking-widest uppercase hover:bg-neutral-200 transition-colors" type="submit">Join Now</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-section-desktop pb-gutter bg-surface-container-low border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop max-w-[1440px] mx-auto mb-section-mobile md:mb-section-desktop">
+<div class="md:col-span-4">
+<h2 class="font-display-lg text-headline-xl text-primary mb-8">MK GLAMZ</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mb-8">Elevating everyday rituals through the lens of prestige makeup artistry and refined editorial luxury.</p>
+<div class="flex gap-6">
+<a class="text-primary hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-primary hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">camera</span></a>
+<a class="text-primary hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+<div class="md:col-span-2 space-y-4">
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-6">SHOP</h4>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Face Collection</a>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Eye Collection</a>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Lip Collection</a>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Best Sellers</a>
+</div>
+<div class="md:col-span-2 space-y-4">
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-6">ARTISTRY</h4>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Booking Services</a>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Bridal Experience</a>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Private Masterclass</a>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Hair Services</a>
+</div>
+<div class="md:col-span-2 space-y-4">
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-6">EXPLORE</h4>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">About MK Glamz</a>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Beauty Journal</a>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Our Ethos</a>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Store Locator</a>
+</div>
+<div class="md:col-span-2 space-y-4">
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-6">CLIENT CARE</h4>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">SHIPPING &amp; RETURNS</a>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">FAQ</a>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">PRIVACY POLICY</a>
+<a class="block font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">TERMS OF SERVICE</a>
+</div>
+</div>
+<div class="px-margin-desktop max-w-[1440px] mx-auto border-t border-outline-variant/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">© 2024 MK GLAMZ. ALL RIGHTS RESERVED.</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">DESIGNED FOR DISCERNING BEAUTY.</p>
+</div>
+</footer>
+<script>
+        // Simple scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.editorial-reveal').forEach(el => observer.observe(el));
+
+        // Smooth reveal on scroll for sections
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.classList.add('editorial-reveal');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
