@@ -108,10 +108,51 @@
                 'fallback_cb'    => false,
             ) );
         } else {
-            // Fallback Menu
-            echo '<a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold" href="' . esc_url( home_url('/shop') ) . '">SHOP</a>';
+            // Fallback Menu with Mega Menu
+            ?>
+            <div class="group py-2">
+              <a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-secondary-fixed-dim after:rounded-full cursor-pointer" href="<?php echo esc_url( home_url('/shop') ); ?>">SHOP</a>
+              
+              <!-- Mega Menu Dropdown -->
+              <div class="absolute left-0 top-[100%] w-full bg-surface-container-lowest/95 backdrop-blur-md border border-outline-variant/30 p-8 grid grid-cols-12 gap-8 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
+                <!-- Left: Categories -->
+                <div class="col-span-5 flex flex-col gap-6">
+                  <h4 class="font-display text-lg tracking-widest uppercase text-secondary font-bold text-left">Categories</h4>
+                  <div class="flex flex-col gap-4 text-left">
+                    <a href="<?php echo esc_url( home_url('/shop') ); ?>" class="font-display text-3xl text-primary hover:text-secondary-fixed-dim transition-colors">Face Products</a>
+                    <a href="<?php echo esc_url( home_url('/shop') ); ?>" class="font-display text-3xl text-primary hover:text-secondary-fixed-dim transition-colors">Lip Products</a>
+                    <a href="<?php echo esc_url( home_url('/shop') ); ?>" class="font-display text-3xl text-primary hover:text-secondary-fixed-dim transition-colors">Luminous Powders</a>
+                    <a href="<?php echo esc_url( home_url('/shop') ); ?>" class="font-display text-3xl text-primary hover:text-secondary-fixed-dim transition-colors">Prestige Collection</a>
+                  </div>
+                </div>
+                
+                <!-- Right: Recommended Products -->
+                <div class="col-span-7 grid grid-cols-2 gap-6 border-l border-outline-variant/30 pl-8 text-left">
+                  <div class="col-span-2">
+                    <h4 class="font-display text-lg tracking-widest uppercase text-secondary font-bold mb-4">Recommended</h4>
+                  </div>
+                  <!-- Recommended 1 -->
+                  <a href="<?php echo esc_url( home_url('/shop') ); ?>" class="flex gap-4 group/item">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSc4q6a0pFvNa3VTS7shBcgks6PxZOtBOWyCf54qzZX9KAFp8a_GpXdtl_cFVXwIaNCLZH9Qk4Nt-qszqif9BIZJ788t4IX9rfWM71RHLmfuI23kgxdElLUYZ9TPaHmlkPFHISfrAxelnit6MPDvGzWiGYy4yRKdxY0k2UF8Ib1A2Dh3QdG6lssxcaiNf6ToBDDiaUD-kRCbFagbBfTv7HCIYszx4vof51q-qZ4qqzrggxe1zrVkoorl4dt1RPH0xVyFYTmczgj-bn" class="w-20 h-24 object-cover" alt="Recommended Fluid"/>
+                    <div>
+                      <h5 class="font-display text-base text-primary group-hover/item:text-secondary-fixed-dim transition-colors">Velvet Skin Fluid</h5>
+                      <p class="font-body-md text-sm text-on-surface-variant">$62.00</p>
+                    </div>
+                  </a>
+                  <!-- Recommended 2 -->
+                  <a href="<?php echo esc_url( home_url('/shop') ); ?>" class="flex gap-4 group/item">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGYx0R3up-CWY_53ISGIXIeIGS37weK3M_sU_plXRCXTYy0I0QavV5cncffSRK6m-_4e3owjd9EiIp37IApIfDi4A8hJ-awQC4uvxBwIJVWLHYSCUMFyRi3KsbO_Bae9v1I2l7DP3EKeySmXxUPRwMujCesk8MLmmh4kl8Owmu3uXRPEuWfYCh4-p4elebFZ4qCLNDZjfpv3hTUHlCLqvGsS1PJI6cQIbWgKz5adCjngCWT652HzFTRnq2odPTZNup58cdeUijmSrg" class="w-20 h-24 object-cover" alt="Recommended Satin"/>
+                    <div>
+                      <h5 class="font-display text-base text-primary group-hover/item:text-secondary-fixed-dim transition-colors">Satin Petal Lipstick</h5>
+                      <p class="font-body-md text-sm text-on-surface-variant">$38.00</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <?php
             echo '<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors" href="' . esc_url( home_url('/about') ) . '">ABOUT</a>';
-            echo '<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors" href="' . esc_url( home_url('/#journal') ) . '">JOURNAL</a>';
+            echo '<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors" href="' . esc_url( home_url('/blog') ) . '">JOURNAL</a>';
         }
         ?>
       </div>
@@ -157,7 +198,20 @@
                 'fallback_cb'    => false,
             ) );
         } else {
-            echo '<a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold" href="' . esc_url( home_url('/shop') ) . '">SHOP ALL</a>';
+            ?>
+            <div class="flex flex-col gap-4">
+              <button class="flex justify-between items-center font-label-md text-label-md uppercase tracking-widest text-primary font-bold bg-transparent border-0 cursor-pointer text-left w-full" onclick="document.getElementById('mobile-shop-submenu').classList.toggle('hidden')">
+                <span>SHOP</span>
+                <span class="material-symbols-outlined text-sm">expand_more</span>
+              </button>
+              <div id="mobile-shop-submenu" class="hidden pl-4 flex flex-col gap-4">
+                <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="<?php echo esc_url( home_url('/shop') ); ?>">Face Products</a>
+                <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="<?php echo esc_url( home_url('/shop') ); ?>">Lip Products</a>
+                <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="<?php echo esc_url( home_url('/shop') ); ?>">Luminous Powders</a>
+                <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="<?php echo esc_url( home_url('/shop') ); ?>">Prestige Collection</a>
+              </div>
+            </div>
+            <?php
             echo '<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="' . esc_url( home_url('/about') ) . '">OUR STORY</a>';
             echo '<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="' . esc_url( home_url('/hair-services') ) . '">HAIRS</a>';
             echo '<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="' . esc_url( home_url('/account') ) . '">MY ACCOUNT</a>';

@@ -96,6 +96,7 @@ get_header(); ?>
                       <?php else : ?>
                           <img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" alt="Product Placeholder" src="<?php echo esc_url( wc_placeholder_img_src() ); ?>"/>
                       <?php endif; ?>
+                      <div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur text-primary text-xs font-label-md tracking-widest uppercase py-3 text-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 pointer-events-none hover:bg-primary hover:text-on-primary">Quick Shop</div>
                     </div>
                     <div class="text-center">
                       <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">
@@ -119,6 +120,7 @@ get_header(); ?>
           <div class="min-w-[320px] md:min-w-[400px] group cursor-pointer">
             <div class="relative overflow-hidden bg-white mb-6">
               <img class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" alt="Velvet Skin Fluid foundation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSc4q6a0pFvNa3VTS7shBcgks6PxZOtBOWyCf54qzZX9KAFp8a_GpXdtl_cFVXwIaNCLZH9Qk4Nt-qszqif9BIZJ788t4IX9rfWM71RHLmfuI23kgxdElLUYZ9TPaHmlkPFHISfrAxelnit6MPDvGzWiGYy4yRKdxY0k2UF8Ib1A2Dh3QdG6lssxcaiNf6ToBDDiaUD-kRCbFagbBfTv7HCIYszx4vof51q-qZ4qqzrggxe1zrVkoorl4dt1RPH0xVyFYTmczgj-bn"/>
+              <div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur text-primary text-xs font-label-md tracking-widest uppercase py-3 text-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 pointer-events-none hover:bg-primary hover:text-on-primary">Quick Shop</div>
             </div>
             <div class="text-center">
               <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">Face</p>
