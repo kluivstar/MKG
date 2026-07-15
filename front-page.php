@@ -19,8 +19,8 @@ get_header(); ?>
         <h2 class="font-display text-5xl md:text-8xl text-primary mb-8 leading-none">The Art of <br/>Elegance</h2>
         <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">Curating prestige beauty for the discerning individual. Discover a symphony of texture, light, and artistry in our limited release series.</p>
         <div class="flex gap-4">
-          <a href="<?php echo esc_url( home_url('/shop') ); ?>" class="bg-primary text-on-primary px-10 py-5 rounded-none font-label-md text-label-md tracking-widest hover:bg-neutral-800 transition-all duration-500 uppercase text-center">Shop Now</a>
-          <a href="#makeup-booking" class="border border-primary text-primary px-10 py-5 rounded-none font-label-md text-label-md tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-500 uppercase text-center inline-block">BOOK US</a>
+          <a href="<?php echo esc_url( home_url('/shop') ); ?>" class="bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white hover:text-black transition-all duration-300 uppercase tracking-widest text-[11px] md:text-sm font-label-md px-6 py-3 md:px-10 md:py-5 font-bold text-center inline-block">Shop Now</a>
+          <a href="#makeup-booking" class="border border-white/40 text-white hover:border-white hover:bg-white/5 transition-all duration-300 uppercase tracking-widest text-[11px] md:text-sm font-label-md px-6 py-3 md:px-10 md:py-5 font-bold text-center inline-block">BOOK US</a>
         </div>
       </div>
     </div>
