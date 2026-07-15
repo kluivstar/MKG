@@ -33,7 +33,7 @@
           <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">OUR STORY</h4>
           <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
             <li><a href="<?php echo esc_url( home_url('/about') ); ?>" class="hover:text-primary transition-colors">The Brand</a></li>
-            <li><a href="<?php echo esc_url( get_post_type_archive_link('post') ); ?>" class="hover:text-primary transition-colors">Editorial Journal</a></li>
+            <li><a href="<?php echo esc_url( home_url('/blog') ); ?>" class="hover:text-primary transition-colors">Editorial Journal</a></li>
             <li><a href="<?php echo esc_url( home_url('/hair-services') ); ?>" class="hover:text-primary transition-colors">Hairs</a></li>
             <li><a href="<?php echo esc_url( home_url('/careers') ); ?>" class="hover:text-primary transition-colors">Careers</a></li>
           </ul>
