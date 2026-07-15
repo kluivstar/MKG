@@ -8,7 +8,7 @@ get_header(); ?>
 <!-- Main Content -->
 <main>
   <!-- Hero Section -->
-  <section class="relative h-screen w-full flex items-center overflow-hidden">
+  <section class="hero-section relative h-screen w-full flex items-center overflow-hidden">
     <div class="absolute inset-0 z-0">
       <img class="w-full h-full object-cover object-center scale-105 transition-transform duration-[10s] hover:scale-100" alt="MK GLAMZ Hero Makeup Shot" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/hero.jpg"/>
       <div class="absolute inset-0 bg-gradient-to-r from-background/40 to-transparent"></div>
@@ -27,7 +27,7 @@ get_header(); ?>
   </section>
 
   <!-- Featured Collections (Bento Style) -->
-  <section class="py-section-desktop px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+  <section class="featured-collections-section py-section-desktop px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
     <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
       <h3 class="font-display text-4xl md:text-5xl text-primary">Signature Tones</h3>
       <p class="font-body-md text-body-md text-on-surface-variant max-w-sm text-right">Meticulously developed formulas for professional-grade results at home.</p>
@@ -68,7 +68,7 @@ get_header(); ?>
   </section>
 
   <!-- Best Sellers: Dynamic WooCommerce Products -->
-  <section class="bg-surface-container-low py-section-desktop overflow-hidden">
+  <section class="best-sellers-section bg-surface-container-low py-section-desktop overflow-hidden">
     <div class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto mb-12 flex justify-between items-baseline">
       <h3 class="font-display text-3xl md:text-5xl text-primary">Best Sellers</h3>
       <a class="font-label-md text-label-md text-primary hover:opacity-50 transition-opacity uppercase tracking-widest border-b border-primary pb-1" href="<?php echo esc_url( home_url('/shop') ); ?>">View All Arrivals</a>
@@ -133,7 +133,7 @@ get_header(); ?>
   </section>
 
   <!-- Professional Artistry (Emphasized Section) -->
-  <section id="makeup-booking" class="py-section-desktop px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto my-16 bg-surface-container rounded-none p-8 md:p-16 shadow-md grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-section-desktop items-center">
+  <section id="makeup-booking" class="artistry-booking-section py-section-desktop px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto my-16 bg-surface-container rounded-none p-8 md:p-16 shadow-md grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-section-desktop items-center">
     <div class="order-2 md:order-1">
       <div class="relative">
         <img class="w-full aspect-[4/5] object-cover rounded-none" alt="Makeup artistry service" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHwIKeoqy6E04wAFnmlhpKkzVawU_haqFhl7KrHG0lKiwNLY0UZjl41JoHmHG5uyh3vS07c0hxTelNlEygtJ49WQ9q5orBj9VcXl4-XYvGhYkDHSntxolU6vltVS83LRa96_8po-7d5z7ZIRGwllU1RuRjOg1xJmVH3HqQZeWlRkCqMjGrN1u1prCVVU358-YbTnBTHXoh84jQ26Nm7jE34dObJw30MhqMQ6hgjpo7e1phVNrNV7l-HdbaivNXEZC69530gCe_yIgn"/>
@@ -163,7 +163,7 @@ get_header(); ?>
   </section>
 
   <!-- The Hair Collection Preview -->
-  <section class="relative h-[600px] w-full flex items-center overflow-hidden bg-black text-white">
+  <section class="hair-collection-section relative h-[600px] w-full flex items-center overflow-hidden bg-black text-white">
     <div class="absolute inset-0 z-0">
       <img class="w-full h-full object-cover opacity-60" alt="Flowing hair model" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK5sZs89OeYLqHWcWmKtpcM7wIbC7MGXFdmKlnTUxBDsVVZu2kjltPd70ElBrLipUitVF_LQV67iAwH3w00xmQRDwUjZbS3oB3PRKMa2-crxem_47UYa6l3bkQtsIhSARBGed6lX0eR4LWyw-OLs6JhuFSdKCjoD1iB3xqDl7ifYYUXZD7DZ2w7O3Js359UOoj5E_7aGHzVJkI7xd4LF5nkw3Nqp4YWRNlwYaBiO8YG5eoJFQPeTNpYTdeVGfO-p2qgu5Zk3u3tPiV"/>
       <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
@@ -177,7 +177,7 @@ get_header(); ?>
   </section>
 
   <!-- Beauty Journal Preview: Dynamic standard WordPress posts -->
-  <section id="journal" class="py-section-desktop px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+  <section id="journal" class="beauty-journal-section py-section-desktop px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
     <div class="flex flex-col md:flex-row justify-between items-baseline mb-16">
       <h3 class="font-display text-3xl md:text-5xl text-primary">The Beauty Journal</h3>
       <a class="font-label-md text-label-md text-primary tracking-widest uppercase border-b border-primary pb-1 mt-4 md:mt-0" href="<?php echo esc_url( get_post_type_archive_link('post') ); ?>">Read More Editorial</a>
@@ -228,7 +228,7 @@ get_header(); ?>
   </section>
 
   <!-- Newsletter Signup -->
-  <section class="py-section-desktop bg-primary text-on-primary">
+  <section class="newsletter-signup-section py-section-desktop bg-primary text-on-primary">
     <div class="px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto text-center">
       <h3 class="font-display text-3xl md:text-5xl mb-6">The Inner Circle</h3>
       <p class="font-body-lg text-body-lg text-neutral-400 mb-10">Sign up to receive early access to new collections, exclusive artistry tutorials, and invitations to private boutique events.</p>
