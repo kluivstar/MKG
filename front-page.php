@@ -219,7 +219,7 @@ get_header(); ?>
             <span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant mb-4 block">Artistry • 12 MIN READ</span>
             <h4 class="font-display text-2xl text-primary mb-4 group-hover:text-secondary-fixed-dim transition-colors">The 7 AM Ritual: Prepping the Canvas</h4>
             <p class="font-body-md text-body-md text-on-surface-variant mb-6">Discover the morning skincare and priming secrets used by our lead artists to ensure makeup longevity and that signature MK glow.</p>
-            <a href="<?php echo esc_url( home_url('/about') ); ?>" class="font-label-md text-label-md tracking-widest uppercase text-primary border-b border-primary pb-1 group-hover:pb-2 transition-all inline-block">Read Article</a>
+            <a href="<?php echo esc_url( get_post_type_archive_link('post') ); ?>" class="font-label-md text-label-md tracking-widest uppercase text-primary border-b border-primary pb-1 group-hover:pb-2 transition-all inline-block">Read Article</a>
           </article>
           <?php
       }

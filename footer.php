@@ -13,9 +13,9 @@
             <?php bloginfo( 'description' ); ?>
           </p>
           <div class="flex gap-4">
-            <a href="#" class="hover:text-secondary-fixed-dim transition-colors" aria-label="Instagram"><span class="material-symbols-outlined">camera</span></a>
-            <a href="#" class="hover:text-secondary-fixed-dim transition-colors" aria-label="Pinterest"><span class="material-symbols-outlined">dynamic_feed</span></a>
-            <a href="#" class="hover:text-secondary-fixed-dim transition-colors" aria-label="TikTok"><span class="material-symbols-outlined">music_note</span></a>
+            <a href="https://instagram.com/mkglamz" target="_blank" class="hover:text-secondary-fixed-dim transition-colors" aria-label="Instagram"><span class="material-symbols-outlined">camera</span></a>
+            <a href="https://pinterest.com/mkglamz" target="_blank" class="hover:text-secondary-fixed-dim transition-colors" aria-label="Pinterest"><span class="material-symbols-outlined">dynamic_feed</span></a>
+            <a href="https://tiktok.com/@mkglamz" target="_blank" class="hover:text-secondary-fixed-dim transition-colors" aria-label="TikTok"><span class="material-symbols-outlined">music_note</span></a>
           </div>
         </div>
         
@@ -33,9 +33,9 @@
           <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">OUR STORY</h4>
           <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
             <li><a href="<?php echo esc_url( home_url('/about') ); ?>" class="hover:text-primary transition-colors">The Brand</a></li>
-            <li><a href="<?php echo esc_url( home_url('/#journal') ); ?>" class="hover:text-primary transition-colors">Editorial Journal</a></li>
+            <li><a href="<?php echo esc_url( get_post_type_archive_link('post') ); ?>" class="hover:text-primary transition-colors">Editorial Journal</a></li>
             <li><a href="<?php echo esc_url( home_url('/hair-services') ); ?>" class="hover:text-primary transition-colors">Hairs</a></li>
-            <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
+            <li><a href="<?php echo esc_url( home_url('/careers') ); ?>" class="hover:text-primary transition-colors">Careers</a></li>
           </ul>
         </div>
         
@@ -46,9 +46,9 @@
           <?php else : ?>
               <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">SUPPORT</h4>
               <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
-                <li><a href="#" class="hover:text-primary transition-colors">Shipping & Returns</a></li>
-                <li><a href="#" class="hover:text-primary transition-colors">FAQ</a></li>
-                <li><a href="#" class="hover:text-primary transition-colors">Contact Us</a></li>
+                <li><a href="<?php echo esc_url( home_url('/shipping-returns') ); ?>" class="hover:text-primary transition-colors">Shipping & Returns</a></li>
+                <li><a href="<?php echo esc_url( home_url('/faq') ); ?>" class="hover:text-primary transition-colors">FAQ</a></li>
+                <li><a href="<?php echo esc_url( home_url('/contact') ); ?>" class="hover:text-primary transition-colors">Contact Us</a></li>
                 <li><a href="<?php echo esc_url( home_url('/privacy-policy') ); ?>" class="hover:text-primary transition-colors">Privacy Policy</a></li>
               </ul>
           <?php endif; ?>
@@ -58,7 +58,7 @@
       <div class="border-t border-outline-variant/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 font-label-sm text-label-sm text-on-surface-variant/60 uppercase tracking-widest">
         <p>&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>. All rights reserved.</p>
         <div class="flex gap-6">
-          <a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
+          <a href="<?php echo esc_url( home_url('/terms-of-service') ); ?>" class="hover:text-primary transition-colors">Terms of Service</a>
           <a href="<?php echo esc_url( home_url('/privacy-policy') ); ?>" class="hover:text-primary transition-colors">Privacy</a>
         </div>
       </div>
