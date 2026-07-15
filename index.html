@@ -9,6 +9,7 @@
   <link href="assets/css/variables.css" rel="stylesheet" />
   <link href="assets/css/main.css" rel="stylesheet" />
   <link href="assets/css/components.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   
   <!-- Tailwind CSS Play CDN & Configuration -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -105,18 +106,18 @@
       <!-- Desktop Left Menu -->
       <div class="flex-1 hidden md:flex gap-8 items-center">
         <div class="group py-2">
-          <a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-secondary-fixed-dim after:rounded-full cursor-pointer" href="shop.html">SHOP</a>
+          <a class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold cursor-pointer" href="shop.html">SHOP <i class="fa-solid fa-chevron-down text-[10px] ml-1.5 align-middle"></i></a>
           
           <!-- Mega Menu Dropdown -->
-          <div class="absolute left-0 top-[100%] w-full bg-surface-container-lowest/95 backdrop-blur-md border border-outline-variant/30 p-8 grid grid-cols-12 gap-8 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
+          <div class="absolute left-0 top-[100%] w-full bg-white border border-outline-variant/30 p-8 grid grid-cols-12 gap-8 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
             <!-- Left: Categories -->
             <div class="col-span-5 flex flex-col gap-6">
               <h4 class="font-display text-lg tracking-widest uppercase text-secondary font-bold">Categories</h4>
               <div class="flex flex-col gap-4">
-                <a href="shop.html" class="font-display text-3xl text-primary hover:text-secondary-fixed-dim transition-colors">Face Products</a>
-                <a href="shop.html" class="font-display text-3xl text-primary hover:text-secondary-fixed-dim transition-colors">Lip Products</a>
-                <a href="shop.html" class="font-display text-3xl text-primary hover:text-secondary-fixed-dim transition-colors">Luminous Powders</a>
-                <a href="shop.html" class="font-display text-3xl text-primary hover:text-secondary-fixed-dim transition-colors">Prestige Collection</a>
+                <a href="shop.html" class="font-display text-3xl text-primary font-bold hover:text-secondary-fixed-dim transition-colors">Face Products</a>
+                <a href="shop.html" class="font-display text-3xl text-primary font-bold hover:text-secondary-fixed-dim transition-colors">Lip Products</a>
+                <a href="shop.html" class="font-display text-3xl text-primary font-bold hover:text-secondary-fixed-dim transition-colors">Luminous Powders</a>
+                <a href="shop.html" class="font-display text-3xl text-primary font-bold hover:text-secondary-fixed-dim transition-colors">Prestige Collection</a>
               </div>
             </div>
             
@@ -156,14 +157,14 @@
           <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70 hover:text-primary transition-colors duration-300" href="account.html">ACCOUNT</a>
         </div>
         <button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 bg-transparent border-0">
-          <span class="material-symbols-outlined">search</span>
+          <i class="fa-solid fa-magnifying-glass text-lg"></i>
         </button>
         <button class="cursor-pointer transition-all duration-300 ease-in-out hover:opacity-70 relative bg-transparent border-0" data-cart-trigger>
-          <span class="material-symbols-outlined">shopping_bag</span>
+          <i class="fa-solid fa-bag-shopping text-lg"></i>
           <span class="absolute -top-1 -right-1 w-4 h-4 bg-secondary-fixed-dim text-white text-[9px] font-bold flex items-center justify-center rounded-full hidden" data-cart-count>0</span>
         </button>
         <button class="md:hidden bg-transparent border-0" data-menu-trigger>
-          <span class="material-symbols-outlined">menu</span>
+          <i class="fa-solid fa-bars text-lg"></i>
         </button>
       </div>
     </div>
@@ -171,7 +172,7 @@
       <div class="flex flex-col gap-4">
         <button class="flex justify-between items-center font-label-md text-label-md uppercase tracking-widest text-primary font-bold bg-transparent border-0 cursor-pointer text-left w-full" onclick="document.getElementById('mobile-shop-submenu').classList.toggle('hidden')">
           <span>SHOP</span>
-          <span class="material-symbols-outlined text-sm">expand_more</span>
+          <i class="fa-solid fa-chevron-down text-xs"></i>
         </button>
         <div id="mobile-shop-submenu" class="hidden pl-4 flex flex-col gap-4">
           <a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant/70" href="shop.html">Face Products</a>
@@ -192,7 +193,7 @@
   <!-- Main Content -->
   <main>
     <!-- Hero Section -->
-    <section class="hero-section relative h-screen w-full flex items-center -m overflow-hidden">
+    <section class="hero-section relative h-screen w-full flex items-center -mt-[10px] md:mt-0 overflow-hidden">
       <div class="absolute inset-0 z-0">
         <img class="w-full h-full object-cover object-center scale-105 transition-transform duration-[10s] hover:scale-100" alt="MK GLAMZ Hero Makeup Shot" src="assets/images/hero.jpg"/>
         <div class="absolute inset-0 bg-gradient-to-r from-background/40 to-transparent"></div>
