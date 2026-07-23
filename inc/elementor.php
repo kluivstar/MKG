@@ -8,11 +8,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // 1. Declare Elementor Theme Builder Locations
-function mk_glamz_register_elementor_locations( $elementor_theme_manager ) {
-    $elementor_theme_manager->register_location( 'header' );
-    $elementor_theme_manager->register_location( 'footer' );
+if ( ! function_exists( 'mk_glamz_register_elementor_locations' ) ) {
+    function mk_glamz_register_elementor_locations( $elementor_theme_manager ) {
+        $elementor_theme_manager->register_location( 'header' );
+        $elementor_theme_manager->register_location( 'footer' );
+    }
+    add_action( 'elementor/theme/register_locations', 'mk_glamz_register_elementor_locations' );
 }
-add_action( 'elementor/theme/register_locations', 'mk_glamz_register_elementor_locations' );
 
 // 2. Elementor Canvas & Page Support
 add_action( 'after_setup_theme', function() {
