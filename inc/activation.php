@@ -38,11 +38,34 @@ function mk_glamz_admin_notices() {
 }
 add_action( 'admin_notices', 'mk_glamz_admin_notices' );
 
+// Helper to generate Elementor widget & container nodes
+function mk_glamz_el_container( $settings = array(), $elements = array() ) {
+    return array(
+        'id'       => substr( md5( uniqid( rand(), true ) ), 0, 7 ),
+        'elType'   => 'container',
+        'settings' => array_merge( array(
+            'content_width'  => 'full',
+            'container_type' => 'flex',
+            'flex_direction' => 'column',
+        ), $settings ),
+        'elements' => $elements,
+    );
+}
+
+function mk_glamz_el_widget( $widget_type, $settings = array() ) {
+    return array(
+        'id'         => substr( md5( uniqid( rand(), true ) ), 0, 7 ),
+        'elType'     => 'widget',
+        'widgetType' => $widget_type,
+        'settings'   => $settings,
+        'elements'   => array(),
+    );
+}
+
 // 4. Installer Action Routine
 function mk_glamz_run_setup_routine() {
-    // Idempotent Page Helper
     if ( ! function_exists( 'mk_glamz_create_page' ) ) {
-        function mk_glamz_create_page( $title, $slug, $template = '', $content = '' ) {
+        function mk_glamz_create_page( $title, $slug, $template = '', $content = '', $elementor_data = null ) {
             $existing = get_posts( array(
                 'name'           => $slug,
                 'post_type'      => 'page',
@@ -64,13 +87,86 @@ function mk_glamz_run_setup_routine() {
 
             if ( $page_id && ! is_wp_error( $page_id ) ) {
                 update_post_meta( $page_id, '_wp_page_template', ! empty( $template ) ? $template : 'default' );
+                if ( ! empty( $elementor_data ) ) {
+                    update_post_meta( $page_id, '_elementor_data', wp_slash( json_encode( $elementor_data ) ) );
+                    update_post_meta( $page_id, '_elementor_edit_mode', 'builder' );
+                    update_post_meta( $page_id, '_elementor_template_type', 'wp-page' );
+                    update_post_meta( $page_id, '_elementor_version', '3.4.0' );
+                }
             }
             return $page_id;
         }
     }
 
-    // Create pages without forcing front-page.php as page template
-    $home_id     = mk_glamz_create_page( 'Home', 'home', '', 'Prestige beauty and curated luxury for the modern lifestyle.' );
+    // Build Home Page Elementor Data
+    $home_elementor_data = array(
+        mk_glamz_el_container( array(
+            'min_height'          => array( 'unit' => 'px', 'size' => 750 ),
+            'flex_justify_content'=> 'center',
+            'background_background'=> 'classic',
+            'background_image'    => array( 'url' => get_template_directory_uri() . '/assets/images/hero.jpg' ),
+            'background_position' => 'center center',
+            'background_size'     => 'cover',
+            'padding'             => array( 'unit' => 'px', 'top' => '120', 'right' => '60', 'bottom' => '120', 'left' => '60', 'isLinked' => false ),
+        ), array(
+            mk_glamz_el_widget( 'heading', array(
+                'title'       => 'THE INAUGURAL COLLECTION',
+                'header_size' => 'h5',
+                'title_color' => '#BD9A5F',
+                'typography_typography'   => 'custom',
+                'typography_font_family' => 'Outfit',
+                'typography_font_size'   => array( 'unit' => 'px', 'size' => 14 ),
+            ) ),
+            mk_glamz_el_widget( 'heading', array(
+                'title'       => 'The Art of Elegance',
+                'header_size' => 'h1',
+                'title_color' => '#FFFFFF',
+                'typography_typography'   => 'custom',
+                'typography_font_family' => 'Syne',
+                'typography_font_size'   => array( 'unit' => 'px', 'size' => 72 ),
+                'typography_font_weight' => '700',
+            ) ),
+            mk_glamz_el_widget( 'text-editor', array(
+                'editor' => '<p style="color:#E2E8F0; font-family:Outfit; font-size:18px; max-width:560px;">Curating prestige beauty for the discerning individual. Discover a symphony of texture, light, and artistry in our limited release series.</p>',
+            ) ),
+            mk_glamz_el_container( array(
+                'flex_direction' => 'row',
+                'gap'            => array( 'unit' => 'px', 'size' => 20 ),
+            ), array(
+                mk_glamz_el_widget( 'button', array(
+                    'text'             => 'SHOP NOW',
+                    'background_color' => '#BD9A5F',
+                    'text_color'       => '#0B1528',
+                ) ),
+                mk_glamz_el_widget( 'button', array(
+                    'text'             => 'BOOK US',
+                    'background_color' => 'transparent',
+                    'text_color'       => '#FFFFFF',
+                    'border_border'    => 'solid',
+                    'border_color'     => '#FFFFFF',
+                ) ),
+            ) ),
+        ) ),
+        mk_glamz_el_container( array(
+            'background_background' => 'classic',
+            'background_color'      => '#FFFFFF',
+            'padding'               => array( 'unit' => 'px', 'top' => '100', 'right' => '60', 'bottom' => '100', 'left' => '60', 'isLinked' => false ),
+        ), array(
+            mk_glamz_el_widget( 'heading', array(
+                'title'       => 'Signature Tones',
+                'title_color' => '#0B1528',
+                'typography_typography'   => 'custom',
+                'typography_font_family' => 'Syne',
+                'typography_font_size'   => array( 'unit' => 'px', 'size' => 48 ),
+            ) ),
+            mk_glamz_el_widget( 'text-editor', array(
+                'editor' => '<p style="color:#64748B; font-family:Outfit; font-size:16px;">Meticulously developed formulas for professional-grade results at home.</p>',
+            ) ),
+        ) ),
+    );
+
+    // Create pages & inject Elementor metadata directly into postmeta
+    $home_id     = mk_glamz_create_page( 'Home', 'home', '', 'Prestige beauty and curated luxury for the modern lifestyle.', $home_elementor_data );
     $about_id    = mk_glamz_create_page( 'About MK Glamz', 'about-mk-glamz', 'template-about.php', 'Our mission is to redefine luxury through intentionality.' );
     $shop_id     = mk_glamz_create_page( 'Shop', 'shop', '', 'Prestige cosmetic lines. Discover a symphony of texture and light.' );
     $services_id = mk_glamz_create_page( 'Makeup Services', 'makeup-services', 'template-services.php', 'Couture artistry for editorial campaigns and event styling.' );
@@ -80,7 +176,6 @@ function mk_glamz_run_setup_routine() {
     $privacy_id  = mk_glamz_create_page( 'Privacy Policy', 'privacy-policy', 'template-privacy.php', 'Your privacy is of utmost importance.' );
     $terms_id    = mk_glamz_create_page( 'Terms & Conditions', 'terms-conditions', 'template-terms.php', 'Please read our terms of use.' );
 
-    // Configure Static Front Page & Posts Page
     if ( $home_id ) {
         update_option( 'show_on_front', 'page' );
         update_option( 'page_on_front', $home_id );
@@ -189,7 +284,7 @@ function mk_glamz_setup_page_callback() {
 
         if ( $_POST['mk_glamz_setup_action'] === 'run' ) {
             mk_glamz_run_setup_routine();
-            echo '<div class="notice notice-success is-dismissible"><p>' . __( 'MK Glamz Setup completed! Pages, menus, and settings are configured.', 'mk-glamz' ) . '</p></div>';
+            echo '<div class="notice notice-success is-dismissible"><p>' . __( 'MK Glamz Setup completed! Pages, menus, and Elementor starter layouts are configured.', 'mk-glamz' ) . '</p></div>';
             $setup_status = 'completed';
         } elseif ( $_POST['mk_glamz_setup_action'] === 'reset' ) {
             mk_glamz_reset_starter_content();
@@ -201,7 +296,7 @@ function mk_glamz_setup_page_callback() {
     ?>
     <div class="wrap">
         <h1><?php _e( 'MK Glamz Setup Dashboard', 'mk-glamz' ); ?></h1>
-        <p><?php _e( 'Configure core pages, menus, reading settings, and starter assets for MK Glamz.', 'mk-glamz' ); ?></p>
+        <p><?php _e( 'Configure core pages, menus, reading settings, and Elementor starter assets for MK Glamz.', 'mk-glamz' ); ?></p>
         <hr/>
 
         <div class="card" style="max-width:600px; margin-top:20px; padding:20px;">
