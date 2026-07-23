@@ -98,17 +98,28 @@ function mk_glamz_run_setup_routine() {
         }
     }
 
-    // A. Build Complete Home Page Elementor Data
+    $img_hero   = 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1920&q=80';
+    $img_face   = 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1200&q=80';
+    $img_lips   = 'https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80';
+    $img_eyes   = 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80';
+    $img_prod1  = 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80';
+    $img_prod2  = 'https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=600&q=80';
+    $img_prod3  = 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80';
+    $img_prod4  = 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=600&q=80';
+    $img_artist = 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1000&q=80';
+    $img_hair   = 'https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=1920&q=80';
+
+    // A. Complete Home Page Elementor Data (7 Full Sections)
     $home_elementor_data = array(
-        // Hero Section
+        // Section 1: Hero
         mk_glamz_el_container( array(
-            'min_height'          => array( 'unit' => 'px', 'size' => 750 ),
-            'flex_justify_content'=> 'center',
+            'min_height'           => array( 'unit' => 'px', 'size' => 750 ),
+            'flex_justify_content' => 'center',
             'background_background'=> 'classic',
-            'background_image'    => array( 'url' => get_template_directory_uri() . '/assets/images/hero.jpg' ),
-            'background_position' => 'center center',
-            'background_size'     => 'cover',
-            'padding'             => array( 'unit' => 'px', 'top' => '120', 'right' => '60', 'bottom' => '120', 'left' => '60', 'isLinked' => false ),
+            'background_image'     => array( 'url' => $img_hero ),
+            'background_position'  => 'center center',
+            'background_size'      => 'cover',
+            'padding'              => array( 'unit' => 'px', 'top' => '120', 'right' => '60', 'bottom' => '120', 'left' => '60', 'isLinked' => false ),
         ), array(
             mk_glamz_el_widget( 'heading', array(
                 'title'       => 'THE INAUGURAL COLLECTION',
@@ -148,7 +159,8 @@ function mk_glamz_run_setup_routine() {
                 ) ),
             ) ),
         ) ),
-        // Signature Tones Bento Section
+
+        // Section 2: Signature Tones Bento Grid
         mk_glamz_el_container( array(
             'background_background' => 'classic',
             'background_color'      => '#FFFFFF',
@@ -174,7 +186,7 @@ function mk_glamz_run_setup_routine() {
                     'min_height'          => array( 'unit' => 'px', 'size' => 500 ),
                     'flex_justify_content'=> 'flex-end',
                     'background_background'=> 'classic',
-                    'background_image'    => array( 'url' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuBuxPXCIAJDif5PwIIksEX7ZuyzYC6F9T7vtPOuuj6-UVpzXQC91uiYpajHdbU9iAxCaawRTcnpaDTCSwS6TcwP7qYF5lorcT-FJkXniErOiQQYgrC23LsC5hENgAoSUIUTz-qAPaRAvZzcPP84OwmIfl2cm0SWmzrjpAU6iXzKF_SNqVKeWxRU9YNcs0-ZUW_Fqnq8c3EtyEq6PnCbGJGrWGpjr0u4RmEKqpSG546ZSGtGbbiwlRe_D0_kVRIh3aVMsP2IthH11xdI' ),
+                    'background_image'    => array( 'url' => $img_face ),
                     'background_position' => 'center center',
                     'background_size'     => 'cover',
                     'padding'             => array( 'unit' => 'px', 'top' => '40', 'right' => '40', 'bottom' => '40', 'left' => '40', 'isLinked' => true ),
@@ -191,7 +203,7 @@ function mk_glamz_run_setup_routine() {
                         'min_height'          => array( 'unit' => 'px', 'size' => 235 ),
                         'flex_justify_content'=> 'flex-end',
                         'background_background'=> 'classic',
-                        'background_image'    => array( 'url' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuAOsX6nxh7IgKj7r3enVghuiZDbee2W97G3K6Ma9U37eHXchXDzLTj_NEUJlBTHDZiXfm9iOeXZz67VAcYN-8whfeoLs8fevrqG7fZ-76FDQOpBseYqdxBVUiwiM1wbpmk6Lv5hAUJGf5ZY5yEkZDdPNbeqToroAyJvEFpDGMC9b9r9phygupAkXg4RnMebUJVqOG1vvU7Oaw9lrz7matdlhPOux7OLmRduIRLn0h8IyQvRhhgSwmt34N0rZEXUrLlEDlxRDL53ZS4r' ),
+                        'background_image'    => array( 'url' => $img_lips ),
                         'background_position' => 'center center',
                         'background_size'     => 'cover',
                         'padding'             => array( 'unit' => 'px', 'top' => '24', 'right' => '24', 'bottom' => '24', 'left' => '24', 'isLinked' => true ),
@@ -202,7 +214,7 @@ function mk_glamz_run_setup_routine() {
                         'min_height'          => array( 'unit' => 'px', 'size' => 235 ),
                         'flex_justify_content'=> 'flex-end',
                         'background_background'=> 'classic',
-                        'background_image'    => array( 'url' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuC3RUMFSf52Lq895LPVQlSYabYadYWj7Hp9NAtllIXk0ctGN82QU8IEAgjYnB9Op6Aey6KplWPxJq-avmkPrRcu-KcroIWfGrWJN1RdQQ7_zZQyf3xIcqcyCsL8ZGHCYru16I3rNaSmpuTS1R_uAOdsM_UL90iaZqcNkZr3W9slgKX8d2kpFcDPgEJkL6n9_uLTLtStUUcEzhuFZNw-CwON0EjjDfiYz8nUCljwRu0hV8opYysF1ygnPCVVjDdLvEzu5_bpQribHCZ2' ),
+                        'background_image'    => array( 'url' => $img_eyes ),
                         'background_position' => 'center center',
                         'background_size'     => 'cover',
                         'padding'             => array( 'unit' => 'px', 'top' => '24', 'right' => '24', 'bottom' => '24', 'left' => '24', 'isLinked' => true ),
@@ -212,7 +224,8 @@ function mk_glamz_run_setup_routine() {
                 ) ),
             ) ),
         ) ),
-        // Best Sellers Grid Section
+
+        // Section 3: Best Sellers Grid Section
         mk_glamz_el_container( array(
             'background_background' => 'classic',
             'background_color'      => '#F8FAFC',
@@ -225,30 +238,106 @@ function mk_glamz_run_setup_routine() {
                 'margin'         => array( 'unit' => 'px', 'top' => '40', 'right' => '0', 'bottom' => '0', 'left' => '0', 'isLinked' => false ),
             ), array(
                 mk_glamz_el_container( array( 'width' => array( 'unit' => '%', 'size' => 25 ), 'background_background' => 'classic', 'background_color' => '#FFFFFF', 'padding' => array( 'unit' => 'px', 'top' => '16', 'right' => '16', 'bottom' => '16', 'left' => '16', 'isLinked' => true ) ), array(
-                    mk_glamz_el_widget( 'image', array( 'image' => array( 'url' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuBSc4q6a0pFvNa3VTS7shBcgks6PxZOtBOWyCf54qzZX9KAFp8a_GpXdtl_cFVXwIaNCLZH9Qk4Nt-qszqif9BIZJ788t4IX9rfWM71RHLmfuI23kgxdElLUYZ9TPaHmlkPFHISfrAxelnit6MPDvGzWiGYy4yRKdxY0k2UF8Ib1A2Dh3QdG6lssxcaiNf6ToBDDiaUD-kRCbFagbBfTv7HCIYszx4vof51q-qZ4qqzrggxe1zrVkoorl4dt1RPH0xVyFYTmczgj-bn' ) ) ),
+                    mk_glamz_el_widget( 'image', array( 'image' => array( 'url' => $img_prod1 ) ) ),
                     mk_glamz_el_widget( 'heading', array( 'title' => 'Velvet Skin Fluid', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 20 ) ) ),
                     mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#BD9A5F; font-weight:bold; font-family:Outfit;">$62.00</p>' ) ),
                     mk_glamz_el_widget( 'button', array( 'text' => 'QUICK SHOP', 'background_color' => '#0B1528', 'text_color' => '#FFFFFF' ) ),
                 ) ),
                 mk_glamz_el_container( array( 'width' => array( 'unit' => '%', 'size' => 25 ), 'background_background' => 'classic', 'background_color' => '#FFFFFF', 'padding' => array( 'unit' => 'px', 'top' => '16', 'right' => '16', 'bottom' => '16', 'left' => '16', 'isLinked' => true ) ), array(
-                    mk_glamz_el_widget( 'image', array( 'image' => array( 'url' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuBGYx0R3up-CWY_53ISGIXIeIGS37weK3M_sU_plXRCXTYy0I0QavV5cncffSRK6m-_4e3owjd9EiIp37IApIfDi4A8hJ-awQC4uvxBwIJVWLHYSCUMFyRi3KsbO_Bae9v1I2l7DP3EKeySmXxUPRwMujCesk8MLmmh4kl8Owmu3uXRPEuWfYCh4-p4elebFZ4qCLNDZjfpv3hTUHlCLqvGsS1PJI6cQIbWgKz5adCjngCWT652HzFTRnq2odPTZNup58cdeUijmSrg' ) ) ),
+                    mk_glamz_el_widget( 'image', array( 'image' => array( 'url' => $img_prod2 ) ) ),
                     mk_glamz_el_widget( 'heading', array( 'title' => 'Satin Petal Lipstick', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 20 ) ) ),
                     mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#BD9A5F; font-weight:bold; font-family:Outfit;">$38.00</p>' ) ),
                     mk_glamz_el_widget( 'button', array( 'text' => 'QUICK SHOP', 'background_color' => '#0B1528', 'text_color' => '#FFFFFF' ) ),
                 ) ),
                 mk_glamz_el_container( array( 'width' => array( 'unit' => '%', 'size' => 25 ), 'background_background' => 'classic', 'background_color' => '#FFFFFF', 'padding' => array( 'unit' => 'px', 'top' => '16', 'right' => '16', 'bottom' => '16', 'left' => '16', 'isLinked' => true ) ), array(
-                    mk_glamz_el_widget( 'image', array( 'image' => array( 'url' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuDLxryS5HtBK7niFTj4LMTsjA7Qe083eI_ukCyepAsg-RHOrT9iBGZd2quh9cC-YfzGKexIEJKfK04ayOmzc7L5dZ71BvMYjpszw53s593V9v8i6X0x3hnAkY-aur4S6y62okLx-EciJIVZwsi9WjOA4rLCaA9XL203_1KfUbOLeMBYrJM9hos9MTaEcRsXSUEd311rekDCCrRt-cDUKlMTK0novECwc7t38Og52vTZQsg5guVMCtN0_VxFQ_tvUvDNnz5jnotl8fqh' ) ) ),
+                    mk_glamz_el_widget( 'image', array( 'image' => array( 'url' => $img_prod3 ) ) ),
                     mk_glamz_el_widget( 'heading', array( 'title' => 'Luminous Glow Powder', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 20 ) ) ),
                     mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#BD9A5F; font-weight:bold; font-family:Outfit;">$54.00</p>' ) ),
                     mk_glamz_el_widget( 'button', array( 'text' => 'QUICK SHOP', 'background_color' => '#0B1528', 'text_color' => '#FFFFFF' ) ),
                 ) ),
                 mk_glamz_el_container( array( 'width' => array( 'unit' => '%', 'size' => 25 ), 'background_background' => 'classic', 'background_color' => '#FFFFFF', 'padding' => array( 'unit' => 'px', 'top' => '16', 'right' => '16', 'bottom' => '16', 'left' => '16', 'isLinked' => true ) ), array(
-                    mk_glamz_el_widget( 'image', array( 'image' => array( 'url' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuAw4WS-IKveooabN5YOrTqs6yV0UvsuQws5AEdusl9gmveHrUTHXpyo1sXGcnXjvq-cXRHwCezXvEYDZqXb7iSbKiXrZ5arNblwoBltpm_iG3reDd1Zxon3PpYWGPo5-nKVENaXytt3l7Pxmg7b7nD64CjDpQ6eqPOLNrLnAZxiRihnPa4Tw1qyVs5OOx9SBL5mGm6LQvv-Ix7EkbFDcRWaRZL-SkI6Tz1UHUjm9c452qRBxxuylYhPRvPnoU5wPH7sRG-Ol3SlNnfW' ) ) ),
+                    mk_glamz_el_widget( 'image', array( 'image' => array( 'url' => $img_prod4 ) ) ),
                     mk_glamz_el_widget( 'heading', array( 'title' => 'Obsidian Eye Palette', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 20 ) ) ),
                     mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#BD9A5F; font-weight:bold; font-family:Outfit;">$75.00</p>' ) ),
                     mk_glamz_el_widget( 'button', array( 'text' => 'QUICK SHOP', 'background_color' => '#0B1528', 'text_color' => '#FFFFFF' ) ),
                 ) ),
             ) ),
+        ) ),
+
+        // Section 4: Master Artistry Booking
+        mk_glamz_el_container( array(
+            'background_background' => 'classic',
+            'background_color'      => '#FFFFFF',
+            'padding'               => array( 'unit' => 'px', 'top' => '100', 'right' => '60', 'bottom' => '100', 'left' => '60', 'isLinked' => false ),
+        ), array(
+            mk_glamz_el_container( array(
+                'flex_direction' => 'row',
+                'gap'            => array( 'unit' => 'px', 'size' => 60 ),
+            ), array(
+                mk_glamz_el_container( array( 'width' => array( 'unit' => '%', 'size' => 50 ) ), array(
+                    mk_glamz_el_widget( 'image', array( 'image' => array( 'url' => $img_artist ) ) ),
+                ) ),
+                mk_glamz_el_container( array( 'width' => array( 'unit' => '%', 'size' => 50 ) ), array(
+                    mk_glamz_el_widget( 'heading', array( 'title' => 'ARTISTRY & CONSULTATION', 'title_color' => '#BD9A5F', 'typography_font_family' => 'Outfit' ) ),
+                    mk_glamz_el_widget( 'heading', array( 'title' => 'Mastering Your Unique Canvas', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 44 ) ) ),
+                    mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#475569; font-family:Outfit; font-size:16px; line-height:1.8;">Our master artists provide bespoke beauty consultations and full-service makeup applications for your most significant moments. From bridal elegance to editorial avant-garde, we bring prestige artistry to life.</p>' ) ),
+                    mk_glamz_el_widget( 'button', array( 'text' => 'BOOK A SESSION', 'background_color' => '#0B1528', 'text_color' => '#FFFFFF' ) ),
+                ) ),
+            ) ),
+        ) ),
+
+        // Section 5: Hair Collection Preview
+        mk_glamz_el_container( array(
+            'min_height'           => array( 'unit' => 'px', 'size' => 500 ),
+            'flex_justify_content' => 'center',
+            'background_background'=> 'classic',
+            'background_image'     => array( 'url' => $img_hair ),
+            'background_position'  => 'center center',
+            'background_size'      => 'cover',
+            'padding'              => array( 'unit' => 'px', 'top' => '100', 'right' => '60', 'bottom' => '100', 'left' => '60', 'isLinked' => false ),
+        ), array(
+            mk_glamz_el_widget( 'button', array( 'text' => 'COMING SOON', 'background_color' => '#BD9A5F', 'text_color' => '#0B1528' ) ),
+            mk_glamz_el_widget( 'heading', array( 'title' => 'The Hair Collection', 'title_color' => '#FFFFFF', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 52 ) ) ),
+            mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#E2E8F0; font-family:Outfit; font-size:18px; max-width:600px;">Extending our philosophy of elegance to the crown. A curated system of care and styling, launching Winter 2026.</p>' ) ),
+            mk_glamz_el_widget( 'button', array( 'text' => 'JOIN THE WAITLIST', 'background_color' => 'transparent', 'text_color' => '#FFFFFF', 'border_border' => 'solid', 'border_color' => '#FFFFFF' ) ),
+        ) ),
+
+        // Section 6: Beauty Journal Section
+        mk_glamz_el_container( array(
+            'background_background' => 'classic',
+            'background_color'      => '#FFFFFF',
+            'padding'               => array( 'unit' => 'px', 'top' => '100', 'right' => '60', 'bottom' => '100', 'left' => '60', 'isLinked' => false ),
+        ), array(
+            mk_glamz_el_widget( 'heading', array( 'title' => 'The Beauty Journal', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 48 ) ) ),
+            mk_glamz_el_container( array(
+                'flex_direction' => 'row',
+                'gap'            => array( 'unit' => 'px', 'size' => 30 ),
+                'margin'         => array( 'unit' => 'px', 'top' => '40', 'right' => '0', 'bottom' => '0', 'left' => '0', 'isLinked' => false ),
+            ), array(
+                mk_glamz_el_container( array( 'width' => array( 'unit' => '%', 'size' => 50 ) ), array(
+                    mk_glamz_el_widget( 'image', array( 'image' => array( 'url' => $img_hero ) ) ),
+                    mk_glamz_el_widget( 'heading', array( 'title' => 'The 7 AM Ritual: Prepping the Canvas', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 24 ) ) ),
+                    mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#64748B; font-family:Outfit; font-size:15px;">Discover the morning skincare and priming secrets used by our lead artists to ensure makeup longevity and that signature MK glow.</p>' ) ),
+                    mk_glamz_el_widget( 'button', array( 'text' => 'READ ARTICLE', 'background_color' => 'transparent', 'text_color' => '#0B1528' ) ),
+                ) ),
+                mk_glamz_el_container( array( 'width' => array( 'unit' => '%', 'size' => 50 ) ), array(
+                    mk_glamz_el_widget( 'image', array( 'image' => array( 'url' => $img_face ) ) ),
+                    mk_glamz_el_widget( 'heading', array( 'title' => 'After Dark: Obsidian & Gold Accents', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 24 ) ) ),
+                    mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#64748B; font-family:Outfit; font-size:15px;">Mastering the transition from daylight elegance to evening drama using the limited edition Obsidian palette.</p>' ) ),
+                    mk_glamz_el_widget( 'button', array( 'text' => 'READ ARTICLE', 'background_color' => 'transparent', 'text_color' => '#0B1528' ) ),
+                ) ),
+            ) ),
+        ) ),
+
+        // Section 7: Newsletter Signup
+        mk_glamz_el_container( array(
+            'background_background' => 'classic',
+            'background_color'      => '#0B1528',
+            'padding'               => array( 'unit' => 'px', 'top' => '100', 'right' => '60', 'bottom' => '100', 'left' => '60', 'isLinked' => false ),
+        ), array(
+            mk_glamz_el_widget( 'heading', array( 'title' => 'The Inner Circle', 'title_color' => '#FFFFFF', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 48 ) ) ),
+            mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#94A3B8; font-family:Outfit; font-size:18px; max-width:600px;">Sign up to receive early access to new collections, exclusive artistry tutorials, and invitations to private boutique events.</p>' ) ),
+            mk_glamz_el_widget( 'form', array( 'button_text' => 'JOIN NOW', 'button_background_color' => '#FFFFFF', 'button_text_color' => '#0B1528' ) ),
         ) ),
     );
 
@@ -258,7 +347,7 @@ function mk_glamz_run_setup_routine() {
             'min_height'          => array( 'unit' => 'px', 'size' => 500 ),
             'flex_justify_content'=> 'center',
             'background_background'=> 'classic',
-            'background_image'    => array( 'url' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuAw4WS-IKveooabN5YOrTqs6yV0UvsuQws5AEdusl9gmveHrUTHXpyo1sXGcnXjvq-cXRHwCezXvEYDZqXb7iSbKiXrZ5arNblwoBltpm_iG3reDd1Zxon3PpYWGPo5-nKVENaXytt3l7Pxmg7b7nD64CjDpQ6eqPOLNrLnAZxiRihnPa4Tw1qyVs5OOx9SBL5mGm6LQvv-Ix7EkbFDcRWaRZL-SkI6Tz1UHUjm9c452qRBxxuylYhPRvPnoU5wPH7sRG-Ol3SlNnfW' ),
+            'background_image'    => array( 'url' => $img_hero ),
             'background_position' => 'center center',
             'background_size'     => 'cover',
             'padding'             => array( 'unit' => 'px', 'top' => '100', 'right' => '60', 'bottom' => '100', 'left' => '60', 'isLinked' => false ),
@@ -271,6 +360,9 @@ function mk_glamz_run_setup_routine() {
         ), array(
             mk_glamz_el_widget( 'heading', array( 'title' => 'Our Mission', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 40 ) ) ),
             mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#475569; font-family:Outfit; font-size:16px; line-height:1.8;">To redefine luxury through the lens of intentionality. MK GLAMZ exists to bridge the gap between high-performance artistry and the effortless grace of daily ritual.</p>' ) ),
+            mk_glamz_el_widget( 'divider', array( 'color' => '#BD9A5F' ) ),
+            mk_glamz_el_widget( 'heading', array( 'title' => 'The Vision', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 40 ) ) ),
+            mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#475569; font-family:Outfit; font-size:16px; line-height:1.8;">A global flagship for the modern minimalist. We aspire to create a sanctuary where sophisticated products meet architectural design.</p>' ) ),
         ) )
     );
 
@@ -285,6 +377,13 @@ function mk_glamz_run_setup_routine() {
         ), array(
             mk_glamz_el_widget( 'button', array( 'text' => 'COMING SOON', 'background_color' => '#FFFFFF', 'text_color' => '#0B1528' ) ),
             mk_glamz_el_widget( 'heading', array( 'title' => 'Professional Makeup Services', 'title_color' => '#FFFFFF', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 56 ) ) ),
+        ) ),
+        mk_glamz_el_container( array(
+            'padding' => array( 'unit' => 'px', 'top' => '100', 'right' => '60', 'bottom' => '100', 'left' => '60', 'isLinked' => false ),
+        ), array(
+            mk_glamz_el_widget( 'heading', array( 'title' => 'Couture Artistry', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 36 ) ) ),
+            mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#475569; font-family:Outfit; font-size:16px; line-height:1.8;">From editorial wings to private bridal styling, our signature application respects individual anatomy, using advanced pigments and skin prep to deliver a flawless, high-definition finish.</p>' ) ),
+            mk_glamz_el_widget( 'form', array( 'button_text' => 'REQUEST PRIORITY ACCESS', 'button_background_color' => '#0B1528' ) ),
         ) )
     );
 
@@ -293,7 +392,9 @@ function mk_glamz_run_setup_routine() {
         mk_glamz_el_container( array(
             'padding' => array( 'unit' => 'px', 'top' => '100', 'right' => '60', 'bottom' => '100', 'left' => '60', 'isLinked' => false ),
         ), array(
+            mk_glamz_el_widget( 'heading', array( 'title' => 'GET IN TOUCH', 'title_color' => '#BD9A5F', 'typography_font_family' => 'Outfit' ) ),
             mk_glamz_el_widget( 'heading', array( 'title' => 'Contact Us', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 56 ) ) ),
+            mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#475569; font-family:Outfit; font-size:16px; line-height:1.8;">For order inquiries, professional registry support, or general comments, please reach out via our contact form or email us at support@mkglamz.com.</p>' ) ),
             mk_glamz_el_widget( 'form', array( 'button_text' => 'SEND MESSAGE', 'button_background_color' => '#0B1528' ) ),
         ) )
     );
@@ -303,11 +404,13 @@ function mk_glamz_run_setup_routine() {
         mk_glamz_el_container( array(
             'padding' => array( 'unit' => 'px', 'top' => '100', 'right' => '60', 'bottom' => '100', 'left' => '60', 'isLinked' => false ),
         ), array(
+            mk_glamz_el_widget( 'heading', array( 'title' => 'SUPPORT CENTER', 'title_color' => '#BD9A5F', 'typography_font_family' => 'Outfit' ) ),
             mk_glamz_el_widget( 'heading', array( 'title' => 'Frequently Asked Questions', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 48 ) ) ),
             mk_glamz_el_widget( 'accordion', array(
                 'tabs' => array(
                     array( 'tab_title' => 'Are your products vegan & cruelty-free?', 'tab_content' => 'Yes. All MK GLAMZ formulations are 100% cruelty-free and vegan certified.' ),
                     array( 'tab_title' => 'How do I book a bridal artistry session?', 'tab_content' => 'You can book bridal sessions directly through our artistry service section or via our contact page.' ),
+                    array( 'tab_title' => 'What is the return policy?', 'tab_content' => 'We offer returns within 30 days of purchase for unused products in original packaging.' ),
                 ),
             ) ),
         ) )
