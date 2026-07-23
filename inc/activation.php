@@ -38,7 +38,7 @@ function mk_glamz_admin_notices() {
 }
 add_action( 'admin_notices', 'mk_glamz_admin_notices' );
 
-// Helper to generate Elementor widget & container nodes
+// Helpers to generate Elementor widget & container nodes
 function mk_glamz_el_container( $settings = array(), $elements = array() ) {
     return array(
         'id'       => substr( md5( uniqid( rand(), true ) ), 0, 7 ),
@@ -98,7 +98,7 @@ function mk_glamz_run_setup_routine() {
         }
     }
 
-    // Build Home Page Elementor Data
+    // A. Build Home Page Elementor Data
     $home_elementor_data = array(
         mk_glamz_el_container( array(
             'min_height'          => array( 'unit' => 'px', 'size' => 750 ),
@@ -165,13 +165,74 @@ function mk_glamz_run_setup_routine() {
         ) ),
     );
 
+    // B. Build About Page Elementor Data
+    $about_elementor_data = array(
+        mk_glamz_el_container( array(
+            'min_height'          => array( 'unit' => 'px', 'size' => 500 ),
+            'flex_justify_content'=> 'center',
+            'background_background'=> 'classic',
+            'background_image'    => array( 'url' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuAw4WS-IKveooabN5YOrTqs6yV0UvsuQws5AEdusl9gmveHrUTHXpyo1sXGcnXjvq-cXRHwCezXvEYDZqXb7iSbKiXrZ5arNblwoBltpm_iG3reDd1Zxon3PpYWGPo5-nKVENaXytt3l7Pxmg7b7nD64CjDpQ6eqPOLNrLnAZxiRihnPa4Tw1qyVs5OOx9SBL5mGm6LQvv-Ix7EkbFDcRWaRZL-SkI6Tz1UHUjm9c452qRBxxuylYhPRvPnoU5wPH7sRG-Ol3SlNnfW' ),
+            'background_position' => 'center center',
+            'background_size'     => 'cover',
+            'padding'             => array( 'unit' => 'px', 'top' => '100', 'right' => '60', 'bottom' => '100', 'left' => '60', 'isLinked' => false ),
+        ), array(
+            mk_glamz_el_widget( 'heading', array( 'title' => 'ESTABLISHED 2018', 'title_color' => '#BD9A5F', 'typography_font_family' => 'Outfit' ) ),
+            mk_glamz_el_widget( 'heading', array( 'title' => 'The Art of Curated Beauty', 'title_color' => '#FFFFFF', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 60 ) ) ),
+        ) ),
+        mk_glamz_el_container( array(
+            'padding' => array( 'unit' => 'px', 'top' => '100', 'right' => '60', 'bottom' => '100', 'left' => '60', 'isLinked' => false ),
+        ), array(
+            mk_glamz_el_widget( 'heading', array( 'title' => 'Our Mission', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 40 ) ) ),
+            mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#475569; font-family:Outfit; font-size:16px; line-height:1.8;">To redefine luxury through the lens of intentionality. MK GLAMZ exists to bridge the gap between high-performance artistry and the effortless grace of daily ritual.</p>' ) ),
+        ) )
+    );
+
+    // C. Build Services Page Elementor Data
+    $services_elementor_data = array(
+        mk_glamz_el_container( array(
+            'min_height'          => array( 'unit' => 'px', 'size' => 450 ),
+            'flex_justify_content'=> 'center',
+            'background_background'=> 'classic',
+            'background_color'    => '#0B1528',
+            'padding'             => array( 'unit' => 'px', 'top' => '100', 'right' => '60', 'bottom' => '100', 'left' => '60', 'isLinked' => false ),
+        ), array(
+            mk_glamz_el_widget( 'button', array( 'text' => 'COMING SOON', 'background_color' => '#FFFFFF', 'text_color' => '#0B1528' ) ),
+            mk_glamz_el_widget( 'heading', array( 'title' => 'Professional Makeup Services', 'title_color' => '#FFFFFF', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 56 ) ) ),
+        ) )
+    );
+
+    // D. Build Contact Page Elementor Data
+    $contact_elementor_data = array(
+        mk_glamz_el_container( array(
+            'padding' => array( 'unit' => 'px', 'top' => '100', 'right' => '60', 'bottom' => '100', 'left' => '60', 'isLinked' => false ),
+        ), array(
+            mk_glamz_el_widget( 'heading', array( 'title' => 'Contact Us', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 56 ) ) ),
+            mk_glamz_el_widget( 'form', array( 'button_text' => 'SEND MESSAGE', 'button_background_color' => '#0B1528' ) ),
+        ) )
+    );
+
+    // E. Build FAQ Page Elementor Data
+    $faq_elementor_data = array(
+        mk_glamz_el_container( array(
+            'padding' => array( 'unit' => 'px', 'top' => '100', 'right' => '60', 'bottom' => '100', 'left' => '60', 'isLinked' => false ),
+        ), array(
+            mk_glamz_el_widget( 'heading', array( 'title' => 'Frequently Asked Questions', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 48 ) ) ),
+            mk_glamz_el_widget( 'accordion', array(
+                'tabs' => array(
+                    array( 'tab_title' => 'Are your products vegan & cruelty-free?', 'tab_content' => 'Yes. All MK GLAMZ formulations are 100% cruelty-free and vegan certified.' ),
+                    array( 'tab_title' => 'How do I book a bridal artistry session?', 'tab_content' => 'You can book bridal sessions directly through our artistry service section or via our contact page.' ),
+                ),
+            ) ),
+        ) )
+    );
+
     // Create pages & inject Elementor metadata directly into postmeta
     $home_id     = mk_glamz_create_page( 'Home', 'home', '', 'Prestige beauty and curated luxury for the modern lifestyle.', $home_elementor_data );
-    $about_id    = mk_glamz_create_page( 'About MK Glamz', 'about-mk-glamz', 'template-about.php', 'Our mission is to redefine luxury through intentionality.' );
+    $about_id    = mk_glamz_create_page( 'About MK Glamz', 'about-mk-glamz', 'template-about.php', 'Our mission is to redefine luxury through intentionality.', $about_elementor_data );
     $shop_id     = mk_glamz_create_page( 'Shop', 'shop', '', 'Prestige cosmetic lines. Discover a symphony of texture and light.' );
-    $services_id = mk_glamz_create_page( 'Makeup Services', 'makeup-services', 'template-services.php', 'Couture artistry for editorial campaigns and event styling.' );
-    $contact_id  = mk_glamz_create_page( 'Contact', 'contact', 'template-contact.php', 'Reach out for master consultations and professional booking slots.' );
-    $faqs_id     = mk_glamz_create_page( 'FAQs', 'faqs', 'template-faq.php', 'Find answers about cosmetic formulations and bookings.' );
+    $services_id = mk_glamz_create_page( 'Makeup Services', 'makeup-services', 'template-services.php', 'Couture artistry for editorial campaigns and event styling.', $services_elementor_data );
+    $contact_id  = mk_glamz_create_page( 'Contact', 'contact', 'template-contact.php', 'Reach out for master consultations and professional booking slots.', $contact_elementor_data );
+    $faqs_id     = mk_glamz_create_page( 'FAQs', 'faqs', 'template-faq.php', 'Find answers about cosmetic formulations and bookings.', $faq_elementor_data );
     $blog_id     = mk_glamz_create_page( 'Beauty Blog', 'beauty-blog', '', 'Editorial insights and styling tips from our lead artists.' );
     $privacy_id  = mk_glamz_create_page( 'Privacy Policy', 'privacy-policy', 'template-privacy.php', 'Your privacy is of utmost importance.' );
     $terms_id    = mk_glamz_create_page( 'Terms & Conditions', 'terms-conditions', 'template-terms.php', 'Please read our terms of use.' );
