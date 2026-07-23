@@ -1,0 +1,198 @@
+{
+  "version": "3.4.0",
+  "title": "MKG-About",
+  "type": "page",
+  "content": [
+    {
+      "id": "k6sdj9e",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "container_type": "flex",
+        "flex_direction": "column",
+        "min_height": {
+          "unit": "px",
+          "size": 500
+        },
+        "flex_justify_content": "center",
+        "background_background": "classic",
+        "background_image": {
+          "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAw4WS-IKveooabN5YOrTqs6yV0UvsuQws5AEdusl9gmveHrUTHXpyo1sXGcnXjvq-cXRHwCezXvEYDZqXb7iSbKiXrZ5arNblwoBltpm_iG3reDd1Zxon3PpYWGPo5-nKVENaXytt3l7Pxmg7b7nD64CjDpQ6eqPOLNrLnAZxiRihnPa4Tw1qyVs5OOx9SBL5mGm6LQvv-Ix7EkbFDcRWaRZL-SkI6Tz1UHUjm9c452qRBxxuylYhPRvPnoU5wPH7sRG-Ol3SlNnfW"
+        },
+        "background_position": "center center",
+        "background_size": "cover",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "60",
+          "bottom": "100",
+          "left": "60",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "nn5anh8",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "ESTABLISHED 2018",
+            "title_color": "#BD9A5F",
+            "typography_font_family": "Outfit"
+          },
+          "elements": []
+        },
+        {
+          "id": "xucxnzl",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "The Art of Curated Beauty",
+            "title_color": "#FFFFFF",
+            "typography_font_family": "Syne",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 60
+            }
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "w3a13e7",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "container_type": "flex",
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "60",
+          "bottom": "100",
+          "left": "60",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "4keeyon",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "container_type": "flex",
+            "flex_direction": "row",
+            "gap": {
+              "unit": "px",
+              "size": 60
+            }
+          },
+          "elements": [
+            {
+              "id": "n8g619d",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "container_type": "flex",
+                "flex_direction": "column",
+                "width": {
+                  "unit": "%",
+                  "size": 50
+                }
+              },
+              "elements": [
+                {
+                  "id": "ye54c4g",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDLxryS5HtBK7niFTj4LMTsjA7Qe083eI_ukCyepAsg-RHOrT9iBGZd2quh9cC-YfzGKexIEJKfK04ayOmzc7L5dZ71BvMYjpszw53s593V9v8i6X0x3hnAkY-aur4S6y62okLx-EciJIVZwsi9WjOA4rLCaA9XL203_1KfUbOLeMBYrJM9hos9MTaEcRsXSUEd311rekDCCrRt-cDUKlMTK0novECwc7t38Og52vTZQsg5guVMCtN0_VxFQ_tvUvDNnz5jnotl8fqh"
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "6t73t06",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "container_type": "flex",
+                "flex_direction": "column",
+                "width": {
+                  "unit": "%",
+                  "size": 50
+                }
+              },
+              "elements": [
+                {
+                  "id": "0rb6zjq",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Our Mission",
+                    "title_color": "#0B1528",
+                    "typography_font_family": "Syne",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 40
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mizdu4u",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color:#475569; font-family:Outfit; font-size:16px; line-height:1.8;\">To redefine luxury through the lens of intentionality. MK GLAMZ exists to bridge the gap between high-performance artistry and the effortless grace of daily ritual. We believe beauty is not an addition, but an unveiling.</p>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "gh5r796",
+                  "elType": "widget",
+                  "widgetType": "divider",
+                  "settings": {
+                    "color": "#BD9A5F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "klebz84",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "The Vision",
+                    "title_color": "#0B1528",
+                    "typography_font_family": "Syne",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 40
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "c2xfabs",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color:#475569; font-family:Outfit; font-size:16px; line-height:1.8;\">A global flagship for the modern minimalist. We aspire to create a sanctuary where sophisticated products meet architectural design, fostering a community that values quality over quantity.</p>"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

@@ -1,0 +1,112 @@
+{
+  "version": "3.4.0",
+  "title": "MKG-Header",
+  "type": "header",
+  "content": [
+    {
+      "id": "ylbf38l",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "container_type": "flex",
+        "flex_direction": "row",
+        "flex_justify_content": "space-between",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#0B1528",
+        "padding": {
+          "unit": "px",
+          "top": "24",
+          "right": "48",
+          "bottom": "24",
+          "left": "48",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "n2ugns3",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "MK GLAMZ",
+            "header_size": "h2",
+            "title_color": "#BD9A5F",
+            "typography_typography": "custom",
+            "typography_font_family": "Syne",
+            "typography_font_weight": "700",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 28
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "nc0yufv",
+          "elType": "widget",
+          "widgetType": "nav-menu",
+          "settings": {
+            "menu": "Primary Menu",
+            "layout": "horizontal",
+            "align": "center",
+            "color_menu_item": "#FFFFFF",
+            "color_menu_item_hover": "#BD9A5F",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 13
+            },
+            "typography_font_weight": "600"
+          },
+          "elements": []
+        },
+        {
+          "id": "i2xremj",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "container_type": "flex",
+            "flex_direction": "row",
+            "gap": {
+              "unit": "px",
+              "size": 16
+            }
+          },
+          "elements": [
+            {
+              "id": "nxb7xrm",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "BOOK US",
+                "button_type": "default",
+                "background_color": "transparent",
+                "text_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#BD9A5F",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 12
+                }
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

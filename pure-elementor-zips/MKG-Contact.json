@@ -1,0 +1,27 @@
+{
+  "version": "3.4.0",
+  "title": "MKG-Contact",
+  "type": "page",
+  "content": [
+    {
+      "id": "lpedscb",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column"
+      },
+      "elements": [
+        {
+          "id": "x3z3snu",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Contact Us"
+          },
+          "elements": []
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

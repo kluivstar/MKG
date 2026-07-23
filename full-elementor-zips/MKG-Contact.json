@@ -1,0 +1,119 @@
+{
+  "version": "3.4.0",
+  "title": "MKG-Contact",
+  "type": "page",
+  "content": [
+    {
+      "id": "kvd5iem",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "container_type": "flex",
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "60",
+          "bottom": "100",
+          "left": "60",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "lzy0xw0",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "container_type": "flex",
+            "flex_direction": "row",
+            "gap": {
+              "unit": "px",
+              "size": 60
+            }
+          },
+          "elements": [
+            {
+              "id": "hgxddmw",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "container_type": "flex",
+                "flex_direction": "column",
+                "width": {
+                  "unit": "%",
+                  "size": 50
+                }
+              },
+              "elements": [
+                {
+                  "id": "nqn02zb",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "GET IN TOUCH",
+                    "title_color": "#BD9A5F",
+                    "typography_font_family": "Outfit"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "ktjm0tn",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Contact Us",
+                    "title_color": "#0B1528",
+                    "typography_font_family": "Syne",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 56
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "murbz2m",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color:#475569; font-family:Outfit; font-size:16px; line-height:1.8;\">For order inquiries, professional registry support, or general comments, please reach out via our contact form or email us at support@mkglamz.com.</p>"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "2bv2ucc",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "container_type": "flex",
+                "flex_direction": "column",
+                "width": {
+                  "unit": "%",
+                  "size": 50
+                }
+              },
+              "elements": [
+                {
+                  "id": "58jmzyh",
+                  "elType": "widget",
+                  "widgetType": "form",
+                  "settings": {
+                    "button_text": "SEND MESSAGE",
+                    "button_background_color": "#0B1528"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

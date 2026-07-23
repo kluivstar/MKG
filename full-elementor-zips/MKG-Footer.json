@@ -1,0 +1,286 @@
+{
+  "version": "3.4.0",
+  "title": "MKG-Footer",
+  "type": "footer",
+  "content": [
+    {
+      "id": "ow8opwa",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "container_type": "flex",
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#0B1528",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "48",
+          "bottom": "40",
+          "left": "48",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "5nivcxo",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "container_type": "flex",
+            "flex_direction": "row",
+            "flex_justify_content": "space-between",
+            "gap": {
+              "unit": "px",
+              "size": 40
+            }
+          },
+          "elements": [
+            {
+              "id": "h723s4j",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "container_type": "flex",
+                "flex_direction": "column",
+                "width": {
+                  "unit": "%",
+                  "size": 30
+                }
+              },
+              "elements": [
+                {
+                  "id": "5x7fxao",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "MK GLAMZ",
+                    "title_color": "#BD9A5F",
+                    "typography_font_family": "Syne",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 24
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "cs6xkwb",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color:#94A3B8; font-family:Outfit; margin-top:12px;\">Prestige beauty and curated luxury for the modern and editorial lifestyle. Experiential consultations and couture beauty design.</p>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "avgfg8k",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Instagram",
+                        "icon": {
+                          "value": "fab fa-instagram",
+                          "library": "fa-brands"
+                        }
+                      },
+                      {
+                        "text": "Pinterest",
+                        "icon": {
+                          "value": "fab fa-pinterest",
+                          "library": "fa-brands"
+                        }
+                      },
+                      {
+                        "text": "TikTok",
+                        "icon": {
+                          "value": "fab fa-tiktok",
+                          "library": "fa-brands"
+                        }
+                      }
+                    ]
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "m0ing2i",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "container_type": "flex",
+                "flex_direction": "column",
+                "width": {
+                  "unit": "%",
+                  "size": 20
+                }
+              },
+              "elements": [
+                {
+                  "id": "yayex9j",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "SHOP",
+                    "title_color": "#FFFFFF",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "fn89vav",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<ul style=\"color:#94A3B8; list-style:none; padding:0; line-height:2.2; font-family:Outfit;\"><li>Face Products</li><li>Lip Products</li><li>Luminous Powders</li><li>Prestige Collection</li></ul>"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "hqnh7br",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "container_type": "flex",
+                "flex_direction": "column",
+                "width": {
+                  "unit": "%",
+                  "size": 20
+                }
+              },
+              "elements": [
+                {
+                  "id": "kezama8",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "OUR STORY",
+                    "title_color": "#FFFFFF",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "q2kt356",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<ul style=\"color:#94A3B8; list-style:none; padding:0; line-height:2.2; font-family:Outfit;\"><li>The Brand</li><li>Editorial Journal</li><li>Hair Services</li><li>Careers</li></ul>"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "opop9a5",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "container_type": "flex",
+                "flex_direction": "column",
+                "width": {
+                  "unit": "%",
+                  "size": 30
+                }
+              },
+              "elements": [
+                {
+                  "id": "fl8d3nv",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "NEWSLETTER",
+                    "title_color": "#FFFFFF",
+                    "typography_font_family": "Outfit",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 14
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "iik3n4j",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color:#94A3B8; font-family:Outfit; margin-bottom:16px;\">Subscribe to receive priority access to couture drops and masterclass invitations.</p>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "s5aplf2",
+                  "elType": "widget",
+                  "widgetType": "form",
+                  "settings": {
+                    "button_text": "SUBSCRIBE",
+                    "button_background_color": "#BD9A5F",
+                    "button_text_color": "#0B1528"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "xw7wisp",
+          "elType": "widget",
+          "widgetType": "divider",
+          "settings": {
+            "color": "#1E293B",
+            "gap": {
+              "unit": "px",
+              "size": 40
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "ozbr2pw",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "container_type": "flex",
+            "flex_direction": "row",
+            "flex_justify_content": "space-between"
+          },
+          "elements": [
+            {
+              "id": "hsike2s",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"color:#64748B; font-family:Outfit; font-size:12px;\">&copy; 2026 MK GLAMZ. All rights reserved.</span>"
+              },
+              "elements": []
+            },
+            {
+              "id": "ajc3fus",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"color:#64748B; font-family:Outfit; font-size:12px;\">Terms of Service &nbsp;|&nbsp; Privacy Policy</span>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

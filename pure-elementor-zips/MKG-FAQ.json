@@ -1,0 +1,27 @@
+{
+  "version": "3.4.0",
+  "title": "MKG-FAQ",
+  "type": "page",
+  "content": [
+    {
+      "id": "11ypgx3",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column"
+      },
+      "elements": [
+        {
+          "id": "hwuc725",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Frequently Asked Questions"
+          },
+          "elements": []
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

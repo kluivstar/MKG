@@ -1,0 +1,194 @@
+{
+  "version": "3.4.0",
+  "title": "MKG-Services",
+  "type": "page",
+  "content": [
+    {
+      "id": "qtnwh9i",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "container_type": "flex",
+        "flex_direction": "column",
+        "min_height": {
+          "unit": "px",
+          "size": 450
+        },
+        "flex_justify_content": "center",
+        "background_background": "classic",
+        "background_color": "#0B1528",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "60",
+          "bottom": "100",
+          "left": "60",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "vuwdvw8",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "COMING SOON",
+            "background_color": "#FFFFFF",
+            "text_color": "#0B1528"
+          },
+          "elements": []
+        },
+        {
+          "id": "gkqxrv4",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Professional Makeup Services",
+            "title_color": "#FFFFFF",
+            "typography_font_family": "Syne",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 56
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "hzqflcw",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p style=\"color:#94A3B8; font-family:Outfit; font-size:18px;\">Prestige editorial and event artistry. Experiential consultations and couture beauty designs for your defining moments.</p>"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "sa5c4hp",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "container_type": "flex",
+        "flex_direction": "column",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "60",
+          "bottom": "100",
+          "left": "60",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF"
+      },
+      "elements": [
+        {
+          "id": "a5rjcwz",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "container_type": "flex",
+            "flex_direction": "row",
+            "gap": {
+              "unit": "px",
+              "size": 60
+            }
+          },
+          "elements": [
+            {
+              "id": "2q1k8z5",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "container_type": "flex",
+                "flex_direction": "column",
+                "width": {
+                  "unit": "%",
+                  "size": 60
+                }
+              },
+              "elements": [
+                {
+                  "id": "oerde6l",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Couture Artistry",
+                    "title_color": "#0B1528",
+                    "typography_font_family": "Syne",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 36
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "2bbweqf",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color:#475569; font-family:Outfit; font-size:16px; line-height:1.8;\">From the editorial wings to private bridal styling, our signature application respects individual anatomy, using advanced pigments and skin prep to deliver a flawless, high-definition finish.</p>"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "u7w9siz",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "container_type": "flex",
+                "flex_direction": "column",
+                "width": {
+                  "unit": "%",
+                  "size": 40
+                },
+                "background_background": "classic",
+                "background_color": "#F8FAFC",
+                "padding": {
+                  "unit": "px",
+                  "top": "40",
+                  "right": "40",
+                  "bottom": "40",
+                  "left": "40",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "6hcnxk7",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "JOIN THE WAITLIST",
+                    "title_color": "#0B1528",
+                    "typography_font_family": "Syne",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 24
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "2kyz4w7",
+                  "elType": "widget",
+                  "widgetType": "form",
+                  "settings": {
+                    "button_text": "REQUEST PRIORITY ACCESS",
+                    "button_background_color": "#0B1528"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

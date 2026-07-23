@@ -13,9 +13,9 @@
             <?php bloginfo( 'description' ); ?>
           </p>
           <div class="flex gap-4">
-            <a href="https://instagram.com/mkglamz" target="_blank" class="hover:text-secondary-fixed-dim transition-colors" aria-label="Instagram"><span class="material-symbols-outlined">camera</span></a>
-            <a href="https://pinterest.com/mkglamz" target="_blank" class="hover:text-secondary-fixed-dim transition-colors" aria-label="Pinterest"><span class="material-symbols-outlined">dynamic_feed</span></a>
-            <a href="https://tiktok.com/@mkglamz" target="_blank" class="hover:text-secondary-fixed-dim transition-colors" aria-label="TikTok"><span class="material-symbols-outlined">music_note</span></a>
+            <a href="https://instagram.com/mkglamz" target="_blank" class="hover:text-secondary-fixed-dim transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram text-xl"></i></a>
+            <a href="https://pinterest.com/mkglamz" target="_blank" class="hover:text-secondary-fixed-dim transition-colors" aria-label="Pinterest"><i class="fa-brands fa-pinterest text-xl"></i></a>
+            <a href="https://tiktok.com/@mkglamz" target="_blank" class="hover:text-secondary-fixed-dim transition-colors" aria-label="TikTok"><i class="fa-brands fa-tiktok text-xl"></i></a>
           </div>
         </div>
         
@@ -32,10 +32,10 @@
         <div>
           <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">OUR STORY</h4>
           <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
-            <li><a href="<?php echo esc_url( home_url('/about') ); ?>" class="hover:text-primary transition-colors">The Brand</a></li>
-            <li><a href="<?php echo esc_url( home_url('/blog') ); ?>" class="hover:text-primary transition-colors">Editorial Journal</a></li>
-            <li><a href="<?php echo esc_url( home_url('/hair-services') ); ?>" class="hover:text-primary transition-colors">Hairs</a></li>
-            <li><a href="<?php echo esc_url( home_url('/careers') ); ?>" class="hover:text-primary transition-colors">Careers</a></li>
+            <li><a href="<?php echo esc_url( home_url('/about-mk-glamz') ); ?>" class="hover:text-primary transition-colors">The Brand</a></li>
+            <li><a href="<?php echo esc_url( home_url('/beauty-blog') ); ?>" class="hover:text-primary transition-colors">Editorial Journal</a></li>
+            <li><a href="<?php echo esc_url( home_url('/makeup-services') ); ?>" class="hover:text-primary transition-colors">Hairs</a></li>
+            <li><a href="<?php echo esc_url( home_url('/contact') ); ?>" class="hover:text-primary transition-colors">Careers</a></li>
           </ul>
         </div>
         
@@ -46,10 +46,10 @@
           <?php else : ?>
               <h4 class="font-label-md text-label-md tracking-widest uppercase text-primary mb-6">SUPPORT</h4>
               <ul class="flex flex-col gap-4 font-body-md text-on-surface-variant">
-                <li><a href="<?php echo esc_url( home_url('/shipping-returns') ); ?>" class="hover:text-primary transition-colors">Shipping & Returns</a></li>
-                <li><a href="<?php echo esc_url( home_url('/faq') ); ?>" class="hover:text-primary transition-colors">FAQ</a></li>
+                <li><a href="<?php echo esc_url( home_url('/faqs') ); ?>" class="hover:text-primary transition-colors">FAQ</a></li>
                 <li><a href="<?php echo esc_url( home_url('/contact') ); ?>" class="hover:text-primary transition-colors">Contact Us</a></li>
                 <li><a href="<?php echo esc_url( home_url('/privacy-policy') ); ?>" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                <li><a href="<?php echo esc_url( home_url('/terms-conditions') ); ?>" class="hover:text-primary transition-colors">Terms of Service</a></li>
               </ul>
           <?php endif; ?>
         </div>
@@ -58,7 +58,7 @@
       <div class="border-t border-outline-variant/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 font-label-sm text-label-sm text-on-surface-variant/60 uppercase tracking-widest">
         <p>&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>. All rights reserved.</p>
         <div class="flex gap-6">
-          <a href="<?php echo esc_url( home_url('/terms-of-service') ); ?>" class="hover:text-primary transition-colors">Terms of Service</a>
+          <a href="<?php echo esc_url( home_url('/terms-conditions') ); ?>" class="hover:text-primary transition-colors">Terms of Service</a>
           <a href="<?php echo esc_url( home_url('/privacy-policy') ); ?>" class="hover:text-primary transition-colors">Privacy</a>
         </div>
       </div>
@@ -71,7 +71,7 @@
     <div class="flex justify-between items-center p-6 border-b border-outline-variant/30">
       <h3 class="font-display text-lg font-bold tracking-tight text-primary">SHOPPING BAG (<span data-cart-count>0</span>)</h3>
       <button data-cart-close class="text-primary hover:opacity-75 transition-opacity bg-transparent border-0 cursor-pointer">
-        <span class="material-symbols-outlined text-2xl">close</span>
+        <i class="fa-solid fa-xmark text-2xl"></i>
       </button>
     </div>
     
@@ -86,8 +86,8 @@
       </div>
       <p class="text-xs text-on-surface-variant/80 mb-6">Shipping, taxes, and discounts will be calculated at checkout.</p>
       <div class="flex flex-col gap-3">
-        <a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="w-full bg-primary text-on-primary text-center py-5 uppercase font-label-md text-label-md tracking-widest hover:bg-neutral-800 transition-colors block">Proceed to Checkout</a>
-        <a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>" class="w-full text-center py-3 uppercase font-label-sm text-label-sm tracking-widest hover:text-primary transition-colors block">Continue Shopping</a>
+        <a href="<?php echo esc_url( function_exists('wc_get_checkout_url') ? wc_get_checkout_url() : home_url('/shop') ); ?>" class="w-full bg-primary text-on-primary text-center py-5 uppercase font-label-md text-label-md tracking-widest hover:bg-neutral-800 transition-colors block">Proceed to Checkout</a>
+        <a href="<?php echo esc_url( home_url('/shop') ); ?>" class="w-full text-center py-3 uppercase font-label-sm text-label-sm tracking-widest hover:text-primary transition-colors block">Continue Shopping</a>
       </div>
     </div>
   </div>

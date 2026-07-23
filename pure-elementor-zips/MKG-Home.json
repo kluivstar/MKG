@@ -1,0 +1,49 @@
+{
+  "version": "3.4.0",
+  "title": "MKG-Home",
+  "type": "page",
+  "content": [
+    {
+      "id": "e6tcfj5",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "background_background": "classic",
+        "background_color": "#0B1528",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "40",
+          "bottom": "100",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "z9qp0q6",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "The Art of Curated Beauty",
+            "title_color": "#FFFFFF",
+            "typography_font_family": "Syne"
+          },
+          "elements": []
+        },
+        {
+          "id": "by97xre",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "SHOP THE INAUGURAL COLLECTION",
+            "background_color": "#BD9A5F"
+          },
+          "elements": []
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

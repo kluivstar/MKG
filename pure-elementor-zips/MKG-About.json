@@ -1,0 +1,27 @@
+{
+  "version": "3.4.0",
+  "title": "MKG-About",
+  "type": "page",
+  "content": [
+    {
+      "id": "ixn767n",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column"
+      },
+      "elements": [
+        {
+          "id": "6mz2myp",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Our Story"
+          },
+          "elements": []
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

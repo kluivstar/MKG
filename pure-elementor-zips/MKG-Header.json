@@ -1,0 +1,55 @@
+{
+  "version": "3.4.0",
+  "title": "MKG-Header",
+  "type": "header",
+  "content": [
+    {
+      "id": "bfnzwf3",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "row",
+        "background_background": "classic",
+        "background_color": "#0B1528",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "40",
+          "bottom": "20",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "m8dd9pa",
+          "elType": "widget",
+          "widgetType": "image",
+          "settings": {
+            "image": {
+              "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuBSc4q6a0pFvNa3VTS7shBcgks6PxZOtBOWyCf54qzZX9KAFp8a_GpXdtl_cFVXwIaNCLZH9Qk4Nt-qszqif9BIZJ788t4IX9rfWM71RHLmfuI23kgxdElLUYZ9TPaHmlkPFHISfrAxelnit6MPDvGzWiGYy4yRKdxY0k2UF8Ib1A2Dh3QdG6lssxcaiNf6ToBDDiaUD-kRCbFagbBfTv7HCIYszx4vof51q-qZ4qqzrggxe1zrVkoorl4dt1RPH0xVyFYTmczgj-bn"
+            },
+            "image_size": "thumbnail",
+            "align": "left"
+          },
+          "elements": []
+        },
+        {
+          "id": "156yrlq",
+          "elType": "widget",
+          "widgetType": "nav-menu",
+          "settings": {
+            "menu": "Primary Menu",
+            "layout": "horizontal",
+            "align": "center",
+            "color_menu_item": "#FFFFFF",
+            "typography_typography": "custom",
+            "typography_font_family": "Outfit"
+          },
+          "elements": []
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

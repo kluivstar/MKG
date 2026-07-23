@@ -1,0 +1,150 @@
+{
+  "version": "3.4.0",
+  "title": "MKG-Footer",
+  "type": "footer",
+  "content": [
+    {
+      "id": "pv8idyd",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "row",
+        "background_background": "classic",
+        "background_color": "#0B1528",
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "40",
+          "bottom": "60",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "stuafzr",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "width": "25%"
+          },
+          "elements": [
+            {
+              "id": "y97ejmo",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "MK GLAMZ",
+                "title_color": "#BD9A5F"
+              },
+              "elements": []
+            },
+            {
+              "id": "8fr6j4p",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Luxury cosmetics and prestige makeup artistry."
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "fnmrf2q",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "width": "25%"
+          },
+          "elements": [
+            {
+              "id": "pcsyxd1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "SHOP",
+                "title_color": "#FFFFFF"
+              },
+              "elements": []
+            },
+            {
+              "id": "fh0jtmy",
+              "elType": "widget",
+              "widgetType": "nav-menu",
+              "settings": {
+                "menu": "Shop Menu",
+                "layout": "vertical"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "1y6a4dp",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "width": "25%"
+          },
+          "elements": [
+            {
+              "id": "e54jvts",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "SUPPORT",
+                "title_color": "#FFFFFF"
+              },
+              "elements": []
+            },
+            {
+              "id": "tpase88",
+              "elType": "widget",
+              "widgetType": "nav-menu",
+              "settings": {
+                "menu": "Support Menu",
+                "layout": "vertical"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "b3gwoqz",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "width": "25%"
+          },
+          "elements": [
+            {
+              "id": "p0hwdaa",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "NEWSLETTER",
+                "title_color": "#FFFFFF"
+              },
+              "elements": []
+            },
+            {
+              "id": "53ngrnl",
+              "elType": "widget",
+              "widgetType": "form",
+              "settings": {
+                "button_background_color": "#BD9A5F"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

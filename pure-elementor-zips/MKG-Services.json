@@ -1,0 +1,27 @@
+{
+  "version": "3.4.0",
+  "title": "MKG-Services",
+  "type": "page",
+  "content": [
+    {
+      "id": "d9hgis0",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column"
+      },
+      "elements": [
+        {
+          "id": "xfzvhly",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Makeup & Hair Services"
+          },
+          "elements": []
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}
