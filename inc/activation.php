@@ -58,14 +58,14 @@ function mk_glamz_run_setup_routine() {
                     'post_status'  => 'publish',
                     'post_type'    => 'page',
                 ) );
-
-                if ( $page_id && ! is_wp_error( $page_id ) && ! empty( $template ) ) {
-                    update_post_meta( $page_id, '_wp_page_template', $template );
-                }
-                return $page_id;
+            } else {
+                $page_id = $existing[0]->ID;
             }
 
-            return $existing[0]->ID;
+            if ( $page_id && ! is_wp_error( $page_id ) ) {
+                update_post_meta( $page_id, '_wp_page_template', ! empty( $template ) ? $template : 'default' );
+            }
+            return $page_id;
         }
     }
 
