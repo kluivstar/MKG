@@ -3,6 +3,21 @@
  * MK GLAMZ front-page.php template
  */
 
+if ( did_action( 'elementor/loaded' ) && ( \Elementor\Plugin::$instance->db->is_built_with_elementor( get_the_ID() ) || \Elementor\Plugin::$instance->preview->is_preview_mode() || isset( $_GET['elementor-preview'] ) ) ) {
+    get_header();
+    ?>
+    <main class="min-h-screen">
+      <?php
+      while ( have_posts() ) : the_post();
+          the_content();
+      endwhile;
+      ?>
+    </main>
+    <?php
+    get_footer();
+    return;
+}
+
 get_header(); ?>
 
 <!-- Main Content -->
