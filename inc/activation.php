@@ -98,8 +98,9 @@ function mk_glamz_run_setup_routine() {
         }
     }
 
-    // A. Build Home Page Elementor Data
+    // A. Build Complete Home Page Elementor Data
     $home_elementor_data = array(
+        // Hero Section
         mk_glamz_el_container( array(
             'min_height'          => array( 'unit' => 'px', 'size' => 750 ),
             'flex_justify_content'=> 'center',
@@ -147,6 +148,7 @@ function mk_glamz_run_setup_routine() {
                 ) ),
             ) ),
         ) ),
+        // Signature Tones Bento Section
         mk_glamz_el_container( array(
             'background_background' => 'classic',
             'background_color'      => '#FFFFFF',
@@ -161,6 +163,91 @@ function mk_glamz_run_setup_routine() {
             ) ),
             mk_glamz_el_widget( 'text-editor', array(
                 'editor' => '<p style="color:#64748B; font-family:Outfit; font-size:16px;">Meticulously developed formulas for professional-grade results at home.</p>',
+            ) ),
+            mk_glamz_el_container( array(
+                'flex_direction' => 'row',
+                'gap'            => array( 'unit' => 'px', 'size' => 30 ),
+                'margin'         => array( 'unit' => 'px', 'top' => '40', 'right' => '0', 'bottom' => '0', 'left' => '0', 'isLinked' => false ),
+            ), array(
+                mk_glamz_el_container( array(
+                    'width'               => array( 'unit' => '%', 'size' => 60 ),
+                    'min_height'          => array( 'unit' => 'px', 'size' => 500 ),
+                    'flex_justify_content'=> 'flex-end',
+                    'background_background'=> 'classic',
+                    'background_image'    => array( 'url' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuBuxPXCIAJDif5PwIIksEX7ZuyzYC6F9T7vtPOuuj6-UVpzXQC91uiYpajHdbU9iAxCaawRTcnpaDTCSwS6TcwP7qYF5lorcT-FJkXniErOiQQYgrC23LsC5hENgAoSUIUTz-qAPaRAvZzcPP84OwmIfl2cm0SWmzrjpAU6iXzKF_SNqVKeWxRU9YNcs0-ZUW_Fqnq8c3EtyEq6PnCbGJGrWGpjr0u4RmEKqpSG546ZSGtGbbiwlRe_D0_kVRIh3aVMsP2IthH11xdI' ),
+                    'background_position' => 'center center',
+                    'background_size'     => 'cover',
+                    'padding'             => array( 'unit' => 'px', 'top' => '40', 'right' => '40', 'bottom' => '40', 'left' => '40', 'isLinked' => true ),
+                ), array(
+                    mk_glamz_el_widget( 'heading', array( 'title' => 'Collection 01', 'title_color' => '#BD9A5F', 'typography_font_family' => 'Outfit' ) ),
+                    mk_glamz_el_widget( 'heading', array( 'title' => 'Face', 'title_color' => '#FFFFFF', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 42 ) ) ),
+                    mk_glamz_el_widget( 'button', array( 'text' => 'EXPLORE LINE', 'background_color' => 'transparent', 'text_color' => '#FFFFFF' ) ),
+                ) ),
+                mk_glamz_el_container( array(
+                    'width' => array( 'unit' => '%', 'size' => 40 ),
+                    'gap'   => array( 'unit' => 'px', 'size' => 30 ),
+                ), array(
+                    mk_glamz_el_container( array(
+                        'min_height'          => array( 'unit' => 'px', 'size' => 235 ),
+                        'flex_justify_content'=> 'flex-end',
+                        'background_background'=> 'classic',
+                        'background_image'    => array( 'url' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuAOsX6nxh7IgKj7r3enVghuiZDbee2W97G3K6Ma9U37eHXchXDzLTj_NEUJlBTHDZiXfm9iOeXZz67VAcYN-8whfeoLs8fevrqG7fZ-76FDQOpBseYqdxBVUiwiM1wbpmk6Lv5hAUJGf5ZY5yEkZDdPNbeqToroAyJvEFpDGMC9b9r9phygupAkXg4RnMebUJVqOG1vvU7Oaw9lrz7matdlhPOux7OLmRduIRLn0h8IyQvRhhgSwmt34N0rZEXUrLlEDlxRDL53ZS4r' ),
+                        'background_position' => 'center center',
+                        'background_size'     => 'cover',
+                        'padding'             => array( 'unit' => 'px', 'top' => '24', 'right' => '24', 'bottom' => '24', 'left' => '24', 'isLinked' => true ),
+                    ), array(
+                        mk_glamz_el_widget( 'heading', array( 'title' => 'Lips', 'title_color' => '#FFFFFF', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 28 ) ) ),
+                    ) ),
+                    mk_glamz_el_container( array(
+                        'min_height'          => array( 'unit' => 'px', 'size' => 235 ),
+                        'flex_justify_content'=> 'flex-end',
+                        'background_background'=> 'classic',
+                        'background_image'    => array( 'url' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuC3RUMFSf52Lq895LPVQlSYabYadYWj7Hp9NAtllIXk0ctGN82QU8IEAgjYnB9Op6Aey6KplWPxJq-avmkPrRcu-KcroIWfGrWJN1RdQQ7_zZQyf3xIcqcyCsL8ZGHCYru16I3rNaSmpuTS1R_uAOdsM_UL90iaZqcNkZr3W9slgKX8d2kpFcDPgEJkL6n9_uLTLtStUUcEzhuFZNw-CwON0EjjDfiYz8nUCljwRu0hV8opYysF1ygnPCVVjDdLvEzu5_bpQribHCZ2' ),
+                        'background_position' => 'center center',
+                        'background_size'     => 'cover',
+                        'padding'             => array( 'unit' => 'px', 'top' => '24', 'right' => '24', 'bottom' => '24', 'left' => '24', 'isLinked' => true ),
+                    ), array(
+                        mk_glamz_el_widget( 'heading', array( 'title' => 'Eyes', 'title_color' => '#FFFFFF', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 28 ) ) ),
+                    ) ),
+                ) ),
+            ) ),
+        ) ),
+        // Best Sellers Grid Section
+        mk_glamz_el_container( array(
+            'background_background' => 'classic',
+            'background_color'      => '#F8FAFC',
+            'padding'               => array( 'unit' => 'px', 'top' => '100', 'right' => '60', 'bottom' => '100', 'left' => '60', 'isLinked' => false ),
+        ), array(
+            mk_glamz_el_widget( 'heading', array( 'title' => 'Best Sellers', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 48 ) ) ),
+            mk_glamz_el_container( array(
+                'flex_direction' => 'row',
+                'gap'            => array( 'unit' => 'px', 'size' => 24 ),
+                'margin'         => array( 'unit' => 'px', 'top' => '40', 'right' => '0', 'bottom' => '0', 'left' => '0', 'isLinked' => false ),
+            ), array(
+                mk_glamz_el_container( array( 'width' => array( 'unit' => '%', 'size' => 25 ), 'background_background' => 'classic', 'background_color' => '#FFFFFF', 'padding' => array( 'unit' => 'px', 'top' => '16', 'right' => '16', 'bottom' => '16', 'left' => '16', 'isLinked' => true ) ), array(
+                    mk_glamz_el_widget( 'image', array( 'image' => array( 'url' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuBSc4q6a0pFvNa3VTS7shBcgks6PxZOtBOWyCf54qzZX9KAFp8a_GpXdtl_cFVXwIaNCLZH9Qk4Nt-qszqif9BIZJ788t4IX9rfWM71RHLmfuI23kgxdElLUYZ9TPaHmlkPFHISfrAxelnit6MPDvGzWiGYy4yRKdxY0k2UF8Ib1A2Dh3QdG6lssxcaiNf6ToBDDiaUD-kRCbFagbBfTv7HCIYszx4vof51q-qZ4qqzrggxe1zrVkoorl4dt1RPH0xVyFYTmczgj-bn' ) ) ),
+                    mk_glamz_el_widget( 'heading', array( 'title' => 'Velvet Skin Fluid', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 20 ) ) ),
+                    mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#BD9A5F; font-weight:bold; font-family:Outfit;">$62.00</p>' ) ),
+                    mk_glamz_el_widget( 'button', array( 'text' => 'QUICK SHOP', 'background_color' => '#0B1528', 'text_color' => '#FFFFFF' ) ),
+                ) ),
+                mk_glamz_el_container( array( 'width' => array( 'unit' => '%', 'size' => 25 ), 'background_background' => 'classic', 'background_color' => '#FFFFFF', 'padding' => array( 'unit' => 'px', 'top' => '16', 'right' => '16', 'bottom' => '16', 'left' => '16', 'isLinked' => true ) ), array(
+                    mk_glamz_el_widget( 'image', array( 'image' => array( 'url' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuBGYx0R3up-CWY_53ISGIXIeIGS37weK3M_sU_plXRCXTYy0I0QavV5cncffSRK6m-_4e3owjd9EiIp37IApIfDi4A8hJ-awQC4uvxBwIJVWLHYSCUMFyRi3KsbO_Bae9v1I2l7DP3EKeySmXxUPRwMujCesk8MLmmh4kl8Owmu3uXRPEuWfYCh4-p4elebFZ4qCLNDZjfpv3hTUHlCLqvGsS1PJI6cQIbWgKz5adCjngCWT652HzFTRnq2odPTZNup58cdeUijmSrg' ) ) ),
+                    mk_glamz_el_widget( 'heading', array( 'title' => 'Satin Petal Lipstick', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 20 ) ) ),
+                    mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#BD9A5F; font-weight:bold; font-family:Outfit;">$38.00</p>' ) ),
+                    mk_glamz_el_widget( 'button', array( 'text' => 'QUICK SHOP', 'background_color' => '#0B1528', 'text_color' => '#FFFFFF' ) ),
+                ) ),
+                mk_glamz_el_container( array( 'width' => array( 'unit' => '%', 'size' => 25 ), 'background_background' => 'classic', 'background_color' => '#FFFFFF', 'padding' => array( 'unit' => 'px', 'top' => '16', 'right' => '16', 'bottom' => '16', 'left' => '16', 'isLinked' => true ) ), array(
+                    mk_glamz_el_widget( 'image', array( 'image' => array( 'url' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuDLxryS5HtBK7niFTj4LMTsjA7Qe083eI_ukCyepAsg-RHOrT9iBGZd2quh9cC-YfzGKexIEJKfK04ayOmzc7L5dZ71BvMYjpszw53s593V9v8i6X0x3hnAkY-aur4S6y62okLx-EciJIVZwsi9WjOA4rLCaA9XL203_1KfUbOLeMBYrJM9hos9MTaEcRsXSUEd311rekDCCrRt-cDUKlMTK0novECwc7t38Og52vTZQsg5guVMCtN0_VxFQ_tvUvDNnz5jnotl8fqh' ) ) ),
+                    mk_glamz_el_widget( 'heading', array( 'title' => 'Luminous Glow Powder', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 20 ) ) ),
+                    mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#BD9A5F; font-weight:bold; font-family:Outfit;">$54.00</p>' ) ),
+                    mk_glamz_el_widget( 'button', array( 'text' => 'QUICK SHOP', 'background_color' => '#0B1528', 'text_color' => '#FFFFFF' ) ),
+                ) ),
+                mk_glamz_el_container( array( 'width' => array( 'unit' => '%', 'size' => 25 ), 'background_background' => 'classic', 'background_color' => '#FFFFFF', 'padding' => array( 'unit' => 'px', 'top' => '16', 'right' => '16', 'bottom' => '16', 'left' => '16', 'isLinked' => true ) ), array(
+                    mk_glamz_el_widget( 'image', array( 'image' => array( 'url' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuAw4WS-IKveooabN5YOrTqs6yV0UvsuQws5AEdusl9gmveHrUTHXpyo1sXGcnXjvq-cXRHwCezXvEYDZqXb7iSbKiXrZ5arNblwoBltpm_iG3reDd1Zxon3PpYWGPo5-nKVENaXytt3l7Pxmg7b7nD64CjDpQ6eqPOLNrLnAZxiRihnPa4Tw1qyVs5OOx9SBL5mGm6LQvv-Ix7EkbFDcRWaRZL-SkI6Tz1UHUjm9c452qRBxxuylYhPRvPnoU5wPH7sRG-Ol3SlNnfW' ) ) ),
+                    mk_glamz_el_widget( 'heading', array( 'title' => 'Obsidian Eye Palette', 'title_color' => '#0B1528', 'typography_font_family' => 'Syne', 'typography_font_size' => array( 'unit' => 'px', 'size' => 20 ) ) ),
+                    mk_glamz_el_widget( 'text-editor', array( 'editor' => '<p style="color:#BD9A5F; font-weight:bold; font-family:Outfit;">$75.00</p>' ) ),
+                    mk_glamz_el_widget( 'button', array( 'text' => 'QUICK SHOP', 'background_color' => '#0B1528', 'text_color' => '#FFFFFF' ) ),
+                ) ),
             ) ),
         ) ),
     );

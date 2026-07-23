@@ -3,7 +3,28 @@
  * MK GLAMZ front-page.php template
  */
 
-get_header(); ?>
+get_header();
+
+// Delegate to Elementor Canvas / Builder when active or in Elementor Editor
+if ( did_action( 'elementor/loaded' ) ) {
+    $page_id   = get_the_ID();
+    $edit_mode = get_post_meta( $page_id, '_elementor_edit_mode', true );
+    $is_preview = \Elementor\Plugin::$instance->preview->is_preview_mode() || isset( $_GET['elementor-preview'] );
+    if ( 'builder' === $edit_mode || $is_preview || \Elementor\Plugin::$instance->db->is_built_with_elementor( $page_id ) ) {
+        ?>
+        <main class="min-h-screen">
+          <?php
+          while ( have_posts() ) : the_post();
+              the_content();
+          endwhile;
+          ?>
+        </main>
+        <?php
+        get_footer();
+        return;
+    }
+}
+?>
 
 <!-- Main Content -->
 <main>
