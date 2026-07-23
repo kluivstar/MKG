@@ -1,0 +1,303 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap');
+
+.mkg-root {
+  font-family: 'Outfit', sans-serif !important;
+  color: #0B1528 !important;
+  background-color: #FFFFFF !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.5 !important;
+}
+
+.mkg-root * {
+  box-sizing: border-box !important;
+}
+
+.mkg-root h1, .mkg-root h2, .mkg-root h3, .mkg-root h4, .mkg-root h5 {
+  font-family: 'Syne', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  margin: 0 0 16px 0 !important;
+}
+
+.mkg-container {
+  max-width: 1440px !important;
+  margin: 0 auto !important;
+  padding: 0 48px !important;
+  width: 100% !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+@media (max-width: 768px) {
+  .mkg-container {
+    padding: 0 24px !important;
+  }
+}
+
+.mkg-btn-gold {
+  background-color: #BD9A5F !important;
+  color: #0B1528 !important;
+  padding: 16px 36px !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  transition: all 0.3s ease !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.mkg-btn-gold:hover {
+  background-color: #d4b275 !important;
+  transform: translateY(-2px) !important;
+}
+
+.mkg-btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  color: #FFFFFF !important;
+  padding: 16px 36px !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  transition: all 0.3s ease !important;
+  background: transparent !important;
+  cursor: pointer !important;
+}
+
+.mkg-btn-outline:hover {
+  border-color: #FFFFFF !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.mkg-btn-dark {
+  background-color: #0B1528 !important;
+  color: #FFFFFF !important;
+  padding: 16px 36px !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  transition: all 0.3s ease !important;
+  border: none !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.mkg-btn-dark:hover {
+  background-color: #1e293b !important;
+}
+
+.mkg-hero {
+  position: relative !important;
+  min-height: 85vh !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  overflow: hidden !important;
+  background-color: #0B1528 !important;
+}
+
+.mkg-hero-bg {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+.mkg-hero-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(90deg, rgba(11, 21, 40, 0.75) 0%, rgba(11, 21, 40, 0.25) 100%) !important;
+}
+
+.mkg-bento-grid {
+  display: grid !important;
+  grid-template-columns: 7fr 5fr !important;
+  gap: 30px !important;
+}
+
+@media (max-width: 768px) {
+  .mkg-bento-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.mkg-product-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 24px !important;
+}
+
+@media (max-width: 1024px) {
+  .mkg-product-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .mkg-product-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.mkg-card {
+  background: #FFFFFF !important;
+  padding: 20px !important;
+  border: 1px solid #E2E8F0 !important;
+  transition: all 0.3s ease !important;
+}
+
+.mkg-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+.mkg-card img {
+  width: 100% !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+  margin-bottom: 16px !important;
+}
+
+.mkg-nav {
+  background: #0B1528 !important;
+  padding: 24px 48px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.mkg-nav a {
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+  margin: 0 16px !important;
+  font-size: 13px !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+}
+
+.mkg-footer {
+  background: #0B1528 !important;
+  color: #FFFFFF !important;
+  padding: 80px 48px 40px 48px !important;
+}
+
+.mkg-footer-grid {
+  display: grid !important;
+  grid-template-columns: 2fr 1fr 1fr 2fr !important;
+  gap: 40px !important;
+}
+
+@media (max-width: 768px) {
+  .mkg-footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+</style>
+
+<div class="mkg-root">
+  <!-- Hero Section -->
+  <section class="mkg-hero">
+    <img class="mkg-hero-bg" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1920&q=80" alt="MK Glamz Hero"/>
+    <div class="mkg-hero-overlay"></div>
+    <div class="mkg-container">
+      <span style="color:#BD9A5F; font-size:14px; letter-spacing:0.3em; text-transform:uppercase; font-weight:600; display:block; margin-bottom:16px;">THE INAUGURAL COLLECTION</span>
+      <h1 style="color:#FFFFFF; font-size:64px; line-height:1.1; margin-bottom:24px;">The Art of Elegance</h1>
+      <p style="color:#E2E8F0; font-size:18px; max-width:540px; margin-bottom:36px; line-height:1.6;">Curating prestige beauty for the discerning individual. Discover a symphony of texture, light, and artistry in our limited release series.</p>
+      <div style="display:flex; gap:20px; flex-wrap:wrap;">
+        <a href="/shop" class="mkg-btn-gold">Shop Now</a>
+        <a href="/makeup-services" class="mkg-btn-outline">Book Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature Tones Bento Section -->
+  <section style="padding:96px 0; background:#FFFFFF;">
+    <div class="mkg-container">
+      <h2 style="color:#0B1528; font-size:48px; margin-bottom:8px;">Signature Tones</h2>
+      <p style="color:#64748B; font-size:16px; margin-bottom:48px;">Meticulously developed formulas for professional-grade results at home.</p>
+      
+      <div class="mkg-bento-grid">
+        <div style="position:relative; min-height:500px; background:url('https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1200&q=80') center/cover; display:flex; flex-direction:column; justify-flex:end; padding:40px;">
+          <div style="position:absolute; inset:0; background:rgba(0,0,0,0.25);"></div>
+          <div style="position:relative; z-index:2;">
+            <span style="color:#BD9A5F; font-size:13px; letter-spacing:0.2em; text-transform:uppercase; font-weight:600;">COLLECTION 01</span>
+            <h3 style="color:#FFFFFF; font-size:42px; margin:8px 0 16px 0;">Face</h3>
+            <a href="/shop" style="color:#FFFFFF; text-decoration:underline; font-size:13px; letter-spacing:0.15em; text-transform:uppercase;">Explore Line</a>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:30px;">
+          <div style="position:relative; min-height:235px; background:url('https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80') center/cover; display:flex; align-items:flex-end; padding:30px;">
+            <div style="position:absolute; inset:0; background:rgba(0,0,0,0.2);"></div>
+            <h3 style="color:#FFFFFF; font-size:28px; position:relative; z-index:2; margin:0;">Lips</h3>
+          </div>
+          <div style="position:relative; min-height:235px; background:url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80') center/cover; display:flex; align-items:flex-end; padding:30px;">
+            <div style="position:absolute; inset:0; background:rgba(0,0,0,0.2);"></div>
+            <h3 style="color:#FFFFFF; font-size:28px; position:relative; z-index:2; margin:0;">Eyes</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Sellers Grid -->
+  <section style="padding:96px 0; background:#F8FAFC;">
+    <div class="mkg-container">
+      <h2 style="color:#0B1528; font-size:48px; margin-bottom:48px;">Best Sellers</h2>
+      <div class="mkg-product-grid">
+        <div class="mkg-card">
+          <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80" alt="Velvet Skin Fluid"/>
+          <h4 style="color:#0B1528; font-size:20px; margin-bottom:4px;">Velvet Skin Fluid</h4>
+          <p style="color:#BD9A5F; font-weight:bold; font-size:16px; margin-bottom:16px;">$62.00</p>
+          <a href="/shop" class="mkg-btn-dark">Quick Shop</a>
+        </div>
+        <div class="mkg-card">
+          <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=600&q=80" alt="Satin Petal Lipstick"/>
+          <h4 style="color:#0B1528; font-size:20px; margin-bottom:4px;">Satin Petal Lipstick</h4>
+          <p style="color:#BD9A5F; font-weight:bold; font-size:16px; margin-bottom:16px;">$38.00</p>
+          <a href="/shop" class="mkg-btn-dark">Quick Shop</a>
+        </div>
+        <div class="mkg-card">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Luminous Glow Powder"/>
+          <h4 style="color:#0B1528; font-size:20px; margin-bottom:4px;">Luminous Glow Powder</h4>
+          <p style="color:#BD9A5F; font-weight:bold; font-size:16px; margin-bottom:16px;">$54.00</p>
+          <a href="/shop" class="mkg-btn-dark">Quick Shop</a>
+        </div>
+        <div class="mkg-card">
+          <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=600&q=80" alt="Obsidian Eye Palette"/>
+          <h4 style="color:#0B1528; font-size:20px; margin-bottom:4px;">Obsidian Eye Palette</h4>
+          <p style="color:#BD9A5F; font-weight:bold; font-size:16px; margin-bottom:16px;">$75.00</p>
+          <a href="/shop" class="mkg-btn-dark">Quick Shop</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section style="padding:96px 0; background:#0B1528; color:#FFFFFF; text-align:center;">
+    <div class="mkg-container" style="max-width:700px;">
+      <h3 style="color:#FFFFFF; font-size:42px; margin-bottom:16px;">The Inner Circle</h3>
+      <p style="color:#94A3B8; font-size:18px; margin-bottom:36px; line-height:1.6;">Sign up to receive early access to new collections, exclusive artistry tutorials, and invitations to private boutique events.</p>
+      <form style="display:flex; gap:16px; max-width:540px; margin:0 auto;" onsubmit="event.preventDefault(); alert('Subscribed!');">
+        <input style="flex:1; background:transparent; border:none; border-bottom:1px solid rgba(255,255,255,0.4); padding:14px; color:#FFFFFF; outline:none; font-family:Outfit;" type="email" placeholder="EMAIL ADDRESS" required/>
+        <button type="submit" class="mkg-btn-gold">Join Now</button>
+      </form>
+    </div>
+  </section>
+</div>
