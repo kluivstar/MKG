@@ -1,0 +1,134 @@
+{
+  "version": "3.4.0",
+  "title": "MKG-Header",
+  "type": "header",
+  "content": [
+    {
+      "id": "iu6w7mz",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "container_type": "flex",
+        "flex_direction": "column",
+        "width": {
+          "unit": "%",
+          "size": 100
+        },
+        "background_background": "classic",
+        "background_color": "#0B1528",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "custom_css": "\n@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap');\n\nselector {\n  width: 100% !important;\n  max-width: 100% !important;\n}\nselector .elementor-heading-title {\n  font-family: 'Syne', sans-serif !important;\n}\nselector p, selector span, selector a, selector button, selector .elementor-button {\n  font-family: 'Outfit', sans-serif !important;\n}\n"
+      },
+      "elements": [
+        {
+          "id": "9beyceo",
+          "elType": "container",
+          "settings": {
+            "content_width": "boxed",
+            "container_type": "flex",
+            "flex_direction": "row",
+            "flex_justify_content": "space-between",
+            "flex_align_items": "center",
+            "boxed_width": {
+              "unit": "px",
+              "size": 1440
+            },
+            "padding": {
+              "unit": "px",
+              "top": "24",
+              "right": "48",
+              "bottom": "24",
+              "left": "48",
+              "isLinked": false
+            },
+            "margin": {
+              "unit": "px",
+              "top": "0",
+              "right": "auto",
+              "bottom": "0",
+              "left": "auto",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "xu7tcft",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "MK GLAMZ",
+                "header_size": "h2",
+                "title_color": "#BD9A5F",
+                "typography_typography": "custom",
+                "typography_font_family": "Syne",
+                "typography_font_weight": "700",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 28
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "2hu8ndi",
+              "elType": "widget",
+              "widgetType": "nav-menu",
+              "settings": {
+                "menu": "Primary Menu",
+                "layout": "horizontal",
+                "align": "center",
+                "color_menu_item": "#FFFFFF",
+                "color_menu_item_hover": "#BD9A5F",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                },
+                "typography_font_weight": "600"
+              },
+              "elements": []
+            },
+            {
+              "id": "mlmijto",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "BOOK US",
+                "background_color": "transparent",
+                "text_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#BD9A5F",
+                "padding": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "24",
+                  "bottom": "12",
+                  "left": "24",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}
