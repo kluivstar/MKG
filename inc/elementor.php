@@ -16,7 +16,15 @@ if ( ! function_exists( 'mk_glamz_register_elementor_locations' ) ) {
     add_action( 'elementor/theme/register_locations', 'mk_glamz_register_elementor_locations' );
 }
 
-// 2. Elementor Canvas & Page Support
+// 2. Enable JSON Mime Type & Unfiltered Template Uploads for Elementor
+add_filter( 'upload_mimes', function( $mimes ) {
+    $mimes['json'] = 'application/json';
+    return $mimes;
+} );
+
+add_filter( 'elementor/files/allow_unfiltered_globally', '__return_true' );
+
+// 3. Elementor Canvas & Page Support
 add_action( 'after_setup_theme', function() {
     add_post_type_support( 'page', 'elementor' );
 } );
